@@ -1,5 +1,5 @@
 Flow report for fulladder
-Tue Aug 29 11:01:32 2023
+Tue Aug 29 11:05:42 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +---------------------------------+------------------------------------------------+
-; Flow Status                     ; Successful - Tue Aug 29 11:01:32 2023          ;
+; Flow Status                     ; Successful - Tue Aug 29 11:05:42 2023          ;
 ; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                   ; fulladder                                      ;
 ; Top-level Entity Name           ; fulladder                                      ;
@@ -108,7 +108,8 @@ https://fpgasoftware.intel.com/eula.
 ; Assembler            ; 00:00:06     ; 1.0                     ; 4877 MB             ; 00:00:06                           ;
 ; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 5126 MB             ; 00:00:04                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4726 MB             ; 00:00:01                           ;
-; Total                ; 00:00:50     ; --                      ; --                  ; 00:01:32                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4722 MB             ; 00:00:01                           ;
+; Total                ; 00:00:51     ; --                      ; --                  ; 00:01:33                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -122,6 +123,7 @@ https://fpgasoftware.intel.com/eula.
 ; Assembler            ; ecelap260969     ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; ecelap260969     ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; ecelap260969     ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; ecelap260969     ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -133,6 +135,7 @@ quartus_fit --read_settings_files=off --write_settings_files=off fulladder -c fu
 quartus_asm --read_settings_files=off --write_settings_files=off fulladder -c fulladder
 quartus_sta fulladder -c fulladder
 quartus_eda --read_settings_files=off --write_settings_files=off fulladder -c fulladder
+quartus_eda --read_settings_files=on --write_settings_files=off fulladder -c fulladder --gen_testbench
 
 
 
