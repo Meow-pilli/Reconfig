@@ -67,9 +67,7 @@ begin
     A = 1; B = 1; Cin = 0;
     #10;
     A = 1; B = 1; Cin = 1;
-    #10;    
-
-	$finish;                                                   
+    #10;                                                       
 // --> end                                             
 $display("Running testbench");                       
 end                                                    
