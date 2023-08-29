@@ -71,15 +71,15 @@ begin
 // --> end                                             
 $display("Running testbench");                       
 end                                                    
-always                                                 
+//always                                                 
 // optional sensitivity list                           
 // @(event1 or event2 or .... eventn)                  
-begin                                                  
+//begin                                                  
 // code executes for every event on sensitivity list   
 // insert code here --> begin                          
                                                        
-@eachvec;                                              
+//@eachvec;                                              
 // --> end                                             
-end                                                    
+//end                                                    
 endmodule
 
