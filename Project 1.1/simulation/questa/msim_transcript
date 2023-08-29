@@ -26,29 +26,28 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/sxc210186/Documents/GitHub/Reconfig/Project\ 1.1 {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/fulladder.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 11:25:28 on Aug 29,2023
+# Start time: 12:48:42 on Aug 29,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1" C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/fulladder.v 
 # -- Compiling module fulladder
 # 
 # Top level modules:
 # 	fulladder
-# End time: 11:25:28 on Aug 29,2023, Elapsed time: 0:00:00
+# End time: 12:48:42 on Aug 29,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vlog -reportprogress 300 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/simulation/questa/fulladder.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 11:25:39 on Aug 29,2023
+# Start time: 12:50:30 on Aug 29,2023
 # vlog -reportprogress 300 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/simulation/questa/fulladder.v 
 # -- Compiling module fulladder_vlg_tst
 # 
 # Top level modules:
 # 	fulladder_vlg_tst
-# End time: 11:25:39 on Aug 29,2023, Elapsed time: 0:00:00
+# End time: 12:50:31 on Aug 29,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vsim work.fulladder_vlg_tst
 # vsim work.fulladder_vlg_tst 
-# Start time: 11:25:47 on Aug 29,2023
+# Start time: 12:50:34 on Aug 29,2023
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading work.fulladder_vlg_tst(fast)
 run
-# Running testbench

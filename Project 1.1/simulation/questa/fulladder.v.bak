@@ -24,6 +24,7 @@
 // 
 // Simulation tool : Questa Intel FPGA (Verilog)
 // 
+
 `timescale 1 ps/ 1 ps
 module fulladder_vlg_tst();
 // constants                                           
@@ -38,31 +39,35 @@ wire Cout;
 wire S;
 
 // assign statements (if any)                          
-fulladder FA (
+fulladder i1 (
+// port map - connection between master ports and signals/registers   
 	.A(A),
 	.B(B),
 	.Cin(Cin),
 	.Cout(Cout),
 	.S(S)
 );
-
-initial begin                                                  
-	A = 1'b0; B = 1'b0; Cin = 1'b0;
-	#10;
-	A = 1'b0; B = 1'b0; Cin = 1'b1;
-	#10;
-	A = 1'b0; B = 1'b1; Cin = 1'b0;
-	#10;
-	A = 1'b0; B = 1'b1; Cin = 1'b1;
-	#10;
-	A = 1'b1; B = 1'b0; Cin = 1'b0;
-	#10;
-	A = 1'b1; B = 1'b0; Cin = 1'b1;
-	#10;
-	A = 1'b1; B = 1'b1; Cin = 1'b0;
-	#10;
-	A = 1'b1; B = 1'b1; Cin = 1'b1;
-	#10;                                                       
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+// Test cases
+A = 0; B = 0; Cin = 0;
+#10;
+A = 0; B = 0; Cin = 1;
+#10;
+A = 0; B = 1; Cin = 0;
+#10;
+A = 0; B = 1; Cin = 1;
+#10;
+A = 1; B = 0; Cin = 0;
+#10;
+A = 1; B = 0; Cin = 1;
+#10;
+A = 1; B = 1; Cin = 0;
+#10;
+A = 1; B = 1; Cin = 1;
+#10;                                                       
 // --> end                                             
 $display("Running testbench");                       
 end                                                    
@@ -75,6 +80,6 @@ end
                                                        
 //@eachvec;                                              
 // --> end                                             
-//end                                                  
+//end                                                    
 endmodule
 
