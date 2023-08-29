@@ -1,7 +1,8 @@
 m255
 K4
 z2
-!s99 nomlopt
+Z0 !s99 nomlopt
+R0
 !s11f vlog 2021.2 2021.04, Apr 14 2021
 13
 !s112 1.1
@@ -9,30 +10,41 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/simulation/questa
+Z1 dC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/simulation/questa
 T_opt
 !s110 1693325822
 VN;fD>U[G<C11k1B9[f`iR1
 04 9 4 work fulladder fast 0
 =1-a029196c4c97-64ee19fe-1ab-5dd8
 !s124 OEM10U1 
-o-quiet -auto_acc_if_foreign -work work
-Z1 tCvgOpt 0
+Z2 o-quiet -auto_acc_if_foreign -work work
+Z3 tCvgOpt 0
 n@_opt
-OL;O;2021.2;73
+Z4 OL;O;2021.2;73
+R1
+T_opt1
+!s110 1693325930
+V=U1O3bQ@_GmY65>]T2S3J3
+04 17 4 work fulladder_vlg_tst fast 0
+=1-a029196c4c97-64ee1a6a-53-3e4
+!s124 OEM10U2 
+R2
+R3
+n@_opt1
+R4
 vfulladder
 !s110 1693325812
 !i10b 1
 !s100 5Y9JP;Ym;QjW9hCd76Wf20
 IZ2BH8_A_=D0f<CX>;AVWD3
-R0
+R1
 w1693324616
 8C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/fulladder.v
 FC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/fulladder.v
 !i122 0
 L0 20 34
-VDg1SIo80bB@j0V0VzS_@n1
-OL;L;2021.2;73
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2021.2;73
 r1
 !s85 0
 31
@@ -42,4 +54,26 @@ r1
 !i113 0
 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 !s92 -vlog01compat -work work {+incdir+C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vfulladder_vlg_tst
+!s110 1693325917
+!i10b 1
+!s100 njnQVj7a4niRQ;c_JXXTb0
+IKQcgmZlDU_>;@Xji7H:F73
 R1
+w1693325661
+8C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/simulation/questa/fulladder.v
+FC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/simulation/questa/fulladder.v
+!i122 1
+L0 29 56
+R5
+R6
+r1
+!s85 0
+31
+!s108 1693325917.000000
+!s107 C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/simulation/questa/fulladder.v|
+!s90 -reportprogress|300|-work|work|C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/simulation/questa/fulladder.v|
+!i113 0
+o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
