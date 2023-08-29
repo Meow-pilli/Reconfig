@@ -51,7 +51,23 @@ initial
 begin                                                  
 // code that executes only once                        
 // insert code here --> begin                          
-                                                       
+// Test cases
+    A = 0; B = 0; Cin = 0;
+    #10;
+    A = 0; B = 0; Cin = 1;
+    #10;
+    A = 0; B = 1; Cin = 0;
+    #10;
+    A = 0; B = 1; Cin = 1;
+    #10;
+    A = 1; B = 0; Cin = 0;
+    #10;
+    A = 1; B = 0; Cin = 1;
+    #10;
+    A = 1; B = 1; Cin = 0;
+    #10;
+    A = 1; B = 1; Cin = 1;
+    #10;                                                       
 // --> end                                             
 $display("Running testbench");                       
 end                                                    
