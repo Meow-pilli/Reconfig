@@ -58,3 +58,5 @@ vsim work.fulladder_vlg_tst
 # Start time: 11:18:49 on Aug 29,2023
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading work.fulladder_vlg_tst(fast)
+# End time: 11:20:20 on Aug 29,2023, Elapsed time: 0:01:31
+# Errors: 0, Warnings: 0
