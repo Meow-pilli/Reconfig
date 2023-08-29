@@ -1,0 +1,45 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/simulation/questa
+T_opt
+!s110 1693325822
+VN;fD>U[G<C11k1B9[f`iR1
+04 9 4 work fulladder fast 0
+=1-a029196c4c97-64ee19fe-1ab-5dd8
+!s124 OEM10U1 
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vfulladder
+!s110 1693325812
+!i10b 1
+!s100 5Y9JP;Ym;QjW9hCd76Wf20
+IZ2BH8_A_=D0f<CX>;AVWD3
+R0
+w1693324616
+8C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/fulladder.v
+FC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/fulladder.v
+!i122 0
+L0 20 34
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2021.2;73
+r1
+!s85 0
+31
+!s108 1693325812.000000
+!s107 C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/fulladder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1|C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/fulladder.v|
+!i113 0
+o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -vlog01compat -work work {+incdir+C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
