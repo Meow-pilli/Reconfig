@@ -26,30 +26,36 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/sxc210186/Documents/GitHub/Reconfig/Project\ 1.1 {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/fulladder.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:48:42 on Aug 29,2023
+# Start time: 21:16:26 on Aug 30,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1" C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/fulladder.v 
 # -- Compiling module fulladder
 # 
 # Top level modules:
 # 	fulladder
-# End time: 12:48:42 on Aug 29,2023, Elapsed time: 0:00:00
+# End time: 21:16:26 on Aug 30,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vlog -reportprogress 300 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/simulation/questa/fulladder.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 12:50:30 on Aug 29,2023
+# Start time: 21:16:55 on Aug 30,2023
 # vlog -reportprogress 300 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/simulation/questa/fulladder.v 
 # -- Compiling module fulladder_vlg_tst
 # 
 # Top level modules:
 # 	fulladder_vlg_tst
-# End time: 12:50:31 on Aug 29,2023, Elapsed time: 0:00:01
+# End time: 21:16:55 on Aug 30,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim work.fulladder_vlg_tst
-# vsim work.fulladder_vlg_tst 
-# Start time: 12:50:34 on Aug 29,2023
+vsim -voptargs=+acc work.fulladder_vlg_tst
+# vsim -voptargs="+acc" work.fulladder_vlg_tst 
+# Start time: 21:17:01 on Aug 30,2023
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading work.fulladder_vlg_tst(fast)
+# Loading work.fulladder(fast)
+add wave -position end  sim:/fulladder_vlg_tst/A
+add wave -position end  sim:/fulladder_vlg_tst/B
+add wave -position end  sim:/fulladder_vlg_tst/Cin
+add wave -position end  sim:/fulladder_vlg_tst/Cout
+add wave -position end  sim:/fulladder_vlg_tst/S
 run
-# End time: 12:56:51 on Aug 29,2023, Elapsed time: 0:06:17
-# Errors: 0, Warnings: 0
+# Running testbench
+run
