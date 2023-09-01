@@ -1,5 +1,5 @@
 Analysis & Synthesis report for fulladder_rtl
-Fri Sep  1 10:56:16 2023
+Fri Sep  1 11:14:35 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Sep  1 10:56:16 2023          ;
+; Analysis & Synthesis Status     ; Successful - Fri Sep  1 11:14:35 2023          ;
 ; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                   ; fulladder_rtl                                  ;
 ; Top-level Entity Name           ; fulladder_rtl                                  ;
@@ -257,14 +257,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Fri Sep  1 10:56:07 2023
+    Info: Processing started: Fri Sep  1 11:14:26 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fulladder_rtl -c fulladder_rtl
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file simulation/questa/fulladder_rtl.v
+    Info (12023): Found entity 1: fulladder_rtl_vlg_tst File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.2/simulation/questa/fulladder_rtl.v Line: 29
 Info (12021): Found 1 design units, including 1 entities, in source file fulladder_rtl.v
     Info (12023): Found entity 1: fulladder_rtl File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.2/fulladder_rtl.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file fulladder_rtl_tb.v
-    Info (12023): Found entity 1: testbench_one File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.2/fulladder_rtl_tb.v Line: 3
 Info (12127): Elaborating entity "fulladder_rtl" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -274,8 +274,8 @@ Info (21057): Implemented 7 device resources after synthesis - the final resourc
     Info (21059): Implemented 2 output pins
     Info (21061): Implemented 2 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4835 megabytes
-    Info: Processing ended: Fri Sep  1 10:56:16 2023
+    Info: Peak virtual memory: 4836 megabytes
+    Info: Processing ended: Fri Sep  1 11:14:35 2023
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:22
 

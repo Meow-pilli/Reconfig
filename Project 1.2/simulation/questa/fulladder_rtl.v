@@ -51,19 +51,41 @@ initial
 begin                                                  
 // code that executes only once                        
 // insert code here --> begin                          
-                                                       
+a = 0; b = 0; cin = 0; // 0 0 0 
+#10;
+
+a = 0; b = 0; cin = 1; // 0 0 1
+#10;
+
+a = 0; b = 1; cin = 0; // 0 1 0
+#10;
+
+a = 0; b = 1; cin = 1; // 0 1 1
+#10;
+
+a = 1; b = 0; cin = 0; // 1 0 0
+#10;
+
+a = 1; b = 0; cin = 1; // 1 0 1
+#10;
+
+a = 1; b = 1; cin = 0; // 1 1 0
+#10;
+
+a = 1; b = 1; cin = 1; // 1 1 1
+#10;                                                       
 // --> end                                             
 $display("Running testbench");                       
 end                                                    
-always                                                 
+//always                                                 
 // optional sensitivity list                           
 // @(event1 or event2 or .... eventn)                  
-begin                                                  
+//begin                                                  
 // code executes for every event on sensitivity list   
 // insert code here --> begin                          
                                                        
-@eachvec;                                              
+//@eachvec;                                              
 // --> end                                             
-end                                                    
+//end                                                    
 endmodule
 

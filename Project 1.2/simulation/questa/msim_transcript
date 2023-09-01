@@ -26,12 +26,35 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/sxc210186/Documents/GitHub/Reconfig/Project\ 1.2 {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.2/fulladder_rtl.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 11:02:42 on Sep 01,2023
+# Start time: 11:23:37 on Sep 01,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.2" C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.2/fulladder_rtl.v 
 # -- Compiling module fulladder_rtl
 # 
 # Top level modules:
 # 	fulladder_rtl
-# End time: 11:02:42 on Sep 01,2023, Elapsed time: 0:00:00
+# End time: 11:23:37 on Sep 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
+vlog -reportprogress 300 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.2/simulation/questa/fulladder_rtl.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:24:17 on Sep 01,2023
+# vlog -reportprogress 300 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.2/simulation/questa/fulladder_rtl.v 
+# -- Compiling module fulladder_rtl_vlg_tst
+# 
+# Top level modules:
+# 	fulladder_rtl_vlg_tst
+# End time: 11:24:17 on Sep 01,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.fulladder_rtl_vlg_tst
+# vsim -voptargs="+acc" work.fulladder_rtl_vlg_tst 
+# Start time: 11:24:21 on Sep 01,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.fulladder_rtl_vlg_tst(fast)
+# Loading work.fulladder_rtl(fast)
+add wave -position end  sim:/fulladder_rtl_vlg_tst/a
+add wave -position end  sim:/fulladder_rtl_vlg_tst/b
+add wave -position end  sim:/fulladder_rtl_vlg_tst/cin
+add wave -position end  sim:/fulladder_rtl_vlg_tst/cout
+add wave -position end  sim:/fulladder_rtl_vlg_tst/sum
+run
+# Running testbench
