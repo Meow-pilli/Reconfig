@@ -1,10 +1,11 @@
 |fulladder
-A => Cout.IN1
-A => SYNTHESIZED_WIRE_4.IN0
-B => SYNTHESIZED_WIRE_4.IN1
-Cin => S.IN1
-Cin => SYNTHESIZED_WIRE_3.IN1
-S << S.DB_MAX_OUTPUT_PORT_TYPE
-Cout << Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+A => inst3.IN1
+B => inst.IN1
+Cin => inst2.IN1
+Cin => inst4.IN1
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 
 

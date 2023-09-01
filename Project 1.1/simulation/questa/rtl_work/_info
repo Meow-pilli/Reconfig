@@ -11,17 +11,17 @@ z2
 cModel Technology
 Z0 dC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/simulation/questa
 T_opt
-!s110 1693448223
-VDzXghZiXaI[iF=]B>BWAZ2
+!s110 1693580002
+VIG`Yb^amN;z9d6XT3YILd1
 04 17 4 work fulladder_vlg_tst fast 0
-=1-a029196c4c97-64eff81e-157-1f3c
+=1-a029196c4c97-64f1fae0-102-3230
 !s124 OEM10U2 
 o-quiet -auto_acc_if_foreign -work work +acc
 Z1 tCvgOpt 0
 n@_opt
 OL;O;2021.2;73
 vfulladder
-!s110 1693448186
+!s110 1693579983
 !i10b 1
 !s100 5Y9JP;Ym;QjW9hCd76Wf20
 IZ2BH8_A_=D0f<CX>;AVWD3
@@ -36,7 +36,7 @@ Z3 OL;L;2021.2;73
 r1
 !s85 0
 31
-!s108 1693448186.000000
+!s108 1693579982.000000
 !s107 C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/fulladder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1|C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/fulladder.v|
 !i113 0
@@ -44,7 +44,7 @@ o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L i
 !s92 -vlog01compat -work work {+incdir+C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R1
 vfulladder_vlg_tst
-!s110 1693448215
+!s110 1693579989
 !i10b 1
 !s100 adIcWZG_hbXa@ca[;SccQ0
 IXI<ea<V5;bDRdcK@ZIic<0
@@ -59,7 +59,7 @@ R3
 r1
 !s85 0
 31
-!s108 1693448215.000000
+!s108 1693579988.000000
 !s107 C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/simulation/questa/fulladder.v|
 !s90 -reportprogress|300|-work|work|C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 1.1/simulation/questa/fulladder.v|
 !i113 0
