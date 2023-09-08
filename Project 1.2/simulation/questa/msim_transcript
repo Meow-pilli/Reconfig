@@ -58,3 +58,5 @@ add wave -position end  sim:/fulladder_rtl_vlg_tst/cout
 add wave -position end  sim:/fulladder_rtl_vlg_tst/sum
 run
 # Running testbench
+# End time: 13:56:50 on Sep 04,2023, Elapsed time: 74:32:29
+# Errors: 0, Warnings: 0
