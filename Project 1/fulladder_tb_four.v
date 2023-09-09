@@ -11,7 +11,7 @@ module testbench_four;
     wire Cout;
     
     // Instantiate the 4-bit full adder
-    fulladder_struct_four dut (
+    fulladder_behav_four dut (
         .A(A),
         .B(B),
         .Cin(Cin),
@@ -26,7 +26,7 @@ module testbench_four;
     // Stimulus
     initial begin
         //$display("Time\tA\tB\tCin\tSum\tCout");
-        $dumpfile("testbench_four.vcd");  
+        $dumpfile("testbench_four_behav.vcd");  
         $dumpvars(0, testbench_four);
         
         A = 4'b0000; B = 4'b0000; Cin = 0; // 0 0 0
