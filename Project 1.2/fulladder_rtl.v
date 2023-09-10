@@ -1,12 +1,12 @@
 module fulladder_rtl (
-    input wire a,
-    input wire b,
-    input wire cin,
-    output wire sum,
-    output wire cout
+    input a,   // inputs
+    input b,
+    input cin,
+    output sum,  // outputs
+    output cout
 );
 
-    assign sum = a ^ b ^ cin;
-    assign cout = (a & b) | (b & cin) | (a & cin);
+    assign sum = a ^ b ^ cin;  // Sum output: XOR of A, B, and Cin
+    assign cout = (a & b) | (b & cin) | (a & cin); // Carry output
 
 endmodule
