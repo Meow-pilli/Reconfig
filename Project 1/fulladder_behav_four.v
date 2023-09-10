@@ -9,7 +9,7 @@ module fulladder_behav_four (
 reg [3:0] Sum;
 reg Cout;
 
-always @(A or B or Cin) begin
+always @(*) begin
     {Cout, Sum}= A + B + Cin;
 end
 
