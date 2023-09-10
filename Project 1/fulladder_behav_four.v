@@ -2,12 +2,12 @@ module fulladder_behav_four (
     input [3:0] A,
     input [3:0] B,
     input Cin,
-    output [3:0] Sum,
-    output Cout
+    output reg [3:0] Sum,
+    output reg Cout
 );
 
-reg [3:0] Sum;
-reg Cout;
+//reg [3:0] Sum;
+//reg Cout;
 
 always @(*) begin
     {Cout, Sum}= A + B + Cin;
