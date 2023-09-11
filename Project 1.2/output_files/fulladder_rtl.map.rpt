@@ -1,5 +1,5 @@
 Analysis & Synthesis report for fulladder_rtl
-Sat Sep  9 19:58:52 2023
+Sun Sep 10 19:38:26 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Sep  9 19:58:52 2023          ;
+; Analysis & Synthesis Status     ; Successful - Sun Sep 10 19:38:26 2023          ;
 ; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                   ; fulladder_rtl                                  ;
 ; Top-level Entity Name           ; fulladder_rtl                                  ;
@@ -247,7 +247,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -257,7 +257,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Sat Sep  9 19:58:38 2023
+    Info: Processing started: Sun Sep 10 19:38:13 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fulladder_rtl -c fulladder_rtl
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -275,8 +275,8 @@ Info (21057): Implemented 7 device resources after synthesis - the final resourc
     Info (21061): Implemented 2 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4822 megabytes
-    Info: Processing ended: Sat Sep  9 19:58:52 2023
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:35
+    Info: Processing ended: Sun Sep 10 19:38:26 2023
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:28
 
 

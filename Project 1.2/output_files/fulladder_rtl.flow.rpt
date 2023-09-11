@@ -1,5 +1,5 @@
 Flow report for fulladder_rtl
-Sat Sep  9 19:59:55 2023
+Sun Sep 10 19:38:26 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -41,25 +41,25 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +---------------------------------+------------------------------------------------+
-; Flow Status                     ; Successful - Sat Sep  9 19:59:55 2023          ;
+; Flow Status                     ; Successful - Sun Sep 10 19:38:26 2023          ;
 ; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                   ; fulladder_rtl                                  ;
 ; Top-level Entity Name           ; fulladder_rtl                                  ;
 ; Family                          ; Cyclone V                                      ;
 ; Device                          ; 5CSEMA5F31C6                                   ;
 ; Timing Models                   ; Final                                          ;
-; Logic utilization (in ALMs)     ; 2 / 32,070 ( < 1 % )                           ;
+; Logic utilization (in ALMs)     ; N/A                                            ;
 ; Total registers                 ; 0                                              ;
-; Total pins                      ; 5 / 457 ( 1 % )                                ;
+; Total pins                      ; 5                                              ;
 ; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                          ;
-; Total DSP Blocks                ; 0 / 87 ( 0 % )                                 ;
+; Total block memory bits         ; 0                                              ;
+; Total DSP Blocks                ; 0                                              ;
 ; Total HSSI RX PCSs              ; 0                                              ;
 ; Total HSSI PMA RX Deserializers ; 0                                              ;
 ; Total HSSI TX PCSs              ; 0                                              ;
 ; Total HSSI PMA TX Serializers   ; 0                                              ;
-; Total PLLs                      ; 0 / 6 ( 0 % )                                  ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                                  ;
+; Total PLLs                      ; 0                                              ;
+; Total DLLs                      ; 0                                              ;
 +---------------------------------+------------------------------------------------+
 
 
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/09/2023 19:58:39 ;
+; Start date & time ; 09/10/2023 19:38:14 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; fulladder_rtl       ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 176098380631191.169430751909356        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 176098380631191.169439269322892        ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -103,12 +103,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4822 MB             ; 00:00:35                           ;
-; Fitter               ; 00:00:42     ; 1.0                     ; 6471 MB             ; 00:01:26                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 4884 MB             ; 00:00:07                           ;
-; Timing Analyzer      ; 00:00:06     ; 1.0                     ; 5123 MB             ; 00:00:06                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4726 MB             ; 00:00:01                           ;
-; Total                ; 00:01:11     ; --                      ; --                  ; 00:02:15                           ;
+; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4822 MB             ; 00:00:28                           ;
+; Total                ; 00:00:12     ; --                      ; --                  ; 00:00:28                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -118,10 +114,6 @@ https://fpgasoftware.intel.com/eula.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; ecelap260969     ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; ecelap260969     ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; ecelap260969     ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; ecelap260969     ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; ecelap260969     ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -129,10 +121,6 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off fulladder_rtl -c fulladder_rtl
-quartus_fit --read_settings_files=off --write_settings_files=off fulladder_rtl -c fulladder_rtl
-quartus_asm --read_settings_files=off --write_settings_files=off fulladder_rtl -c fulladder_rtl
-quartus_sta fulladder_rtl -c fulladder_rtl
-quartus_eda --read_settings_files=off --write_settings_files=off fulladder_rtl -c fulladder_rtl
 
 
 
