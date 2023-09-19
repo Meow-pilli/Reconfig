@@ -13,7 +13,7 @@ module sincos (
 
 	sincos_CORDIC_0 cordic_0 (
 		.clk    (clk),    //    clk.clk
-		.areset (areset), // areset.reset
+		.areset (!areset), // areset.reset
 		.a      (a),      //      a.a
 		.c      (c),      //      c.c
 		.s      (s)       //      s.s
