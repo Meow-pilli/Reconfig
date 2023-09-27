@@ -15,7 +15,7 @@ module ledcounter1 (
             if (direction) begin
                 pre_count <= pre_count + 1;
             end else begin
-                pre_count <= pre_count - 1;
+                pre_count <= pre_count - 1; //fgcutf
             end
         end
         count <= pre_count[31:28]; // assign the 4 most significant bits to the output

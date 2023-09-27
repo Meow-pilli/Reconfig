@@ -95,9 +95,9 @@ direction => pre_count.OUTPUTSELECT
 direction => pre_count.OUTPUTSELECT
 direction => pre_count.OUTPUTSELECT
 direction => pre_count.OUTPUTSELECT
-count[0] << pre_count[28].DB_MAX_OUTPUT_PORT_TYPE
-count[1] << pre_count[29].DB_MAX_OUTPUT_PORT_TYPE
-count[2] << pre_count[30].DB_MAX_OUTPUT_PORT_TYPE
-count[3] << pre_count[31].DB_MAX_OUTPUT_PORT_TYPE
+count[0] <= pre_count[28].DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= pre_count[29].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= pre_count[30].DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= pre_count[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
