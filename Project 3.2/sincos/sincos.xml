@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2023.09.26.11:59:59"
+ date="2023.09.29.17:54:53"
  outputDirectory="C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.2/sincos/">
  <perimeter>
   <parameter
@@ -64,7 +64,7 @@
   <interface name="c" kind="conduit" start="0">
    <property name="associatedClock" value="clk" />
    <property name="associatedReset" value="" />
-   <port name="c" direction="output" role="c" width="7" />
+   <port name="c" direction="output" role="c" width="3" />
   </interface>
   <interface name="clk" kind="clock" start="0">
    <property name="clockRate" value="0" />
@@ -75,18 +75,18 @@
   <interface name="s" kind="conduit" start="0">
    <property name="associatedClock" value="clk" />
    <property name="associatedReset" value="" />
-   <port name="s" direction="output" role="s" width="7" />
+   <port name="s" direction="output" role="s" width="3" />
   </interface>
  </perimeter>
  <entity
    path=""
-   parameterizationKey="sincos:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5CSEMA5F31C6,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=6,AUTO_GENERATION_ID=1695747598,AUTO_UNIQUE_ID=(altera_CORDIC:22.1:ALL_function=SINCOS,FUNCTION_FAMILY=ALL,LUTSize=6,RES_DSP_param=0,RES_LUT_param=0,RES_MBIT_param=0,RES_MBLOCK_param=0,SFCompensation=false,derivedfunction=SINCOS,force_elaborate=0,frequency_feedback=0,frequency_target=50,fxpt_in_2_fraction_derived=0,fxpt_in_2_sign_derived=1,fxpt_in_2_width_derived=32,fxpt_in_fraction=7,fxpt_in_fraction_derived=0,fxpt_in_sign=1,fxpt_in_sign_derived=1,fxpt_in_width=32,fxpt_in_width_derived=10,fxpt_out_2_fraction_derived=0,fxpt_out_2_sign_derived=1,fxpt_out_2_width_derived=32,fxpt_out_fraction=5,fxpt_out_fraction_derived=0,fxpt_out_sign=1,fxpt_out_sign_derived=1,fxpt_out_width=32,fxpt_out_width_derived=7,gen_enable=false,latency_feedback=0,latency_target=2,performance_goal=frequency,report_resources_to_xml=false,selected_device_family=Cyclone V,selected_device_speedgrade=6,specifyLUTs=false,useLUTs=false,validation_failed=false)"
+   parameterizationKey="sincos:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5CSEMA5F31C6,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=6,AUTO_GENERATION_ID=1696028091,AUTO_UNIQUE_ID=(altera_CORDIC:22.1:ALL_function=SINCOS,FUNCTION_FAMILY=ALL,LUTSize=6,RES_DSP_param=0,RES_LUT_param=0,RES_MBIT_param=0,RES_MBLOCK_param=0,SFCompensation=false,derivedfunction=SINCOS,force_elaborate=0,frequency_feedback=0,frequency_target=50,fxpt_in_2_fraction_derived=0,fxpt_in_2_sign_derived=1,fxpt_in_2_width_derived=32,fxpt_in_fraction=7,fxpt_in_fraction_derived=0,fxpt_in_sign=1,fxpt_in_sign_derived=1,fxpt_in_width=32,fxpt_in_width_derived=10,fxpt_out_2_fraction_derived=0,fxpt_out_2_sign_derived=1,fxpt_out_2_width_derived=32,fxpt_out_fraction=1,fxpt_out_fraction_derived=0,fxpt_out_sign=1,fxpt_out_sign_derived=1,fxpt_out_width=32,fxpt_out_width_derived=3,gen_enable=false,latency_feedback=0,latency_target=2,performance_goal=frequency,report_resources_to_xml=false,selected_device_family=Cyclone V,selected_device_speedgrade=6,specifyLUTs=false,useLUTs=false,validation_failed=false)"
    instancePathKey="sincos"
    kind="sincos"
    version="1.0"
    name="sincos">
   <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
-  <parameter name="AUTO_GENERATION_ID" value="1695747598" />
+  <parameter name="AUTO_GENERATION_ID" value="1696028091" />
   <parameter name="AUTO_DEVICE" value="5CSEMA5F31C6" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
   <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
@@ -136,10 +136,10 @@
    <message level="Debug">Transform: ResetAdaptation</message>
    <message level="Debug" culprit="sincos"><![CDATA["<b>sincos</b>" reuses <b>altera_CORDIC</b> "<b>submodules/sincos_CORDIC_0</b>"]]></message>
    <message level="Debug" culprit="sincos">queue size: 0 starting:altera_CORDIC "submodules/sincos_CORDIC_0"</message>
-   <message level="Info" culprit="CORDIC_0">C:/intelfpga_lite/22.1std/quartus/dspba/backend/windows64/cmdPolyEval -target CycloneV -frequency 50 -name sincos_CORDIC_0 -noChanValid -faithfulRounding -printMachineReadable -lang VHDL -speedgrade 6 FXPSinCosCordic 10 7 1 5</message>
+   <message level="Info" culprit="CORDIC_0">C:/intelfpga_lite/22.1std/quartus/dspba/backend/windows64/cmdPolyEval -target CycloneV -frequency 50 -name sincos_CORDIC_0 -noChanValid -faithfulRounding -printMachineReadable -lang VHDL -speedgrade 6 FXPSinCosCordic 10 7 1 1</message>
    <message level="Info" culprit="CORDIC_0">Latency on Cyclone V is 1 cycle</message>
    <message level="Info" culprit="CORDIC_0">DSP Blocks Used: 0</message>
-   <message level="Info" culprit="CORDIC_0">LUTs Used: 507</message>
+   <message level="Info" culprit="CORDIC_0">LUTs Used: 182</message>
    <message level="Info" culprit="CORDIC_0">Memory Bits Used: 0</message>
    <message level="Info" culprit="CORDIC_0">Memory Blocks Used: 0</message>
    <message level="Info" culprit="CORDIC_0"><![CDATA["<b>sincos</b>" instantiated <b>altera_CORDIC</b> "<b>CORDIC_0</b>"]]></message>
@@ -147,7 +147,7 @@
  </entity>
  <entity
    path="submodules/"
-   parameterizationKey="altera_CORDIC:22.1:ALL_function=SINCOS,FUNCTION_FAMILY=ALL,LUTSize=6,RES_DSP_param=0,RES_LUT_param=0,RES_MBIT_param=0,RES_MBLOCK_param=0,SFCompensation=false,derivedfunction=SINCOS,force_elaborate=0,frequency_feedback=0,frequency_target=50,fxpt_in_2_fraction_derived=0,fxpt_in_2_sign_derived=1,fxpt_in_2_width_derived=32,fxpt_in_fraction=7,fxpt_in_fraction_derived=0,fxpt_in_sign=1,fxpt_in_sign_derived=1,fxpt_in_width=32,fxpt_in_width_derived=10,fxpt_out_2_fraction_derived=0,fxpt_out_2_sign_derived=1,fxpt_out_2_width_derived=32,fxpt_out_fraction=5,fxpt_out_fraction_derived=0,fxpt_out_sign=1,fxpt_out_sign_derived=1,fxpt_out_width=32,fxpt_out_width_derived=7,gen_enable=false,latency_feedback=0,latency_target=2,performance_goal=frequency,report_resources_to_xml=false,selected_device_family=Cyclone V,selected_device_speedgrade=6,specifyLUTs=false,useLUTs=false,validation_failed=false"
+   parameterizationKey="altera_CORDIC:22.1:ALL_function=SINCOS,FUNCTION_FAMILY=ALL,LUTSize=6,RES_DSP_param=0,RES_LUT_param=0,RES_MBIT_param=0,RES_MBLOCK_param=0,SFCompensation=false,derivedfunction=SINCOS,force_elaborate=0,frequency_feedback=0,frequency_target=50,fxpt_in_2_fraction_derived=0,fxpt_in_2_sign_derived=1,fxpt_in_2_width_derived=32,fxpt_in_fraction=7,fxpt_in_fraction_derived=0,fxpt_in_sign=1,fxpt_in_sign_derived=1,fxpt_in_width=32,fxpt_in_width_derived=10,fxpt_out_2_fraction_derived=0,fxpt_out_2_sign_derived=1,fxpt_out_2_width_derived=32,fxpt_out_fraction=1,fxpt_out_fraction_derived=0,fxpt_out_sign=1,fxpt_out_sign_derived=1,fxpt_out_width=32,fxpt_out_width_derived=3,gen_enable=false,latency_feedback=0,latency_target=2,performance_goal=frequency,report_resources_to_xml=false,selected_device_family=Cyclone V,selected_device_speedgrade=6,specifyLUTs=false,useLUTs=false,validation_failed=false"
    instancePathKey="sincos:.:CORDIC_0"
    kind="altera_CORDIC"
    version="22.1"
@@ -159,7 +159,7 @@
   <parameter name="fxpt_in_fraction" value="7" />
   <parameter name="fxpt_out_width" value="32" />
   <parameter name="selected_device_family" value="Cyclone V" />
-  <parameter name="fxpt_out_fraction" value="5" />
+  <parameter name="fxpt_out_fraction" value="1" />
   <parameter name="fxpt_in_2_fraction_derived" value="0" />
   <parameter name="fxpt_in_2_width_derived" value="32" />
   <parameter name="fxpt_in_2_sign_derived" value="1" />
@@ -168,7 +168,7 @@
   <parameter name="force_elaborate" value="0" />
   <parameter name="latency_target" value="2" />
   <parameter name="LUTSize" value="6" />
-  <parameter name="fxpt_out_width_derived" value="7" />
+  <parameter name="fxpt_out_width_derived" value="3" />
   <parameter name="fxpt_out_fraction_derived" value="0" />
   <parameter name="frequency_target" value="50" />
   <parameter name="fxpt_out_sign" value="1" />
@@ -211,10 +211,10 @@
   <instantiator instantiator="sincos" as="CORDIC_0" />
   <messages>
    <message level="Debug" culprit="sincos">queue size: 0 starting:altera_CORDIC "submodules/sincos_CORDIC_0"</message>
-   <message level="Info" culprit="CORDIC_0">C:/intelfpga_lite/22.1std/quartus/dspba/backend/windows64/cmdPolyEval -target CycloneV -frequency 50 -name sincos_CORDIC_0 -noChanValid -faithfulRounding -printMachineReadable -lang VHDL -speedgrade 6 FXPSinCosCordic 10 7 1 5</message>
+   <message level="Info" culprit="CORDIC_0">C:/intelfpga_lite/22.1std/quartus/dspba/backend/windows64/cmdPolyEval -target CycloneV -frequency 50 -name sincos_CORDIC_0 -noChanValid -faithfulRounding -printMachineReadable -lang VHDL -speedgrade 6 FXPSinCosCordic 10 7 1 1</message>
    <message level="Info" culprit="CORDIC_0">Latency on Cyclone V is 1 cycle</message>
    <message level="Info" culprit="CORDIC_0">DSP Blocks Used: 0</message>
-   <message level="Info" culprit="CORDIC_0">LUTs Used: 507</message>
+   <message level="Info" culprit="CORDIC_0">LUTs Used: 182</message>
    <message level="Info" culprit="CORDIC_0">Memory Bits Used: 0</message>
    <message level="Info" culprit="CORDIC_0">Memory Blocks Used: 0</message>
    <message level="Info" culprit="CORDIC_0"><![CDATA["<b>sincos</b>" instantiated <b>altera_CORDIC</b> "<b>CORDIC_0</b>"]]></message>

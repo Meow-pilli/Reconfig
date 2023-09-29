@@ -2,7 +2,7 @@ set_global_assignment -entity "sincos" -library "sincos" -name IP_TOOL_NAME "Qsy
 set_global_assignment -entity "sincos" -library "sincos" -name IP_TOOL_VERSION "22.1"
 set_global_assignment -entity "sincos" -library "sincos" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "sincos" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../sincos.sopcinfo"]
-set_global_assignment -entity "sincos" -library "sincos" -name SLD_INFO "QSYS_NAME sincos HAS_SOPCINFO 1 GENERATION_ID 1695747598"
+set_global_assignment -entity "sincos" -library "sincos" -name SLD_INFO "QSYS_NAME sincos HAS_SOPCINFO 1 GENERATION_ID 1696028091"
 set_global_assignment -library "sincos" -name MISC_FILE [file join $::quartus(qip_path) "../sincos.cmp"]
 set_global_assignment -library "sincos" -name SLD_FILE [file join $::quartus(qip_path) "sincos.debuginfo"]
 set_global_assignment -entity "sincos" -library "sincos" -name IP_TARGETED_DEVICE_FAMILY "Cyclone V"
@@ -15,7 +15,7 @@ set_global_assignment -entity "sincos" -library "sincos" -name IP_COMPONENT_DISP
 set_global_assignment -entity "sincos" -library "sincos" -name IP_COMPONENT_REPORT_HIERARCHY "On"
 set_global_assignment -entity "sincos" -library "sincos" -name IP_COMPONENT_INTERNAL "Off"
 set_global_assignment -entity "sincos" -library "sincos" -name IP_COMPONENT_VERSION "MS4w"
-set_global_assignment -entity "sincos" -library "sincos" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTY5NTc0NzU5OA==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "sincos" -library "sincos" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTY5NjAyODA5MQ==::QXV0byBHRU5FUkFUSU9OX0lE"
 set_global_assignment -entity "sincos" -library "sincos" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBW::QXV0byBERVZJQ0VfRkFNSUxZ"
 set_global_assignment -entity "sincos" -library "sincos" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::NUNTRU1BNUYzMUM2::QXV0byBERVZJQ0U="
 set_global_assignment -entity "sincos" -library "sincos" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::Ng==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
@@ -41,7 +41,7 @@ set_global_assignment -entity "sincos_CORDIC_0" -library "sincos" -name IP_COMPO
 set_global_assignment -entity "sincos_CORDIC_0" -library "sincos" -name IP_COMPONENT_PARAMETER "ZnhwdF9pbl9mcmFjdGlvbg==::Nw==::RnJhY3Rpb24="
 set_global_assignment -entity "sincos_CORDIC_0" -library "sincos" -name IP_COMPONENT_PARAMETER "ZnhwdF9pbl9zaWdu::MQ==::U2lnbg=="
 set_global_assignment -entity "sincos_CORDIC_0" -library "sincos" -name IP_COMPONENT_PARAMETER "ZnhwdF9vdXRfd2lkdGg=::MzI=::V2lkdGg="
-set_global_assignment -entity "sincos_CORDIC_0" -library "sincos" -name IP_COMPONENT_PARAMETER "ZnhwdF9vdXRfZnJhY3Rpb24=::NQ==::RnJhY3Rpb24="
+set_global_assignment -entity "sincos_CORDIC_0" -library "sincos" -name IP_COMPONENT_PARAMETER "ZnhwdF9vdXRfZnJhY3Rpb24=::MQ==::RnJhY3Rpb24="
 set_global_assignment -entity "sincos_CORDIC_0" -library "sincos" -name IP_COMPONENT_PARAMETER "ZnhwdF9vdXRfc2lnbg==::MQ==::U2lnbg=="
 set_global_assignment -entity "sincos_CORDIC_0" -library "sincos" -name IP_COMPONENT_PARAMETER "dXNlTFVUcw==::ZmFsc2U=::TFVUIFNpemUgT3B0aW1pemF0aW9u"
 set_global_assignment -entity "sincos_CORDIC_0" -library "sincos" -name IP_COMPONENT_PARAMETER "c3BlY2lmeUxVVHM=::ZmFsc2U=::TWFudWFsbHkgU3BlY2lmeSBMVVQgU2l6ZQ=="

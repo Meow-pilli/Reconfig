@@ -6,14 +6,14 @@
 module sincos (
 		input  wire [9:0] a,      //      a.a
 		input  wire       areset, // areset.reset
-		output wire [6:0] c,      //      c.c
+		output wire [2:0] c,      //      c.c
 		input  wire       clk,    //    clk.clk
-		output wire [6:0] s       //      s.s
+		output wire [2:0] s       //      s.s
 	);
 
 	sincos_CORDIC_0 cordic_0 (
 		.clk    (clk),    //    clk.clk
-		.areset (!areset), // areset.reset
+		.areset (areset), // areset.reset
 		.a      (a),      //      a.a
 		.c      (c),      //      c.c
 		.s      (s)       //      s.s

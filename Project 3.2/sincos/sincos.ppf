@@ -8,7 +8,7 @@
   <pin name="clk" direction="input" scope="external" />
   <pin name="areset" direction="input" scope="external" />
   <pin name="a[9..0]" direction="input" scope="external" />
-  <pin name="c[6..0]" direction="output" scope="external" />
-  <pin name="s[6..0]" direction="output" scope="external" />
+  <pin name="c[2..0]" direction="output" scope="external" />
+  <pin name="s[2..0]" direction="output" scope="external" />
  </global>
 </pinplan>

@@ -67,7 +67,7 @@
   <parameter name="fxpt_in_fraction" value="7" />
   <parameter name="fxpt_in_sign" value="1" />
   <parameter name="fxpt_in_width" value="32" />
-  <parameter name="fxpt_out_fraction" value="5" />
+  <parameter name="fxpt_out_fraction" value="1" />
   <parameter name="fxpt_out_width" value="32" />
   <parameter name="gen_enable" value="false" />
   <parameter name="latency_target" value="2" />

@@ -3,8 +3,8 @@
 			clk    : in  std_logic                    := 'X';             -- clk
 			areset : in  std_logic                    := 'X';             -- reset
 			a      : in  std_logic_vector(9 downto 0) := (others => 'X'); -- a
-			c      : out std_logic_vector(6 downto 0);                    -- c
-			s      : out std_logic_vector(6 downto 0)                     -- s
+			c      : out std_logic_vector(2 downto 0);                    -- c
+			s      : out std_logic_vector(2 downto 0)                     -- s
 		);
 	end component sincos;
 

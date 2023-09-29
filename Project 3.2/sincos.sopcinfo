@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="sincos" kind="sincos" version="1.0" fabric="QSYS">
  <!-- Format version 22.1 922 (Future versions may contain additional information.) -->
- <!-- 2023.09.26.11:59:58 -->
+ <!-- 2023.09.29.17:54:51 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1695747598</value>
+  <value>1696028091</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -196,7 +196,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="fxpt_out_fraction">
    <type>int</type>
-   <value>5</value>
+   <value>1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -260,7 +260,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="fxpt_out_width_derived">
    <type>int</type>
-   <value>7</value>
+   <value>3</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>true</visible>
@@ -616,7 +616,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>c</name>
     <direction>Output</direction>
-    <width>7</width>
+    <width>3</width>
     <role>c</role>
    </port>
   </interface>
@@ -665,7 +665,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>s</name>
     <direction>Output</direction>
-    <width>7</width>
+    <width>3</width>
     <role>s</role>
    </port>
   </interface>

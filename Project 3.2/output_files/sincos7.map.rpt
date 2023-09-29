@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sincos7
-Tue Sep 26 12:15:22 2023
+Fri Sep 29 17:58:28 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -13,27 +13,21 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Source assignments for sincos_CORDIC_0:cordic_0
- 12. Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist6_signA_uid7_sincosTest_b_1
- 13. Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist5_invSignA_uid8_sincosTest_q_1
- 14. Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist0_aip1E_uid98_sincosTest_b_1
- 15. Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist1_xMSB_uid83_sincosTest_b_1
- 16. Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1
- 17. Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1
- 18. Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist4_firstQuadrant_uid15_sincosTest_b_1
- 19. Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist4_firstQuadrant_uid15_sincosTest_b_1"
- 20. Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1"
- 21. Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1"
- 22. Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist1_xMSB_uid83_sincosTest_b_1"
- 23. Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist0_aip1E_uid98_sincosTest_b_1"
- 24. Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist5_invSignA_uid8_sincosTest_q_1"
- 25. Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist6_signA_uid7_sincosTest_b_1"
- 26. Post-Synthesis Netlist Statistics for Top Partition
- 27. Elapsed Time Per Partition
- 28. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Source assignments for sincos_CORDIC_0:cordic_0
+ 10. Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist4_signA_uid7_sincosTest_b_1
+ 11. Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist3_invSignA_uid8_sincosTest_q_1
+ 12. Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist0_xMSB_uid64_sincosTest_b_1
+ 13. Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist1_xMSB_uid48_sincosTest_b_1
+ 14. Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist2_firstQuadrant_uid15_sincosTest_b_1
+ 15. Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist2_firstQuadrant_uid15_sincosTest_b_1"
+ 16. Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist1_xMSB_uid48_sincosTest_b_1"
+ 17. Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist0_xMSB_uid64_sincosTest_b_1"
+ 18. Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist3_invSignA_uid8_sincosTest_q_1"
+ 19. Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist4_signA_uid7_sincosTest_b_1"
+ 20. Post-Synthesis Netlist Statistics for Top Partition
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
 
 
 
@@ -60,14 +54,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Sep 26 12:15:22 2023          ;
+; Analysis & Synthesis Status     ; Successful - Fri Sep 29 17:58:28 2023          ;
 ; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                   ; sincos7                                        ;
 ; Top-level Entity Name           ; sincos                                         ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 29                                             ;
-; Total pins                      ; 26                                             ;
+; Total registers                 ; 5                                              ;
+; Total pins                      ; 18                                             ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0                                              ;
 ; Total DSP Blocks                ; 0                                              ;
@@ -188,38 +182,38 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path                      ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                   ; Library ;
 +-------------------------------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------+---------+
-; sincos/simulation/sincos.v                            ; yes             ; User Verilog HDL File  ; C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.2/sincos/simulation/sincos.v                            ;         ;
+; sincos/synthesis/sincos.v                             ; yes             ; User Verilog HDL File  ; C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.2/sincos/synthesis/sincos.v                             ;         ;
 ; sincos/synthesis/submodules/sincos_CORDIC_0.vhd       ; yes             ; User VHDL File         ; C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.2/sincos/synthesis/submodules/sincos_CORDIC_0.vhd       ;         ;
 ; sincos/synthesis/submodules/dspba_library_package.vhd ; yes             ; User VHDL File         ; C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.2/sincos/synthesis/submodules/dspba_library_package.vhd ;         ;
 ; sincos/synthesis/submodules/dspba_library.vhd         ; yes             ; User VHDL File         ; C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.2/sincos/synthesis/submodules/dspba_library.vhd         ;         ;
 +-------------------------------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                                  ;
-+---------------------------------------------+----------------------------------------------------------------+
-; Resource                                    ; Usage                                                          ;
-+---------------------------------------------+----------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 233                                                            ;
-;                                             ;                                                                ;
-; Combinational ALUT usage for logic          ; 465                                                            ;
-;     -- 7 input functions                    ; 0                                                              ;
-;     -- 6 input functions                    ; 0                                                              ;
-;     -- 5 input functions                    ; 71                                                             ;
-;     -- 4 input functions                    ; 25                                                             ;
-;     -- <=3 input functions                  ; 369                                                            ;
-;                                             ;                                                                ;
-; Dedicated logic registers                   ; 29                                                             ;
-;                                             ;                                                                ;
-; I/O pins                                    ; 26                                                             ;
-;                                             ;                                                                ;
-; Total DSP Blocks                            ; 0                                                              ;
-;                                             ;                                                                ;
-; Maximum fan-out node                        ; sincos_CORDIC_0:cordic_0|aip1E_6high_uid129_sincosTest_a[10]~0 ;
-; Maximum fan-out                             ; 76                                                             ;
-; Total fan-out                               ; 1664                                                           ;
-; Average fan-out                             ; 3.05                                                           ;
-+---------------------------------------------+----------------------------------------------------------------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimate of Logic utilization (ALMs needed) ; 22         ;
+;                                             ;            ;
+; Combinational ALUT usage for logic          ; 42         ;
+;     -- 7 input functions                    ; 0          ;
+;     -- 6 input functions                    ; 0          ;
+;     -- 5 input functions                    ; 5          ;
+;     -- 4 input functions                    ; 5          ;
+;     -- <=3 input functions                  ; 32         ;
+;                                             ;            ;
+; Dedicated logic registers                   ; 5          ;
+;                                             ;            ;
+; I/O pins                                    ; 18         ;
+;                                             ;            ;
+; Total DSP Blocks                            ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; a[9]~input ;
+; Maximum fan-out                             ; 11         ;
+; Total fan-out                               ; 161        ;
+; Average fan-out                             ; 1.94       ;
++---------------------------------------------+------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -227,51 +221,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                                     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                     ; Entity Name     ; Library Name ;
 +----------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------+-----------------+--------------+
-; |sincos                                                        ; 465 (0)             ; 29 (0)                    ; 0                 ; 0          ; 26   ; 0            ; |sincos                                                                                 ; sincos          ; work         ;
-;    |sincos_CORDIC_0:cordic_0|                                  ; 465 (458)           ; 29 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |sincos|sincos_CORDIC_0:cordic_0                                                        ; sincos_CORDIC_0 ; work         ;
-;       |dspba_delay:redist0_aip1E_uid98_sincosTest_b_1|         ; 0 (0)               ; 13 (13)                   ; 0                 ; 0          ; 0    ; 0            ; |sincos|sincos_CORDIC_0:cordic_0|dspba_delay:redist0_aip1E_uid98_sincosTest_b_1         ; dspba_delay     ; work         ;
-;       |dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|        ; 5 (5)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |sincos|sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1        ; dspba_delay     ; work         ;
-;       |dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1|        ; 1 (1)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |sincos|sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1        ; dspba_delay     ; work         ;
-;       |dspba_delay:redist4_firstQuadrant_uid15_sincosTest_b_1| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |sincos|sincos_CORDIC_0:cordic_0|dspba_delay:redist4_firstQuadrant_uid15_sincosTest_b_1 ; dspba_delay     ; work         ;
-;       |dspba_delay:redist5_invSignA_uid8_sincosTest_q_1|       ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |sincos|sincos_CORDIC_0:cordic_0|dspba_delay:redist5_invSignA_uid8_sincosTest_q_1       ; dspba_delay     ; work         ;
-;       |dspba_delay:redist6_signA_uid7_sincosTest_b_1|          ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |sincos|sincos_CORDIC_0:cordic_0|dspba_delay:redist6_signA_uid7_sincosTest_b_1          ; dspba_delay     ; work         ;
+; |sincos                                                        ; 42 (0)              ; 5 (0)                     ; 0                 ; 0          ; 18   ; 0            ; |sincos                                                                                 ; sincos          ; work         ;
+;    |sincos_CORDIC_0:cordic_0|                                  ; 42 (40)             ; 5 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |sincos|sincos_CORDIC_0:cordic_0                                                        ; sincos_CORDIC_0 ; work         ;
+;       |dspba_delay:redist0_xMSB_uid64_sincosTest_b_1|          ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |sincos|sincos_CORDIC_0:cordic_0|dspba_delay:redist0_xMSB_uid64_sincosTest_b_1          ; dspba_delay     ; work         ;
+;       |dspba_delay:redist1_xMSB_uid48_sincosTest_b_1|          ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |sincos|sincos_CORDIC_0:cordic_0|dspba_delay:redist1_xMSB_uid48_sincosTest_b_1          ; dspba_delay     ; work         ;
+;       |dspba_delay:redist2_firstQuadrant_uid15_sincosTest_b_1| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |sincos|sincos_CORDIC_0:cordic_0|dspba_delay:redist2_firstQuadrant_uid15_sincosTest_b_1 ; dspba_delay     ; work         ;
+;       |dspba_delay:redist3_invSignA_uid8_sincosTest_q_1|       ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |sincos|sincos_CORDIC_0:cordic_0|dspba_delay:redist3_invSignA_uid8_sincosTest_q_1       ; dspba_delay     ; work         ;
+;       |dspba_delay:redist4_signA_uid7_sincosTest_b_1|          ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |sincos|sincos_CORDIC_0:cordic_0|dspba_delay:redist4_signA_uid7_sincosTest_b_1          ; dspba_delay     ; work         ;
 +----------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                                                        ;
-+-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+
-; Register name                                                                                 ; Reason for Removal                                                                                        ;
-+-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1|delay_signals[0][18] ; Stuck at GND due to stuck port data_in                                                                    ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1|delay_signals[0][17] ; Stuck at GND due to stuck port data_in                                                                    ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][18] ; Stuck at GND due to stuck port data_in                                                                    ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][17] ; Stuck at GND due to stuck port data_in                                                                    ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1|delay_signals[0][16] ; Stuck at GND due to stuck port data_in                                                                    ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][16] ; Stuck at GND due to stuck port data_in                                                                    ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1|delay_signals[0][3]  ; Merged with sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1|delay_signals[0][13] ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][10] ; Merged with sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][0]  ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][14] ; Merged with sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][0]  ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][7]  ; Merged with sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][0]  ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1|delay_signals[0][9]  ; Merged with sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1|delay_signals[0][5]  ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][2]  ; Merged with sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][11] ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1|delay_signals[0][6]  ; Merged with sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][11] ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1|delay_signals[0][8]  ; Merged with sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][11] ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][3]  ; Merged with sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][13] ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1|delay_signals[0][10] ; Merged with sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1|delay_signals[0][0]  ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1|delay_signals[0][14] ; Merged with sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1|delay_signals[0][0]  ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1|delay_signals[0][7]  ; Merged with sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1|delay_signals[0][0]  ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][9]  ; Merged with sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][5]  ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][8]  ; Merged with sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][6]  ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1|delay_signals[0][11] ; Merged with sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][6]  ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1|delay_signals[0][2]  ; Merged with sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][6]  ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist1_xMSB_uid83_sincosTest_b_1|delay_signals[0][0]    ; Merged with sincos_CORDIC_0:cordic_0|dspba_delay:redist0_aip1E_uid98_sincosTest_b_1|delay_signals[0][1]   ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1|delay_signals[0][5]  ; Merged with sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][13] ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1|delay_signals[0][4]  ; Merged with sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][4]  ;
-; sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1|delay_signals[0][13] ; Merged with sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1|delay_signals[0][5]  ;
-; Total Number of Removed Registers = 26                                                        ;                                                                                                           ;
-+-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -279,23 +237,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 29    ;
+; Total registers                              ; 5     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 29    ;
+; Number of registers using Asynchronous Clear ; 5     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |sincos|sincos_CORDIC_0:cordic_0|Add42 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
 
 
 +--------------------------------------------------------------+
@@ -323,7 +272,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +---------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist6_signA_uid7_sincosTest_b_1 ;
+; Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist4_signA_uid7_sincosTest_b_1 ;
 +----------------+-------+--------------------------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                                       ;
 +----------------+-------+--------------------------------------------------------------------------------------------+
@@ -336,7 +285,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist5_invSignA_uid8_sincosTest_q_1 ;
+; Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist3_invSignA_uid8_sincosTest_q_1 ;
 +----------------+-------+-----------------------------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                                          ;
 +----------------+-------+-----------------------------------------------------------------------------------------------+
@@ -348,21 +297,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist0_aip1E_uid98_sincosTest_b_1 ;
-+----------------+-------+---------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                        ;
-+----------------+-------+---------------------------------------------------------------------------------------------+
-; width          ; 13    ; Signed Integer                                                                              ;
-; depth          ; 1     ; Signed Integer                                                                              ;
-; reset_high     ; '1'   ; Enumerated                                                                                  ;
-; reset_kind     ; ASYNC ; String                                                                                      ;
-+----------------+-------+---------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +---------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist1_xMSB_uid83_sincosTest_b_1 ;
+; Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist0_xMSB_uid64_sincosTest_b_1 ;
 +----------------+-------+--------------------------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                                       ;
 +----------------+-------+--------------------------------------------------------------------------------------------+
@@ -374,34 +310,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1 ;
-+----------------+-------+----------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                         ;
-+----------------+-------+----------------------------------------------------------------------------------------------+
-; width          ; 19    ; Signed Integer                                                                               ;
-; depth          ; 1     ; Signed Integer                                                                               ;
-; reset_high     ; '1'   ; Enumerated                                                                                   ;
-; reset_kind     ; ASYNC ; String                                                                                       ;
-+----------------+-------+----------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1 ;
-+----------------+-------+----------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                         ;
-+----------------+-------+----------------------------------------------------------------------------------------------+
-; width          ; 19    ; Signed Integer                                                                               ;
-; depth          ; 1     ; Signed Integer                                                                               ;
-; reset_high     ; '1'   ; Enumerated                                                                                   ;
-; reset_kind     ; ASYNC ; String                                                                                       ;
-+----------------+-------+----------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist1_xMSB_uid48_sincosTest_b_1 ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; width          ; 1     ; Signed Integer                                                                             ;
+; depth          ; 1     ; Signed Integer                                                                             ;
+; reset_high     ; '1'   ; Enumerated                                                                                 ;
+; reset_kind     ; ASYNC ; String                                                                                     ;
++----------------+-------+--------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist4_firstQuadrant_uid15_sincosTest_b_1 ;
+; Parameter Settings for User Entity Instance: sincos_CORDIC_0:cordic_0|dspba_delay:redist2_firstQuadrant_uid15_sincosTest_b_1 ;
 +----------------+-------+-----------------------------------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                                                ;
 +----------------+-------+-----------------------------------------------------------------------------------------------------+
@@ -414,7 +337,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist4_firstQuadrant_uid15_sincosTest_b_1" ;
+; Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist2_firstQuadrant_uid15_sincosTest_b_1" ;
 +------+-------+----------+-----------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                           ;
 +------+-------+----------+-----------------------------------------------------------------------------------+
@@ -422,26 +345,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+-----------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist3_xip1_3_uid80_sincosTest_b_1" ;
-+------+-------+----------+----------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                    ;
-+------+-------+----------+----------------------------------------------------------------------------+
-; ena  ; Input ; Info     ; Stuck at VCC                                                               ;
-+------+-------+----------+----------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1" ;
-+------+-------+----------+----------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                    ;
-+------+-------+----------+----------------------------------------------------------------------------+
-; ena  ; Input ; Info     ; Stuck at VCC                                                               ;
-+------+-------+----------+----------------------------------------------------------------------------+
-
-
 +----------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist1_xMSB_uid83_sincosTest_b_1" ;
+; Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist1_xMSB_uid48_sincosTest_b_1" ;
 +------+-------+----------+--------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                  ;
 +------+-------+----------+--------------------------------------------------------------------------+
@@ -449,17 +354,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+--------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist0_aip1E_uid98_sincosTest_b_1" ;
-+------+-------+----------+---------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                   ;
-+------+-------+----------+---------------------------------------------------------------------------+
-; ena  ; Input ; Info     ; Stuck at VCC                                                              ;
-+------+-------+----------+---------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist0_xMSB_uid64_sincosTest_b_1" ;
++------+-------+----------+--------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                  ;
++------+-------+----------+--------------------------------------------------------------------------+
+; ena  ; Input ; Info     ; Stuck at VCC                                                             ;
++------+-------+----------+--------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist5_invSignA_uid8_sincosTest_q_1" ;
+; Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist3_invSignA_uid8_sincosTest_q_1" ;
 +------+-------+----------+-----------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                     ;
 +------+-------+----------+-----------------------------------------------------------------------------+
@@ -468,7 +373,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist6_signA_uid7_sincosTest_b_1" ;
+; Port Connectivity Checks: "sincos_CORDIC_0:cordic_0|dspba_delay:redist4_signA_uid7_sincosTest_b_1" ;
 +------+-------+----------+--------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                  ;
 +------+-------+----------+--------------------------------------------------------------------------+
@@ -481,29 +386,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 29                          ;
-;     CLR               ; 29                          ;
-; arriav_lcell_comb     ; 465                         ;
-;     arith             ; 274                         ;
-;         0 data inputs ; 5                           ;
-;         1 data inputs ; 60                          ;
-;         2 data inputs ; 74                          ;
-;         3 data inputs ; 42                          ;
-;         4 data inputs ; 25                          ;
-;         5 data inputs ; 68                          ;
-;     normal            ; 97                          ;
-;         1 data inputs ; 7                           ;
-;         2 data inputs ; 5                           ;
-;         3 data inputs ; 82                          ;
+; arriav_ff             ; 5                           ;
+;     CLR               ; 5                           ;
+; arriav_lcell_comb     ; 42                          ;
+;     arith             ; 17                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 10                          ;
+;         4 data inputs ; 2                           ;
+;         5 data inputs ; 2                           ;
+;     normal            ; 15                          ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 6                           ;
+;         4 data inputs ; 3                           ;
 ;         5 data inputs ; 3                           ;
-;     shared            ; 94                          ;
-;         0 data inputs ; 10                          ;
-;         1 data inputs ; 22                          ;
-;         2 data inputs ; 62                          ;
-; boundary_port         ; 26                          ;
+;     shared            ; 10                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 9                           ;
+; boundary_port         ; 18                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 11.80                       ;
-; Average LUT depth     ; 10.79                       ;
+; Max LUT depth         ; 6.60                        ;
+; Average LUT depth     ; 5.51                        ;
 +-----------------------+-----------------------------+
 
 
@@ -522,12 +426,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Tue Sep 26 12:15:13 2023
+    Info: Processing started: Fri Sep 29 17:58:12 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sincos7 -c sincos7
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file sincos/simulation/sincos.v
-    Info (12023): Found entity 1: sincos File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.2/sincos/simulation/sincos.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file sincos/synthesis/sincos.v
+    Info (12023): Found entity 1: sincos File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.2/sincos/synthesis/sincos.v Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file sincos/synthesis/submodules/sincos_cordic_0.vhd
     Info (12022): Found design unit 1: sincos_CORDIC_0-normal File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.2/sincos/synthesis/submodules/sincos_CORDIC_0.vhd Line: 46
     Info (12023): Found entity 1: sincos_CORDIC_0 File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.2/sincos/synthesis/submodules/sincos_CORDIC_0.vhd Line: 36
@@ -541,21 +445,19 @@ Info (12021): Found 6 design units, including 3 entities, in source file sincos/
     Info (12023): Found entity 2: dspba_sync_reg File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.2/sincos/synthesis/submodules/dspba_library.vhd Line: 93
     Info (12023): Found entity 3: dspba_pipe File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.2/sincos/synthesis/submodules/dspba_library.vhd Line: 343
 Info (12127): Elaborating entity "sincos" for the top level hierarchy
-Info (12128): Elaborating entity "sincos_CORDIC_0" for hierarchy "sincos_CORDIC_0:cordic_0" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.2/sincos/simulation/sincos.v Line: 20
-Info (12128): Elaborating entity "dspba_delay" for hierarchy "sincos_CORDIC_0:cordic_0|dspba_delay:redist6_signA_uid7_sincosTest_b_1" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.2/sincos/synthesis/submodules/sincos_CORDIC_0.vhd Line: 315
-Info (12128): Elaborating entity "dspba_delay" for hierarchy "sincos_CORDIC_0:cordic_0|dspba_delay:redist0_aip1E_uid98_sincosTest_b_1" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.2/sincos/synthesis/submodules/sincos_CORDIC_0.vhd Line: 515
-Info (12128): Elaborating entity "dspba_delay" for hierarchy "sincos_CORDIC_0:cordic_0|dspba_delay:redist2_yip1_3_uid81_sincosTest_b_1" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.2/sincos/synthesis/submodules/sincos_CORDIC_0.vhd Line: 694
+Info (12128): Elaborating entity "sincos_CORDIC_0" for hierarchy "sincos_CORDIC_0:cordic_0" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.2/sincos/synthesis/sincos.v Line: 20
+Info (12128): Elaborating entity "dspba_delay" for hierarchy "sincos_CORDIC_0:cordic_0|dspba_delay:redist4_signA_uid7_sincosTest_b_1" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.2/sincos/synthesis/submodules/sincos_CORDIC_0.vhd Line: 203
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 501 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 62 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
-    Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 475 logic cells
+    Info (21059): Implemented 6 output pins
+    Info (21061): Implemented 44 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4887 megabytes
-    Info: Processing ended: Tue Sep 26 12:15:23 2023
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Peak virtual memory: 4865 megabytes
+    Info: Processing ended: Fri Sep 29 17:58:28 2023
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:40
 
 

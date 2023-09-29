@@ -9,6 +9,6 @@ module sincos (
 	input		clk;
 	input		areset;
 	input	[9:0]	a;
-	output	[6:0]	c;
-	output	[6:0]	s;
+	output	[2:0]	c;
+	output	[2:0]	s;
 endmodule

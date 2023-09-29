@@ -24,7 +24,7 @@
 // 
 // Simulation tool : Questa Intel FPGA (Verilog)
 // 
-
+//`include "sincos\synthesis\sincos.v"
 `timescale 1 ps/ 1 ps
 module sincos_vlg_tst();
 // constants                                           
@@ -51,9 +51,11 @@ initial
 begin                                                  
 // code that executes only once                        
 // insert code here --> begin                          
-                                                       
+//[9:0] a = 0;                                                       
 // --> end                                             
-$display("Running testbench");                       
+$display("Running testbench"); 
+//$dumpfile("sincos.vcd");  
+//$dumpvars(0, sincos_vlg_tst);                      
 end                                                    
 always                                                 
 // optional sensitivity list                           
@@ -61,8 +63,10 @@ always
 begin                                                  
 // code executes for every event on sensitivity list   
 // insert code here --> begin                          
-                                                       
-@eachvec;                                              
+   #5 a[0] = ~a[0];
+   #10 a[1] = ~a[1];
+
+//@eachvec;                                              
 // --> end                                             
 end                                                    
 endmodule
