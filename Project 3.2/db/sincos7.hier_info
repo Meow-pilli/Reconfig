@@ -11,20 +11,20 @@ a[8] => a[8].IN1
 a[9] => a[9].IN1
 areset => _.IN1
 clk => clk.IN1
-sev1[0] <= seven_display_decoder:u1.out
-sev1[1] <= seven_display_decoder:u1.out
-sev1[2] <= seven_display_decoder:u1.out
-sev1[3] <= seven_display_decoder:u1.out
-sev1[4] <= seven_display_decoder:u1.out
-sev1[5] <= seven_display_decoder:u1.out
-sev1[6] <= seven_display_decoder:u1.out
-sev2[0] <= seven_display_decoder:u2.out
-sev2[1] <= seven_display_decoder:u2.out
-sev2[2] <= seven_display_decoder:u2.out
-sev2[3] <= seven_display_decoder:u2.out
-sev2[4] <= seven_display_decoder:u2.out
-sev2[5] <= seven_display_decoder:u2.out
-sev2[6] <= seven_display_decoder:u2.out
+sev1[0] << seven_display_decoder:u1.out
+sev1[1] << seven_display_decoder:u1.out
+sev1[2] << seven_display_decoder:u1.out
+sev1[3] << seven_display_decoder:u1.out
+sev1[4] << seven_display_decoder:u1.out
+sev1[5] << seven_display_decoder:u1.out
+sev1[6] << seven_display_decoder:u1.out
+sev2[0] << seven_display_decoder:u2.out
+sev2[1] << seven_display_decoder:u2.out
+sev2[2] << seven_display_decoder:u2.out
+sev2[3] << seven_display_decoder:u2.out
+sev2[4] << seven_display_decoder:u2.out
+sev2[5] << seven_display_decoder:u2.out
+sev2[6] << seven_display_decoder:u2.out
 
 
 |sincos|sincos_CORDIC_0:u0
