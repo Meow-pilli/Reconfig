@@ -48,19 +48,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "sin_sev_sign[0]",
-					"strict" : false
-				},
-				{
-					"name" : "sin_sev_sign[3]",
-					"strict" : false
-				},
-				{
-					"name" : "sin_sev_sign[4]",
-					"strict" : false
-				},
-				{
-					"name" : "sin_sev_sign[5]",
+					"name" : "sin_sev_sign[6]",
 					"strict" : false
 				},
 				{
@@ -108,19 +96,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "cos_sev_sign[0]",
-					"strict" : false
-				},
-				{
-					"name" : "cos_sev_sign[3]",
-					"strict" : false
-				},
-				{
-					"name" : "cos_sev_sign[4]",
-					"strict" : false
-				},
-				{
-					"name" : "cos_sev_sign[5]",
+					"name" : "cos_sev_sign[6]",
 					"strict" : false
 				},
 				{

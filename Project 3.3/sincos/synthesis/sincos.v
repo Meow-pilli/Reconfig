@@ -41,10 +41,10 @@ module sincos(
 	sincos_CORDIC_0 u0(.a(a), .areset(!areset), .clk(clk), .c(temp_cos), .s(temp_sin)); 
 	seven_display_decoder u1(.in(temp_cos[2:0]), .out(cos_sev_dec));
 	seven_display_decoder u2(.in(temp_cos[3]), .out(cos_sev_int));
-	seven_display_decoder u3(.in(temp_cos[4]), .out(cos_sev_sign));
+	seven_display_decoder_sign u3(.in(temp_cos[4]), .out(cos_sev_sign));
 	seven_display_decoder u4(.in(temp_sin[2:0]), .out(sin_sev_dec));
 	seven_display_decoder u5(.in(temp_sin[3]), .out(sin_sev_int));
-	seven_display_decoder u6(.in(temp_sin[4]), .out(sin_sev_sign));
+	seven_display_decoder_sign u6(.in(temp_sin[4]), .out(sin_sev_sign));
 
 endmodule
 
@@ -66,23 +66,32 @@ always @(*) begin
     endcase
 end
 endmodule
+
 /*
-module seven_display_decoder(
+module twocompliment(
+	input wire sign;
+	input wire fraction;
+	output reg com_out;
+);
+
+if(sign == 1)begin
+  assign fraction = ~fraction;
+  assign com_out = fraction + 1;
+end
+
+endmodule
+*/
+
+
+module seven_display_decoder_sign(
 	input wire in,
 	output reg [6:0]out
 );
 always @(*) begin
     case(in)
-        3'b000: out = 7'b1000000; // Display 0
-        3'b001: out = 7'b1111001; // Display 1
-        3'b010: out = 7'b0100100; // Display 2
-        3'b011: out = 7'b0110000; // Display 3
-        3'b100: out = 7'b0011001; // Display 4
-        3'b101: out = 7'b0010010; // Display 5
-        3'b110: out = 7'b0000010; // Display 6
-        3'b111: out = 7'b1111000; // Display 7
+        3'b000: out = 7'b1111111; // Display 0
+        3'b001: out = 7'b0111111; // Display 1 as minus
         default: out = 7'b1111111; // Turn off all segments for unknown input
     endcase
 end
 endmodule
-*/

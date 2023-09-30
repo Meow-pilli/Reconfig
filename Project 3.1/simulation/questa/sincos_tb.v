@@ -21,7 +21,6 @@ initial
 begin
 areset = 1;
 clk = 0;                                                                                              
-
 $display("Running testbench");                      
 end  
 
