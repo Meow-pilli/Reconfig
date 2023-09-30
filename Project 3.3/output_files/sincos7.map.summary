@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Fri Sep 29 21:44:17 2023
+Analysis & Synthesis Status : Successful - Sat Sep 30 15:57:47 2023
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : sincos7
 Top-level Entity Name : sincos
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 0
+Total registers : 20
 Total pins : 54
 Total virtual pins : 0
 Total block memory bits : 0

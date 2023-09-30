@@ -21,6 +21,8 @@ R0
 R0
 R0
 R0
+R0
+R0
 !s11e MIXED_VERSIONS
 !s11f vlog 2021.2 2021.04, Apr 14 2021
 13
@@ -36,69 +38,69 @@ V^E0:7<mPT;89[99dEFdzQ1
 Z2 04 14 4 work sincos_vlg_tst fast 0
 =1-a029196c4c97-65184f78-114-aa0
 Z3 !s124 OEM10U12 
-o-quiet -auto_acc_if_foreign -work work +acc
-Z4 tCvgOpt 0
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 tCvgOpt 0
 n@_opt
-Z5 OL;O;2021.2;73
-T_opt1
-!s110 1696091262
-Vzk2Dm2L4?KdnnK;nF@5fE3
-R2
-=1-a029196c4c97-65184c7d-260-2128
-R3
-o-quiet -auto_acc_if_foreign -work work
-R4
-n@_opt1
-R5
+Z6 OL;O;2021.2;73
 R1
+T_opt1
+!s110 1696108621
+VmXQB21Y0TTOc[fUMJ7Toj1
+R2
+=1-a029196c4c97-6518904c-3b4-4b70
+R3
+R4
+R5
+n@_opt1
+R6
 Edspba_delay
-Z6 w1695089876
-Z7 DPx4 work 21 dspba_library_package 0 22 eSLfb32RIDmC]Dn0OVC<<2
-Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z7 w1695089876
+Z8 DPx4 work 21 dspba_library_package 0 22 eSLfb32RIDmC]Dn0OVC<<2
+Z9 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z10 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 3
 R1
-Z10 8C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library.vhd
-Z11 FC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library.vhd
+Z11 8C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library.vhd
+Z12 FC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library.vhd
 l0
 L18 1
 V[G@<^c>=TRP4Ebdc;UVX<2
 !s100 >TY9@l4a>2O5Wd_6jF4:g0
-Z12 OL;C;2021.2;73
+Z13 OL;C;2021.2;73
 31
-Z13 !s110 1696089557
+Z14 !s110 1696107533
 !i10b 1
-Z14 !s108 1696089557.000000
-Z15 !s90 -reportprogress|300|-93|-work|work|C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library.vhd|
-Z16 !s107 C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library.vhd|
+Z15 !s108 1696107533.000000
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library.vhd|
+Z17 !s107 C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library.vhd|
 !i113 0
-Z17 o-93 -work work
-Z18 tExplicit 1 CvgOpt 0
+Z18 o-93 -work work
+Z19 tExplicit 1 CvgOpt 0
 Adelay
-R7
 R8
 R9
+R10
 DEx4 work 11 dspba_delay 0 22 [G@<^c>=TRP4Ebdc;UVX<2
 !i122 3
 l37
 L34 51
 VFf_8jL[Y@V5U2Kkg3Ck_G0
 !s100 DAfPXKZhR<Ac>Wg8zYj1H3
-R12
-31
 R13
-!i10b 1
+31
 R14
+!i10b 1
 R15
 R16
-!i113 0
 R17
+!i113 0
 R18
+R19
 Pdspba_library_package
-R8
 R9
+R10
 !i122 1
-R6
+R7
 R1
 8C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library_package.vhd
 FC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library_package.vhd
@@ -106,106 +108,106 @@ l0
 L17 1
 VeSLfb32RIDmC]Dn0OVC<<2
 !s100 @e;XE0e^oAdIdzY=Rc];H3
-R12
+R13
 31
-Z19 !s110 1696089553
+!s110 1696107532
 !i10b 1
-!s108 1696089553.000000
+Z20 !s108 1696107532.000000
 !s90 -reportprogress|300|-93|-work|work|C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library_package.vhd|
 !s107 C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library_package.vhd|
 !i113 0
-R17
 R18
+R19
 Edspba_pipe
-R6
-Z20 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-R8
+R7
+Z21 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R9
+R10
 !i122 3
 R1
-R10
 R11
+R12
 l0
 L343 1
 V>IlOeXdfT<7V2QJKNdZe90
 !s100 ko3XcgZgdPgSD;SDR?Wmi2
-R12
-31
 R13
-!i10b 1
+31
 R14
+!i10b 1
 R15
 R16
-!i113 0
 R17
+!i113 0
 R18
+R19
 Artl
-R20
-R8
+R21
 R9
+R10
 DEx4 work 10 dspba_pipe 0 22 >IlOeXdfT<7V2QJKNdZe90
 !i122 3
 l362
 L356 21
 VTzNFSozF=XU]g;2e]lDWf1
 !s100 =]hA3YBJaaU9dNBMla?I?2
-R12
-31
 R13
-!i10b 1
+31
 R14
+!i10b 1
 R15
 R16
-!i113 0
 R17
+!i113 0
 R18
+R19
 Edspba_sync_reg
-R6
 R7
-R20
 R8
+R21
 R9
+R10
 !i122 3
 R1
-R10
 R11
+R12
 l0
 L93 1
 V:<1PXj<7[mzNze]33he;@3
 !s100 G`[2Ci2RQWoL`zK>2h>oj2
-R12
-31
 R13
-!i10b 1
+31
 R14
+!i10b 1
 R15
 R16
-!i113 0
 R17
+!i113 0
 R18
+R19
 Async_reg
-R7
-R20
 R8
+R21
 R9
+R10
 DEx4 work 14 dspba_sync_reg 0 22 :<1PXj<7[mzNze]33he;@3
 !i122 3
 l136
 L117 219
 VeakK8P>MjnH?ogBLmJ_ja0
 !s100 3CF6gEiK7^`H_<3Ne[inV2
-R12
-31
 R13
-!i10b 1
+31
 R14
+!i10b 1
 R15
 R16
-!i113 0
 R17
+!i113 0
 R18
-vsincos
 R19
+vsincos
+!s110 1696107531
 !i10b 1
 !s100 h3eYPEa8ThTi;mo@f:ncE2
 I;]Dk710=:PQ6N=hM_a2MC1
@@ -215,90 +217,90 @@ w1695092061
 FC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/sincos.v
 !i122 0
 L0 6 17
-Z21 VDg1SIo80bB@j0V0VzS_@n1
-Z22 OL;L;2021.2;73
+Z22 VDg1SIo80bB@j0V0VzS_@n1
+Z23 OL;L;2021.2;73
 r1
 !s85 0
 31
-!s108 1696089552.000000
+!s108 1696107531.000000
 !s107 C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/sincos.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis|C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/sincos.v|
 !i113 0
 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 !s92 -vlog01compat -work work {+incdir+C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R4
+R5
 Esincos_cordic_0
-R6
-Z23 DPx3 lpm 14 lpm_components 0 22 jWP?7ndEDod9;KYR`hkoP2
-Z24 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 M6b?@hz5nYN>G@h<KCMCl3
-Z25 DPx9 altera_mf 20 altera_mf_components 0 22 IID6YdTF]cR91BRMJR]l@0
 R7
-Z26 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
-R20
+Z24 DPx3 lpm 14 lpm_components 0 22 jWP?7ndEDod9;KYR`hkoP2
+Z25 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 M6b?@hz5nYN>G@h<KCMCl3
+Z26 DPx9 altera_mf 20 altera_mf_components 0 22 IID6YdTF]cR91BRMJR]l@0
 R8
+Z27 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+R21
 R9
+R10
 !i122 2
 R1
-Z27 8C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/sincos_CORDIC_0.vhd
-Z28 FC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/sincos_CORDIC_0.vhd
+Z28 8C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/sincos_CORDIC_0.vhd
+Z29 FC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/sincos_CORDIC_0.vhd
 l0
 L36 1
 V4_13f76nWl9`dDGl:<e7W2
 !s100 TEDgA;X4eUOZN]J2zalMO2
-R12
+R13
 31
-Z29 !s110 1696089556
+R14
 !i10b 1
-Z30 !s108 1696089556.000000
-Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/sincos_CORDIC_0.vhd|
-Z32 !s107 C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/sincos_CORDIC_0.vhd|
+R20
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/sincos_CORDIC_0.vhd|
+Z31 !s107 C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/sincos_CORDIC_0.vhd|
 !i113 0
-R17
 R18
+R19
 Anormal
-R23
 R24
 R25
-R7
 R26
-R20
 R8
+R27
+R21
 R9
+R10
 DEx4 work 15 sincos_cordic_0 0 22 4_13f76nWl9`dDGl:<e7W2
 !i122 2
 l249
 L46 757
 VA=h<^1?3L=oRjWdnEdJjA1
 !s100 E`ZJ1nfNJKT;U16OIM[G30
-R12
+R13
 31
-R29
+R14
 !i10b 1
+R20
 R30
 R31
-R32
 !i113 0
-R17
 R18
+R19
 vsincos_vlg_tst
-!s110 1696092013
+!s110 1696108607
 !i10b 1
-!s100 _S:mM@Y87GU9]k7Rc1zlR1
-IVKTbiim8=?nVI>_mKBUNR0
+!s100 oioEVfZbj?nb[MJj2?5`V2
+I_fIQ<azCnD9J3;QXJN?8O3
 R1
-w1696092000
+w1696108592
 8C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v
 FC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v
-!i122 23
+!i122 5
 L0 3 56
-R21
 R22
+R23
 r1
 !s85 0
 31
-!s108 1696092013.000000
+!s108 1696108607.000000
 !s107 C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v|
 !s90 -reportprogress|300|-work|work|C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v|
 !i113 0
 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R4
+R5

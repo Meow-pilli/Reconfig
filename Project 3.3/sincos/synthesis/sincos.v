@@ -37,17 +37,12 @@ module sincos(
 
 	reg [4:0]temp_cos;
 	reg [4:0]temp_sin;
-	wire [2:0]dec1;
-	wire [2:0]dec2; 
 
-	assign dec1 = temp_cos[2:0];
-	assign dec2 = temp_sin[2:0];
-
-	sincos_CORDIC_0 u0(.a(a), .areset(!areset), .clk(clk), .c(temp1), .s(temp2)); 
-	seven_display_decoder u1(.in(dec1), .out(cos_sev_dec));
+	sincos_CORDIC_0 u0(.a(a), .areset(!areset), .clk(clk), .c(temp_cos), .s(temp_sin)); 
+	seven_display_decoder u1(.in(temp_cos[2:0]), .out(cos_sev_dec));
 	seven_display_decoder u2(.in(temp_cos[3]), .out(cos_sev_int));
 	seven_display_decoder u3(.in(temp_cos[4]), .out(cos_sev_sign));
-	seven_display_decoder u4(.in(dec2), .out(sin_sev_dec));
+	seven_display_decoder u4(.in(temp_sin[2:0]), .out(sin_sev_dec));
 	seven_display_decoder u5(.in(temp_sin[3]), .out(sin_sev_int));
 	seven_display_decoder u6(.in(temp_sin[4]), .out(sin_sev_sign));
 
