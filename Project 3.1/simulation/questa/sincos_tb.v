@@ -1,73 +1,59 @@
-// Copyright (C) 2023  Intel Corporation. All rights reserved.
-// Your use of Intel Corporation's design tools, logic functions 
-// and other software and tools, and any partner logic 
-// functions, and any output files from any of the foregoing 
-// (including device programming or simulation files), and any 
-// associated documentation or information are expressly subject 
-// to the terms and conditions of the Intel Program License 
-// Subscription Agreement, the Intel Quartus Prime License Agreement,
-// the Intel FPGA IP License Agreement, or other applicable license
-// agreement, including, without limitation, that your use is for
-// the sole purpose of programming logic devices manufactured by
-// Intel and sold by Intel or its authorized distributors.  Please
-// refer to the applicable agreement for further details, at
-// https://fpgasoftware.intel.com/eula.
 
-// *****************************************************************************
-// This file contains a Verilog test bench template that is freely editable to  
-// suit user's needs .Comments are provided in each section to help the user    
-// fill out necessary details.                                                  
-// *****************************************************************************
-// Generated on "09/26/2023 10:53:44"
-                                                                                
-// Verilog Test Bench template for design : sincos
-// 
-// Simulation tool : Questa Intel FPGA (Verilog)
-// 
-//`include "sincos\synthesis\sincos.v"
 `timescale 1 ps/ 1 ps
 module sincos_vlg_tst();
-// constants                                           
-// general purpose registers
-reg eachvec;
-// test vector input registers
-reg [9:0] a;
+reg [9:0] a;	// test vector input registers
 reg areset;
-reg clk;
-// wires                                               
-wire [4:0]  c;
+reg clk;                             
+wire [4:0]  c;	// wires           
 wire [4:0]  s;
-
-// assign statements (if any)                          
-sincos i1 (
-// port map - connection between master ports and signals/registers   
+                          
+sincos i1 (				 // port map - connection between master ports and signals/registers   
 	.a(a),
 	.areset(areset),
 	.c(c),
 	.clk(clk),
 	.s(s)
 );
-initial                                                
-begin                                                  
-// code that executes only once                        
-// insert code here --> begin                          
-//[9:0] a = 0;                                                       
-// --> end                                             
-$display("Running testbench"); 
-//$dumpfile("sincos.vcd");  
-//$dumpvars(0, sincos_vlg_tst);                      
-end                                                    
-always                                                 
-// optional sensitivity list                           
-// @(event1 or event2 or .... eventn)                  
-begin                                                  
-// code executes for every event on sensitivity list   
-// insert code here --> begin                          
-   #5 a[0] = ~a[0];
-   #10 a[1] = ~a[1];
 
-//@eachvec;                                              
-// --> end                                             
-end                                                    
+//integer i;
+
+initial                                                
+begin
+areset = 1;
+clk = 0;                                                                                              
+
+$display("Running testbench");                      
+end  
+
+always #5 clk = ~clk;
+
+
+always @(negedge clk) begin
+	a = 0;
+	#10;
+	a = 0110001110;
+	#10;
+	a = 1110010000;
+	#10;
+	a =0110010000;
+	#10;
+
+/*
+  for(i=0;i<=511;i=i+1)
+	begin 
+		a[8] <= i[8];
+		a[7] <= i[7];
+		a[6] <= i[6];
+		a[5] <= i[5];
+		a[4] <= i[4];
+		a[3] <= i[3];
+		a[2] <= i[2];
+		a[1] <= i[1];
+		a[0] <= i[0];
+		#5;
+	end
+*/
+end
+
 endmodule
 

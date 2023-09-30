@@ -1,7 +1,26 @@
 m255
 K4
 z2
-!s99 nomlopt
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
 !s11e MIXED_VERSIONS
 !s11f vlog 2021.2 2021.04, Apr 14 2021
 13
@@ -10,265 +29,276 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa
+Z1 dC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa
 T_opt
-!s110 1695939872
-VcP^ZKJFCL=<TgZTPho6N^0
-04 14 4 work sincos_vlg_tst fast 0
-=1-a029196c4c97-6515fd1f-ac-50c0
-!s124 OEM10U12 
+!s110 1696092024
+V^E0:7<mPT;89[99dEFdzQ1
+Z2 04 14 4 work sincos_vlg_tst fast 0
+=1-a029196c4c97-65184f78-114-aa0
+Z3 !s124 OEM10U12 
 o-quiet -auto_acc_if_foreign -work work +acc
-Z1 tCvgOpt 0
+Z4 tCvgOpt 0
 n@_opt
-OL;O;2021.2;73
+Z5 OL;O;2021.2;73
+T_opt1
+!s110 1696091262
+Vzk2Dm2L4?KdnnK;nF@5fE3
+R2
+=1-a029196c4c97-65184c7d-260-2128
+R3
+o-quiet -auto_acc_if_foreign -work work
+R4
+n@_opt1
+R5
+R1
 Edspba_delay
-Z2 w1695089876
-Z3 DPx4 work 21 dspba_library_package 0 22 eSLfb32RIDmC]Dn0OVC<<2
-Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z6 w1695089876
+Z7 DPx4 work 21 dspba_library_package 0 22 eSLfb32RIDmC]Dn0OVC<<2
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 3
-R0
-Z6 8C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library.vhd
-Z7 FC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library.vhd
+R1
+Z10 8C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library.vhd
+Z11 FC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library.vhd
 l0
 L18 1
 V[G@<^c>=TRP4Ebdc;UVX<2
 !s100 >TY9@l4a>2O5Wd_6jF4:g0
-Z8 OL;C;2021.2;73
+Z12 OL;C;2021.2;73
 31
-Z9 !s110 1695939815
+Z13 !s110 1696089557
 !i10b 1
-Z10 !s108 1695939814.000000
-Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library.vhd|
-Z12 !s107 C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library.vhd|
+Z14 !s108 1696089557.000000
+Z15 !s90 -reportprogress|300|-93|-work|work|C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library.vhd|
+Z16 !s107 C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library.vhd|
 !i113 0
-Z13 o-93 -work work
-Z14 tExplicit 1 CvgOpt 0
+Z17 o-93 -work work
+Z18 tExplicit 1 CvgOpt 0
 Adelay
-R3
-R4
-R5
+R7
+R8
+R9
 DEx4 work 11 dspba_delay 0 22 [G@<^c>=TRP4Ebdc;UVX<2
 !i122 3
 l37
 L34 51
 VFf_8jL[Y@V5U2Kkg3Ck_G0
 !s100 DAfPXKZhR<Ac>Wg8zYj1H3
-R8
-31
-R9
-!i10b 1
-R10
-R11
 R12
-!i113 0
+31
 R13
+!i10b 1
 R14
+R15
+R16
+!i113 0
+R17
+R18
 Pdspba_library_package
-R4
-R5
+R8
+R9
 !i122 1
-R2
-R0
+R6
+R1
 8C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library_package.vhd
 FC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library_package.vhd
 l0
 L17 1
 VeSLfb32RIDmC]Dn0OVC<<2
 !s100 @e;XE0e^oAdIdzY=Rc];H3
-R8
+R12
 31
-Z15 !s110 1695939814
+Z19 !s110 1696089553
 !i10b 1
-R10
+!s108 1696089553.000000
 !s90 -reportprogress|300|-93|-work|work|C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library_package.vhd|
 !s107 C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library_package.vhd|
 !i113 0
-R13
-R14
+R17
+R18
 Edspba_pipe
-R2
-Z16 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-R4
-R5
-!i122 3
-R0
 R6
-R7
+Z20 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R8
+R9
+!i122 3
+R1
+R10
+R11
 l0
 L343 1
 V>IlOeXdfT<7V2QJKNdZe90
 !s100 ko3XcgZgdPgSD;SDR?Wmi2
-R8
-31
-R9
-!i10b 1
-R10
-R11
 R12
-!i113 0
+31
 R13
+!i10b 1
 R14
-Artl
+R15
 R16
-R4
-R5
+!i113 0
+R17
+R18
+Artl
+R20
+R8
+R9
 DEx4 work 10 dspba_pipe 0 22 >IlOeXdfT<7V2QJKNdZe90
 !i122 3
 l362
 L356 21
 VTzNFSozF=XU]g;2e]lDWf1
 !s100 =]hA3YBJaaU9dNBMla?I?2
-R8
-31
-R9
-!i10b 1
-R10
-R11
 R12
-!i113 0
+31
 R13
+!i10b 1
 R14
-Edspba_sync_reg
-R2
-R3
+R15
 R16
-R4
-R5
-!i122 3
-R0
+!i113 0
+R17
+R18
+Edspba_sync_reg
 R6
 R7
+R20
+R8
+R9
+!i122 3
+R1
+R10
+R11
 l0
 L93 1
 V:<1PXj<7[mzNze]33he;@3
 !s100 G`[2Ci2RQWoL`zK>2h>oj2
-R8
-31
-R9
-!i10b 1
-R10
-R11
 R12
-!i113 0
+31
 R13
+!i10b 1
 R14
-Async_reg
-R3
+R15
 R16
-R4
-R5
+!i113 0
+R17
+R18
+Async_reg
+R7
+R20
+R8
+R9
 DEx4 work 14 dspba_sync_reg 0 22 :<1PXj<7[mzNze]33he;@3
 !i122 3
 l136
 L117 219
 VeakK8P>MjnH?ogBLmJ_ja0
 !s100 3CF6gEiK7^`H_<3Ne[inV2
-R8
-31
-R9
-!i10b 1
-R10
-R11
 R12
-!i113 0
+31
 R13
+!i10b 1
 R14
+R15
+R16
+!i113 0
+R17
+R18
 vsincos
-!s110 1695939813
+R19
 !i10b 1
 !s100 h3eYPEa8ThTi;mo@f:ncE2
 I;]Dk710=:PQ6N=hM_a2MC1
-R0
+R1
 w1695092061
 8C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/sincos.v
 FC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/sincos.v
 !i122 0
 L0 6 17
-Z17 VDg1SIo80bB@j0V0VzS_@n1
-Z18 OL;L;2021.2;73
+Z21 VDg1SIo80bB@j0V0VzS_@n1
+Z22 OL;L;2021.2;73
 r1
 !s85 0
 31
-!s108 1695939812.000000
+!s108 1696089552.000000
 !s107 C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/sincos.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis|C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/sincos.v|
 !i113 0
 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 !s92 -vlog01compat -work work {+incdir+C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R1
-Esincos_cordic_0
-R2
-Z19 DPx3 lpm 14 lpm_components 0 22 jWP?7ndEDod9;KYR`hkoP2
-Z20 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 M6b?@hz5nYN>G@h<KCMCl3
-Z21 DPx9 altera_mf 20 altera_mf_components 0 22 IID6YdTF]cR91BRMJR]l@0
-R3
-Z22 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
-R16
 R4
-R5
+Esincos_cordic_0
+R6
+Z23 DPx3 lpm 14 lpm_components 0 22 jWP?7ndEDod9;KYR`hkoP2
+Z24 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 M6b?@hz5nYN>G@h<KCMCl3
+Z25 DPx9 altera_mf 20 altera_mf_components 0 22 IID6YdTF]cR91BRMJR]l@0
+R7
+Z26 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+R20
+R8
+R9
 !i122 2
-R0
-Z23 8C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/sincos_CORDIC_0.vhd
-Z24 FC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/sincos_CORDIC_0.vhd
+R1
+Z27 8C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/sincos_CORDIC_0.vhd
+Z28 FC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/sincos_CORDIC_0.vhd
 l0
 L36 1
 V4_13f76nWl9`dDGl:<e7W2
 !s100 TEDgA;X4eUOZN]J2zalMO2
-R8
+R12
 31
-R15
+Z29 !s110 1696089556
 !i10b 1
-R10
-Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/sincos_CORDIC_0.vhd|
-Z26 !s107 C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/sincos_CORDIC_0.vhd|
+Z30 !s108 1696089556.000000
+Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/sincos_CORDIC_0.vhd|
+Z32 !s107 C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/sincos_CORDIC_0.vhd|
 !i113 0
-R13
-R14
+R17
+R18
 Anormal
-R19
+R23
+R24
+R25
+R7
+R26
 R20
-R21
-R3
-R22
-R16
-R4
-R5
+R8
+R9
 DEx4 work 15 sincos_cordic_0 0 22 4_13f76nWl9`dDGl:<e7W2
 !i122 2
 l249
 L46 757
 VA=h<^1?3L=oRjWdnEdJjA1
 !s100 E`ZJ1nfNJKT;U16OIM[G30
-R8
+R12
 31
-R15
+R29
 !i10b 1
-R10
-R25
-R26
+R30
+R31
+R32
 !i113 0
-R13
-R14
-vsincos_vlg_tst
-!s110 1695939860
-!i10b 1
-!s100 B;^nTWICilcIJ<CH:l9SE0
-In@R[M>VMBNiQ4az^]OcNN3
-R0
-w1695866036
-8C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v
-FC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v
-!i122 4
-L0 29 44
 R17
 R18
+vsincos_vlg_tst
+!s110 1696092013
+!i10b 1
+!s100 _S:mM@Y87GU9]k7Rc1zlR1
+IVKTbiim8=?nVI>_mKBUNR0
+R1
+w1696092000
+8C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v
+FC:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v
+!i122 23
+L0 3 56
+R21
+R22
 r1
 !s85 0
 31
-!s108 1695939860.000000
+!s108 1696092013.000000
 !s107 C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v|
 !s90 -reportprogress|300|-work|work|C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v|
 !i113 0
 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R1
+R4

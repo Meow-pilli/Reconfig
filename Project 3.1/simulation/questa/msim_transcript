@@ -26,27 +26,27 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/sxc210186/Documents/GitHub/Reconfig/Project\ 3.1/sincos/synthesis {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/sincos.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:23:32 on Sep 28,2023
+# Start time: 10:59:12 on Sep 30,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis" C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/sincos.v 
 # -- Compiling module sincos
 # 
 # Top level modules:
 # 	sincos
-# End time: 17:23:33 on Sep 28,2023, Elapsed time: 0:00:01
+# End time: 10:59:13 on Sep 30,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library_package.vhd}
 # Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:23:34 on Sep 28,2023
+# Start time: 10:59:13 on Sep 30,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library_package.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package dspba_library_package
-# End time: 17:23:34 on Sep 28,2023, Elapsed time: 0:00:00
+# End time: 10:59:13 on Sep 30,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/sincos_CORDIC_0.vhd}
 # Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:23:34 on Sep 28,2023
+# Start time: 10:59:16 on Sep 30,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/sincos_CORDIC_0.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -59,11 +59,11 @@
 # -- Loading package LPM_COMPONENTS
 # -- Compiling entity sincos_CORDIC_0
 # -- Compiling architecture normal of sincos_CORDIC_0
-# End time: 17:23:34 on Sep 28,2023, Elapsed time: 0:00:00
+# End time: 10:59:17 on Sep 30,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library.vhd}
 # Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:23:34 on Sep 28,2023
+# Start time: 10:59:17 on Sep 30,2023
 # vcom -reportprogress 300 -93 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/sincos/synthesis/submodules/dspba_library.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -76,22 +76,22 @@
 # -- Compiling architecture sync_reg of dspba_sync_reg
 # -- Compiling entity dspba_pipe
 # -- Compiling architecture rtl of dspba_pipe
-# End time: 17:23:35 on Sep 28,2023, Elapsed time: 0:00:01
+# End time: 10:59:17 on Sep 30,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vlog -reportprogress 300 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:24:20 on Sep 28,2023
+# Start time: 10:59:20 on Sep 30,2023
 # vlog -reportprogress 300 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v 
 # -- Compiling module sincos_vlg_tst
 # 
 # Top level modules:
 # 	sincos_vlg_tst
-# End time: 17:24:20 on Sep 28,2023, Elapsed time: 0:00:00
+# End time: 10:59:20 on Sep 30,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim -voptargs=+acc work.sincos_vlg_tst
 # vsim -voptargs="+acc" work.sincos_vlg_tst 
-# Start time: 17:24:30 on Sep 28,2023
+# Start time: 10:59:27 on Sep 30,2023
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading work.sincos_vlg_tst(fast)
 # Loading work.sincos(fast)
@@ -115,5 +115,719 @@ add wave -position end  sim:/sincos_vlg_tst/c
 add wave -position end  sim:/sincos_vlg_tst/s
 run
 # Running testbench
+vlog -reportprogress 300 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:02:25 on Sep 30,2023
+# vlog -reportprogress 300 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v 
+# -- Compiling module sincos_vlg_tst
+# 
+# Top level modules:
+# 	sincos_vlg_tst
+# End time: 11:02:26 on Sep 30,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.sincos_vlg_tst
+# End time: 11:02:35 on Sep 30,2023, Elapsed time: 0:03:08
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.sincos_vlg_tst 
+# Start time: 11:02:35 on Sep 30,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.sincos_vlg_tst(fast)
+# Loading work.sincos(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.dspba_library_package
+# Loading altera_mf.altera_mf_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading lpm.lpm_components
+# Loading work.sincos_cordic_0(normal)#1
+# Loading work.dspba_delay(delay)#1
+# Loading work.dspba_delay(delay)#2
+# Loading work.dspba_delay(delay)#3
+add wave -position end  sim:/sincos_vlg_tst/a
+add wave -position end  sim:/sincos_vlg_tst/areset
+add wave -position end  sim:/sincos_vlg_tst/clk
+add wave -position end  sim:/sincos_vlg_tst/c
+add wave -position end  sim:/sincos_vlg_tst/s
+add wave -position end  sim:/sincos_vlg_tst/i
 run
+# Running testbench
+vlog -reportprogress 300 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:03:16 on Sep 30,2023
+# vlog -reportprogress 300 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v 
+# -- Compiling module sincos_vlg_tst
+# 
+# Top level modules:
+# 	sincos_vlg_tst
+# End time: 11:03:17 on Sep 30,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.sincos_vlg_tst
+# End time: 11:03:26 on Sep 30,2023, Elapsed time: 0:00:51
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.sincos_vlg_tst 
+# Start time: 11:03:26 on Sep 30,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.sincos_vlg_tst(fast)
+# Loading work.sincos(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.dspba_library_package
+# Loading altera_mf.altera_mf_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading lpm.lpm_components
+# Loading work.sincos_cordic_0(normal)#1
+# Loading work.dspba_delay(delay)#1
+# Loading work.dspba_delay(delay)#2
+# Loading work.dspba_delay(delay)#3
+add wave -position end  sim:/sincos_vlg_tst/a
+add wave -position end  sim:/sincos_vlg_tst/areset
+add wave -position end  sim:/sincos_vlg_tst/clk
+add wave -position end  sim:/sincos_vlg_tst/c
+add wave -position end  sim:/sincos_vlg_tst/s
+add wave -position end  sim:/sincos_vlg_tst/i
 run
+# Running testbench
+vlog -reportprogress 300 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:05:27 on Sep 30,2023
+# vlog -reportprogress 300 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v 
+# -- Compiling module sincos_vlg_tst
+# 
+# Top level modules:
+# 	sincos_vlg_tst
+# End time: 11:05:27 on Sep 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.sincos_vlg_tst
+# End time: 11:05:35 on Sep 30,2023, Elapsed time: 0:02:09
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.sincos_vlg_tst 
+# Start time: 11:05:35 on Sep 30,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.sincos_vlg_tst(fast)
+# Loading work.sincos(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.dspba_library_package
+# Loading altera_mf.altera_mf_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading lpm.lpm_components
+# Loading work.sincos_cordic_0(normal)#1
+# Loading work.dspba_delay(delay)#1
+# Loading work.dspba_delay(delay)#2
+# Loading work.dspba_delay(delay)#3
+add wave -position end  sim:/sincos_vlg_tst/a
+add wave -position end  sim:/sincos_vlg_tst/areset
+add wave -position end  sim:/sincos_vlg_tst/clk
+add wave -position end  sim:/sincos_vlg_tst/c
+add wave -position end  sim:/sincos_vlg_tst/s
+add wave -position end  sim:/sincos_vlg_tst/i
+run
+# Running testbench
+vlog -reportprogress 300 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:12:40 on Sep 30,2023
+# vlog -reportprogress 300 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v 
+# -- Compiling module sincos_vlg_tst
+# 
+# Top level modules:
+# 	sincos_vlg_tst
+# End time: 11:12:40 on Sep 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.sincos_vlg_tst
+# End time: 11:12:49 on Sep 30,2023, Elapsed time: 0:07:14
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.sincos_vlg_tst 
+# Start time: 11:12:49 on Sep 30,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.sincos_vlg_tst(fast)
+# Loading work.sincos(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.dspba_library_package
+# Loading altera_mf.altera_mf_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading lpm.lpm_components
+# Loading work.sincos_cordic_0(normal)#1
+# Loading work.dspba_delay(delay)#1
+# Loading work.dspba_delay(delay)#2
+# Loading work.dspba_delay(delay)#3
+add wave -position end  sim:/sincos_vlg_tst/a
+add wave -position end  sim:/sincos_vlg_tst/areset
+add wave -position end  sim:/sincos_vlg_tst/clk
+add wave -position end  sim:/sincos_vlg_tst/c
+add wave -position end  sim:/sincos_vlg_tst/s
+run
+# Running testbench
+vlog -reportprogress 300 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:14:11 on Sep 30,2023
+# vlog -reportprogress 300 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v 
+# -- Compiling module sincos_vlg_tst
+# 
+# Top level modules:
+# 	sincos_vlg_tst
+# End time: 11:14:11 on Sep 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.sincos_vlg_tst
+# End time: 11:14:20 on Sep 30,2023, Elapsed time: 0:01:31
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.sincos_vlg_tst 
+# Start time: 11:14:20 on Sep 30,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.sincos_vlg_tst(fast)
+# Loading work.sincos(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.dspba_library_package
+# Loading altera_mf.altera_mf_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading lpm.lpm_components
+# Loading work.sincos_cordic_0(normal)#1
+# Loading work.dspba_delay(delay)#1
+# Loading work.dspba_delay(delay)#2
+# Loading work.dspba_delay(delay)#3
+add wave -position end  sim:/sincos_vlg_tst/a
+add wave -position end  sim:/sincos_vlg_tst/areset
+add wave -position end  sim:/sincos_vlg_tst/clk
+add wave -position end  sim:/sincos_vlg_tst/c
+add wave -position end  sim:/sincos_vlg_tst/s
+run
+# Running testbench
+vlog -reportprogress 300 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:16:03 on Sep 30,2023
+# vlog -reportprogress 300 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v 
+# -- Compiling module sincos_vlg_tst
+# 
+# Top level modules:
+# 	sincos_vlg_tst
+# End time: 11:16:03 on Sep 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.sincos_vlg_tst
+# End time: 11:16:15 on Sep 30,2023, Elapsed time: 0:01:55
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.sincos_vlg_tst 
+# Start time: 11:16:15 on Sep 30,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.sincos_vlg_tst(fast)
+# Loading work.sincos(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.dspba_library_package
+# Loading altera_mf.altera_mf_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading lpm.lpm_components
+# Loading work.sincos_cordic_0(normal)#1
+# Loading work.dspba_delay(delay)#1
+# Loading work.dspba_delay(delay)#2
+# Loading work.dspba_delay(delay)#3
+add wave -position end  sim:/sincos_vlg_tst/a
+add wave -position end  sim:/sincos_vlg_tst/areset
+add wave -position end  sim:/sincos_vlg_tst/clk
+add wave -position end  sim:/sincos_vlg_tst/c
+add wave -position end  sim:/sincos_vlg_tst/s
+run
+# Running testbench
+vlog -reportprogress 300 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:17:17 on Sep 30,2023
+# vlog -reportprogress 300 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v 
+# -- Compiling module sincos_vlg_tst
+# 
+# Top level modules:
+# 	sincos_vlg_tst
+# End time: 11:17:18 on Sep 30,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.sincos_vlg_tst
+# End time: 11:17:30 on Sep 30,2023, Elapsed time: 0:01:15
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.sincos_vlg_tst 
+# Start time: 11:17:30 on Sep 30,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.sincos_vlg_tst(fast)
+# Loading work.sincos(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.dspba_library_package
+# Loading altera_mf.altera_mf_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading lpm.lpm_components
+# Loading work.sincos_cordic_0(normal)#1
+# Loading work.dspba_delay(delay)#1
+# Loading work.dspba_delay(delay)#2
+# Loading work.dspba_delay(delay)#3
+add wave -position end  sim:/sincos_vlg_tst/a
+add wave -position end  sim:/sincos_vlg_tst/areset
+add wave -position end  sim:/sincos_vlg_tst/clk
+add wave -position end  sim:/sincos_vlg_tst/c
+add wave -position end  sim:/sincos_vlg_tst/s
+run
+# Running testbench
+vlog -reportprogress 300 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:19:28 on Sep 30,2023
+# vlog -reportprogress 300 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v 
+# -- Compiling module sincos_vlg_tst
+# 
+# Top level modules:
+# 	sincos_vlg_tst
+# End time: 11:19:28 on Sep 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:19:30 on Sep 30,2023
+# vlog -reportprogress 300 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v 
+# -- Compiling module sincos_vlg_tst
+# 
+# Top level modules:
+# 	sincos_vlg_tst
+# End time: 11:19:30 on Sep 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.sincos_vlg_tst
+# End time: 11:19:36 on Sep 30,2023, Elapsed time: 0:02:06
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.sincos_vlg_tst 
+# Start time: 11:19:37 on Sep 30,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.sincos_vlg_tst(fast)
+# Loading work.sincos(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.dspba_library_package
+# Loading altera_mf.altera_mf_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading lpm.lpm_components
+# Loading work.sincos_cordic_0(normal)#1
+# Loading work.dspba_delay(delay)#1
+# Loading work.dspba_delay(delay)#2
+# Loading work.dspba_delay(delay)#3
+add wave -position end  sim:/sincos_vlg_tst/a
+add wave -position end  sim:/sincos_vlg_tst/areset
+add wave -position end  sim:/sincos_vlg_tst/clk
+add wave -position end  sim:/sincos_vlg_tst/c
+add wave -position end  sim:/sincos_vlg_tst/s
+add wave -position end  sim:/sincos_vlg_tst/i
+run
+# Running testbench
+vlog -reportprogress 300 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:22:09 on Sep 30,2023
+# vlog -reportprogress 300 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v 
+# -- Compiling module sincos_vlg_tst
+# 
+# Top level modules:
+# 	sincos_vlg_tst
+# End time: 11:22:09 on Sep 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.sincos_vlg_tst
+# End time: 11:22:17 on Sep 30,2023, Elapsed time: 0:02:40
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.sincos_vlg_tst 
+# Start time: 11:22:17 on Sep 30,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.sincos_vlg_tst(fast)
+# Loading work.sincos(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.dspba_library_package
+# Loading altera_mf.altera_mf_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading lpm.lpm_components
+# Loading work.sincos_cordic_0(normal)#1
+# Loading work.dspba_delay(delay)#1
+# Loading work.dspba_delay(delay)#2
+# Loading work.dspba_delay(delay)#3
+add wave -position end  sim:/sincos_vlg_tst/a
+add wave -position end  sim:/sincos_vlg_tst/areset
+add wave -position end  sim:/sincos_vlg_tst/clk
+add wave -position end  sim:/sincos_vlg_tst/c
+add wave -position end  sim:/sincos_vlg_tst/s
+add wave -position end  sim:/sincos_vlg_tst/i
+run
+# Running testbench
+vlog -reportprogress 300 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:23:20 on Sep 30,2023
+# vlog -reportprogress 300 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v 
+# -- Compiling module sincos_vlg_tst
+# 
+# Top level modules:
+# 	sincos_vlg_tst
+# End time: 11:23:20 on Sep 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.sincos_vlg_tst
+# End time: 11:23:28 on Sep 30,2023, Elapsed time: 0:01:11
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.sincos_vlg_tst 
+# Start time: 11:23:28 on Sep 30,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.sincos_vlg_tst(fast)
+# Loading work.sincos(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.dspba_library_package
+# Loading altera_mf.altera_mf_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading lpm.lpm_components
+# Loading work.sincos_cordic_0(normal)#1
+# Loading work.dspba_delay(delay)#1
+# Loading work.dspba_delay(delay)#2
+# Loading work.dspba_delay(delay)#3
+add wave -position end  sim:/sincos_vlg_tst/a
+add wave -position end  sim:/sincos_vlg_tst/areset
+add wave -position end  sim:/sincos_vlg_tst/clk
+add wave -position end  sim:/sincos_vlg_tst/c
+add wave -position end  sim:/sincos_vlg_tst/s
+run
+# Running testbench
+vlog -reportprogress 300 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:24:52 on Sep 30,2023
+# vlog -reportprogress 300 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v 
+# -- Compiling module sincos_vlg_tst
+# 
+# Top level modules:
+# 	sincos_vlg_tst
+# End time: 11:24:52 on Sep 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.sincos_vlg_tst
+# End time: 11:25:00 on Sep 30,2023, Elapsed time: 0:01:32
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.sincos_vlg_tst 
+# Start time: 11:25:00 on Sep 30,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.sincos_vlg_tst(fast)
+# Loading work.sincos(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.dspba_library_package
+# Loading altera_mf.altera_mf_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading lpm.lpm_components
+# Loading work.sincos_cordic_0(normal)#1
+# Loading work.dspba_delay(delay)#1
+# Loading work.dspba_delay(delay)#2
+# Loading work.dspba_delay(delay)#3
+add wave -position end  sim:/sincos_vlg_tst/a
+add wave -position end  sim:/sincos_vlg_tst/areset
+add wave -position end  sim:/sincos_vlg_tst/clk
+add wave -position end  sim:/sincos_vlg_tst/c
+add wave -position end  sim:/sincos_vlg_tst/s
+run
+# Running testbench
+vlog -reportprogress 300 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:26:02 on Sep 30,2023
+# vlog -reportprogress 300 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v 
+# -- Compiling module sincos_vlg_tst
+# 
+# Top level modules:
+# 	sincos_vlg_tst
+# End time: 11:26:02 on Sep 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.sincos_vlg_tst
+# End time: 11:26:13 on Sep 30,2023, Elapsed time: 0:01:13
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.sincos_vlg_tst 
+# Start time: 11:26:13 on Sep 30,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.sincos_vlg_tst(fast)
+# Loading work.sincos(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.dspba_library_package
+# Loading altera_mf.altera_mf_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading lpm.lpm_components
+# Loading work.sincos_cordic_0(normal)#1
+# Loading work.dspba_delay(delay)#1
+# Loading work.dspba_delay(delay)#2
+# Loading work.dspba_delay(delay)#3
+add wave -position end  sim:/sincos_vlg_tst/a
+add wave -position end  sim:/sincos_vlg_tst/areset
+add wave -position end  sim:/sincos_vlg_tst/clk
+add wave -position end  sim:/sincos_vlg_tst/c
+add wave -position end  sim:/sincos_vlg_tst/s
+run
+# Running testbench
+vlog -reportprogress 300 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:27:31 on Sep 30,2023
+# vlog -reportprogress 300 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v 
+# -- Compiling module sincos_vlg_tst
+# 
+# Top level modules:
+# 	sincos_vlg_tst
+# End time: 11:27:31 on Sep 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.sincos_vlg_tst
+# End time: 11:27:41 on Sep 30,2023, Elapsed time: 0:01:28
+# Errors: 0, Warnings: 0
+# vsim work.sincos_vlg_tst 
+# Start time: 11:27:41 on Sep 30,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.sincos_vlg_tst(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.dspba_library_package
+# Loading altera_mf.altera_mf_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading lpm.lpm_components
+# Loading work.sincos_cordic_0(normal)#1
+vsim -voptargs=+acc work.sincos_vlg_tst
+# End time: 11:27:52 on Sep 30,2023, Elapsed time: 0:00:11
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.sincos_vlg_tst 
+# Start time: 11:27:52 on Sep 30,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.sincos_vlg_tst(fast)
+# Loading work.sincos(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.dspba_library_package
+# Loading altera_mf.altera_mf_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading lpm.lpm_components
+# Loading work.sincos_cordic_0(normal)#1
+# Loading work.dspba_delay(delay)#1
+# Loading work.dspba_delay(delay)#2
+# Loading work.dspba_delay(delay)#3
+add wave -position end  sim:/sincos_vlg_tst/a
+add wave -position end  sim:/sincos_vlg_tst/areset
+add wave -position end  sim:/sincos_vlg_tst/clk
+add wave -position end  sim:/sincos_vlg_tst/c
+add wave -position end  sim:/sincos_vlg_tst/s
+run
+# Running testbench
+vlog -reportprogress 300 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:44 on Sep 30,2023
+# vlog -reportprogress 300 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v 
+# -- Compiling module sincos_vlg_tst
+# 
+# Top level modules:
+# 	sincos_vlg_tst
+# End time: 11:28:45 on Sep 30,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.sincos_vlg_tst
+# End time: 11:28:53 on Sep 30,2023, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.sincos_vlg_tst 
+# Start time: 11:28:53 on Sep 30,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.sincos_vlg_tst(fast)
+# Loading work.sincos(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.dspba_library_package
+# Loading altera_mf.altera_mf_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading lpm.lpm_components
+# Loading work.sincos_cordic_0(normal)#1
+# Loading work.dspba_delay(delay)#1
+# Loading work.dspba_delay(delay)#2
+# Loading work.dspba_delay(delay)#3
+add wave -position end  sim:/sincos_vlg_tst/a
+add wave -position end  sim:/sincos_vlg_tst/areset
+add wave -position end  sim:/sincos_vlg_tst/clk
+add wave -position end  sim:/sincos_vlg_tst/c
+add wave -position end  sim:/sincos_vlg_tst/s
+run
+# Running testbench
+vlog -reportprogress 300 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:29:53 on Sep 30,2023
+# vlog -reportprogress 300 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v 
+# -- Compiling module sincos_vlg_tst
+# 
+# Top level modules:
+# 	sincos_vlg_tst
+# End time: 11:29:53 on Sep 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.sincos_vlg_tst
+# End time: 11:30:01 on Sep 30,2023, Elapsed time: 0:01:08
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.sincos_vlg_tst 
+# Start time: 11:30:01 on Sep 30,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.sincos_vlg_tst(fast)
+# Loading work.sincos(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.dspba_library_package
+# Loading altera_mf.altera_mf_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading lpm.lpm_components
+# Loading work.sincos_cordic_0(normal)#1
+# Loading work.dspba_delay(delay)#1
+# Loading work.dspba_delay(delay)#2
+# Loading work.dspba_delay(delay)#3
+add wave -position end  sim:/sincos_vlg_tst/a
+add wave -position end  sim:/sincos_vlg_tst/areset
+add wave -position end  sim:/sincos_vlg_tst/clk
+add wave -position end  sim:/sincos_vlg_tst/c
+add wave -position end  sim:/sincos_vlg_tst/s
+run
+# Running testbench
+vlog -reportprogress 300 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:35:51 on Sep 30,2023
+# vlog -reportprogress 300 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v 
+# -- Compiling module sincos_vlg_tst
+# 
+# Top level modules:
+# 	sincos_vlg_tst
+# End time: 11:35:51 on Sep 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.sincos_vlg_tst
+# End time: 11:36:02 on Sep 30,2023, Elapsed time: 0:06:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.sincos_vlg_tst 
+# Start time: 11:36:03 on Sep 30,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.sincos_vlg_tst(fast)
+# Loading work.sincos(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.dspba_library_package
+# Loading altera_mf.altera_mf_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading lpm.lpm_components
+# Loading work.sincos_cordic_0(normal)#1
+# Loading work.dspba_delay(delay)#1
+# Loading work.dspba_delay(delay)#2
+# Loading work.dspba_delay(delay)#3
+add wave -position end  sim:/sincos_vlg_tst/a
+add wave -position end  sim:/sincos_vlg_tst/areset
+add wave -position end  sim:/sincos_vlg_tst/clk
+add wave -position end  sim:/sincos_vlg_tst/c
+add wave -position end  sim:/sincos_vlg_tst/s
+run
+# Running testbench
+vlog -reportprogress 300 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:39:10 on Sep 30,2023
+# vlog -reportprogress 300 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v 
+# -- Compiling module sincos_vlg_tst
+# 
+# Top level modules:
+# 	sincos_vlg_tst
+# End time: 11:39:10 on Sep 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.sincos_vlg_tst
+# End time: 11:39:26 on Sep 30,2023, Elapsed time: 0:03:23
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.sincos_vlg_tst 
+# Start time: 11:39:26 on Sep 30,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.sincos_vlg_tst(fast)
+# Loading work.sincos(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.dspba_library_package
+# Loading altera_mf.altera_mf_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading lpm.lpm_components
+# Loading work.sincos_cordic_0(normal)#1
+# Loading work.dspba_delay(delay)#1
+# Loading work.dspba_delay(delay)#2
+# Loading work.dspba_delay(delay)#3
+add wave -position end  sim:/sincos_vlg_tst/a
+add wave -position end  sim:/sincos_vlg_tst/areset
+add wave -position end  sim:/sincos_vlg_tst/clk
+add wave -position end  sim:/sincos_vlg_tst/c
+add wave -position end  sim:/sincos_vlg_tst/s
+run
+# Running testbench
+vlog -reportprogress 300 -work work {C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:40:13 on Sep 30,2023
+# vlog -reportprogress 300 -work work C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/simulation/questa/sincos_tb.v 
+# -- Compiling module sincos_vlg_tst
+# 
+# Top level modules:
+# 	sincos_vlg_tst
+# End time: 11:40:13 on Sep 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.sincos_vlg_tst
+# End time: 11:40:24 on Sep 30,2023, Elapsed time: 0:00:58
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.sincos_vlg_tst 
+# Start time: 11:40:24 on Sep 30,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.sincos_vlg_tst(fast)
+# Loading work.sincos(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.dspba_library_package
+# Loading altera_mf.altera_mf_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading lpm.lpm_components
+# Loading work.sincos_cordic_0(normal)#1
+# Loading work.dspba_delay(delay)#1
+# Loading work.dspba_delay(delay)#2
+# Loading work.dspba_delay(delay)#3
+add wave -position end  sim:/sincos_vlg_tst/a
+add wave -position end  sim:/sincos_vlg_tst/areset
+add wave -position end  sim:/sincos_vlg_tst/clk
+add wave -position end  sim:/sincos_vlg_tst/c
+add wave -position end  sim:/sincos_vlg_tst/s
+run
+# Running testbench
