@@ -22,24 +22,6 @@
 endmodule
 */
 
-module seven_display_decoder(
-	input wire [2:0]in,
-	output reg [6:0]out
-);
-always @(*) begin
-    case(in)
-        3'b000: out = 7'b1000000; // Display 0
-        3'b001: out = 7'b1111001; // Display 1
-        3'b010: out = 7'b0100100; // Display 2
-        3'b011: out = 7'b0110000; // Display 3
-        3'b100: out = 7'b0011001; // Display 4
-        3'b101: out = 7'b0010010; // Display 5
-        3'b110: out = 7'b0000010; // Display 6
-        3'b111: out = 7'b1111000; // Display 7
-        default: out = 7'b1111111; // Turn off all segments for unknown input
-    endcase
-end
-endmodule
 
 module sincos(
 	input [9:0]a,
@@ -58,3 +40,21 @@ module sincos(
 
 endmodule
 
+module seven_display_decoder(
+	input wire [2:0]in,
+	output reg [6:0]out
+);
+always @(*) begin
+    case(in)
+        3'b000: out = 7'b1000000; // Display 0
+        3'b001: out = 7'b1111001; // Display 1
+        3'b010: out = 7'b0100100; // Display 2
+        3'b011: out = 7'b0110000; // Display 3
+        3'b100: out = 7'b0011001; // Display 4
+        3'b101: out = 7'b0010010; // Display 5
+        3'b110: out = 7'b0000010; // Display 6
+        3'b111: out = 7'b1111000; // Display 7
+        default: out = 7'b1111111; // Turn off all segments for unknown input
+    endcase
+end
+endmodule

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sincos7
-Fri Sep 29 21:21:03 2023
+Fri Sep 29 21:44:17 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -26,21 +26,23 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
  18. Parameter Settings for User Entity Instance: sincos_CORDIC_0:u0|dspba_delay:redist6_firstQuadrant_uid15_sincosTest_b_2
  19. Port Connectivity Checks: "seven_display_decoder:u6"
  20. Port Connectivity Checks: "seven_display_decoder:u5"
- 21. Port Connectivity Checks: "seven_display_decoder:u3"
- 22. Port Connectivity Checks: "seven_display_decoder:u2"
- 23. Port Connectivity Checks: "sincos_CORDIC_0:u0|dspba_delay:redist6_firstQuadrant_uid15_sincosTest_b_2"
- 24. Port Connectivity Checks: "sincos_CORDIC_0:u0|dspba_delay:redist1_xPostExc_uid123_sincosTest_b_1"
- 25. Port Connectivity Checks: "sincos_CORDIC_0:u0|dspba_delay:redist0_yPostExc_uid124_sincosTest_b_1"
- 26. Port Connectivity Checks: "sincos_CORDIC_0:u0|dspba_delay:redist5_xMSB_uid48_sincosTest_b_1"
- 27. Port Connectivity Checks: "sincos_CORDIC_0:u0|dspba_delay:redist4_xMSB_uid64_sincosTest_b_1"
- 28. Port Connectivity Checks: "sincos_CORDIC_0:u0|dspba_delay:redist3_xMSB_uid80_sincosTest_b_1"
- 29. Port Connectivity Checks: "sincos_CORDIC_0:u0|dspba_delay:redist2_xMSB_uid96_sincosTest_b_1"
- 30. Port Connectivity Checks: "sincos_CORDIC_0:u0|dspba_delay:redist7_invSignA_uid8_sincosTest_q_2"
- 31. Port Connectivity Checks: "sincos_CORDIC_0:u0|dspba_delay:redist8_signA_uid7_sincosTest_b_2"
- 32. Port Connectivity Checks: "sincos_CORDIC_0:u0"
- 33. Post-Synthesis Netlist Statistics for Top Partition
- 34. Elapsed Time Per Partition
- 35. Analysis & Synthesis Messages
+ 21. Port Connectivity Checks: "seven_display_decoder:u4"
+ 22. Port Connectivity Checks: "seven_display_decoder:u3"
+ 23. Port Connectivity Checks: "seven_display_decoder:u2"
+ 24. Port Connectivity Checks: "seven_display_decoder:u1"
+ 25. Port Connectivity Checks: "sincos_CORDIC_0:u0|dspba_delay:redist6_firstQuadrant_uid15_sincosTest_b_2"
+ 26. Port Connectivity Checks: "sincos_CORDIC_0:u0|dspba_delay:redist1_xPostExc_uid123_sincosTest_b_1"
+ 27. Port Connectivity Checks: "sincos_CORDIC_0:u0|dspba_delay:redist0_yPostExc_uid124_sincosTest_b_1"
+ 28. Port Connectivity Checks: "sincos_CORDIC_0:u0|dspba_delay:redist5_xMSB_uid48_sincosTest_b_1"
+ 29. Port Connectivity Checks: "sincos_CORDIC_0:u0|dspba_delay:redist4_xMSB_uid64_sincosTest_b_1"
+ 30. Port Connectivity Checks: "sincos_CORDIC_0:u0|dspba_delay:redist3_xMSB_uid80_sincosTest_b_1"
+ 31. Port Connectivity Checks: "sincos_CORDIC_0:u0|dspba_delay:redist2_xMSB_uid96_sincosTest_b_1"
+ 32. Port Connectivity Checks: "sincos_CORDIC_0:u0|dspba_delay:redist7_invSignA_uid8_sincosTest_q_2"
+ 33. Port Connectivity Checks: "sincos_CORDIC_0:u0|dspba_delay:redist8_signA_uid7_sincosTest_b_2"
+ 34. Port Connectivity Checks: "sincos_CORDIC_0:u0"
+ 35. Post-Synthesis Netlist Statistics for Top Partition
+ 36. Elapsed Time Per Partition
+ 37. Analysis & Synthesis Messages
 
 
 
@@ -67,7 +69,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Sep 29 21:21:03 2023          ;
+; Analysis & Synthesis Status     ; Successful - Fri Sep 29 21:44:17 2023          ;
 ; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                   ; sincos7                                        ;
 ; Top-level Entity Name           ; sincos                                         ;
@@ -413,6 +415,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
 
 
++------------------------------------------------------+
+; Port Connectivity Checks: "seven_display_decoder:u4" ;
++------+-------+----------+----------------------------+
+; Port ; Type  ; Severity ; Details                    ;
++------+-------+----------+----------------------------+
+; in   ; Input ; Info     ; Stuck at GND               ;
++------+-------+----------+----------------------------+
+
+
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "seven_display_decoder:u3"                                                                                                                 ;
 +------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
@@ -429,6 +440,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
 ; in   ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (3 bits) it drives.  Extra input bit(s) "in[2..1]" will be connected to GND. ;
 +------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; Port Connectivity Checks: "seven_display_decoder:u1" ;
++------+-------+----------+----------------------------+
+; Port ; Type  ; Severity ; Details                    ;
++------+-------+----------+----------------------------+
+; in   ; Input ; Info     ; Stuck at GND               ;
++------+-------+----------+----------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------+
@@ -554,7 +574,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Fri Sep 29 21:20:54 2023
+    Info: Processing started: Fri Sep 29 21:44:03 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sincos7 -c sincos7
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -572,15 +592,17 @@ Info (12021): Found 6 design units, including 3 entities, in source file sincos/
     Info (12023): Found entity 3: dspba_pipe File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/submodules/dspba_library.vhd Line: 343
 Info (12021): Found 2 design units, including 2 entities, in source file sincos/synthesis/sincos.v
     Info (12023): Found entity 1: sincos File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 26
-    Info (12023): Found entity 2: seven_display_decoder File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 51
-Warning (10236): Verilog HDL Implicit Net warning at sincos.v(41): created implicit net for "temp1" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 41
-Warning (10236): Verilog HDL Implicit Net warning at sincos.v(41): created implicit net for "temp2" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 41
+    Info (12023): Found entity 2: seven_display_decoder File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 56
+Warning (10236): Verilog HDL Implicit Net warning at sincos.v(46): created implicit net for "temp1" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 46
+Warning (10236): Verilog HDL Implicit Net warning at sincos.v(46): created implicit net for "temp2" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 46
 Info (12127): Elaborating entity "sincos" for the top level hierarchy
-Info (12128): Elaborating entity "sincos_CORDIC_0" for hierarchy "sincos_CORDIC_0:u0" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 41
+Warning (10030): Net "temp_cos[2..0]" at sincos.v(38) has no driver or initial value, using a default initial value '0' File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 38
+Warning (10030): Net "temp_sin[2..0]" at sincos.v(39) has no driver or initial value, using a default initial value '0' File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 39
+Info (12128): Elaborating entity "sincos_CORDIC_0" for hierarchy "sincos_CORDIC_0:u0" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 46
 Info (12128): Elaborating entity "dspba_delay" for hierarchy "sincos_CORDIC_0:u0|dspba_delay:redist8_signA_uid7_sincosTest_b_2" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/submodules/sincos_CORDIC_0.vhd Line: 259
 Info (12128): Elaborating entity "dspba_delay" for hierarchy "sincos_CORDIC_0:u0|dspba_delay:redist2_xMSB_uid96_sincosTest_b_1" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/submodules/sincos_CORDIC_0.vhd Line: 450
 Info (12128): Elaborating entity "dspba_delay" for hierarchy "sincos_CORDIC_0:u0|dspba_delay:redist0_yPostExc_uid124_sincosTest_b_1" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/submodules/sincos_CORDIC_0.vhd Line: 682
-Info (12128): Elaborating entity "seven_display_decoder" for hierarchy "seven_display_decoder:u1" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 42
+Info (12128): Elaborating entity "seven_display_decoder" for hierarchy "seven_display_decoder:u1" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 47
 Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "sin_sev_dec[0]" is stuck at GND File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 30
@@ -643,10 +665,10 @@ Warning (21074): Design contains 12 input pin(s) that do not drive logic
 Info (21057): Implemented 54 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 42 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 60 warnings
-    Info: Peak virtual memory: 4866 megabytes
-    Info: Processing ended: Fri Sep 29 21:21:03 2023
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:22
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 62 warnings
+    Info: Peak virtual memory: 4858 megabytes
+    Info: Processing ended: Fri Sep 29 21:44:17 2023
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:36
 
 
