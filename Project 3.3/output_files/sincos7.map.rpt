@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sincos7
-Sat Sep 30 17:48:50 2023
+Sun Oct  1 17:35:28 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -24,8 +24,8 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
  16. Parameter Settings for User Entity Instance: sincos_CORDIC_0:u0|dspba_delay:redist0_yPostExc_uid124_sincosTest_b_1
  17. Parameter Settings for User Entity Instance: sincos_CORDIC_0:u0|dspba_delay:redist1_xPostExc_uid123_sincosTest_b_1
  18. Parameter Settings for User Entity Instance: sincos_CORDIC_0:u0|dspba_delay:redist6_firstQuadrant_uid15_sincosTest_b_2
- 19. Port Connectivity Checks: "seven_display_decoder:u5"
- 20. Port Connectivity Checks: "seven_display_decoder:u2"
+ 19. Port Connectivity Checks: "seven_display_decoder:u7"
+ 20. Port Connectivity Checks: "seven_display_decoder:u4"
  21. Port Connectivity Checks: "sincos_CORDIC_0:u0|dspba_delay:redist6_firstQuadrant_uid15_sincosTest_b_2"
  22. Port Connectivity Checks: "sincos_CORDIC_0:u0|dspba_delay:redist1_xPostExc_uid123_sincosTest_b_1"
  23. Port Connectivity Checks: "sincos_CORDIC_0:u0|dspba_delay:redist0_yPostExc_uid124_sincosTest_b_1"
@@ -64,7 +64,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Sep 30 17:48:50 2023          ;
+; Analysis & Synthesis Status     ; Successful - Sun Oct  1 17:35:28 2023          ;
 ; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                   ; sincos7                                        ;
 ; Top-level Entity Name           ; sincos                                         ;
@@ -207,12 +207,12 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------------------------------------------------------------------------------+
 ; Estimate of Logic utilization (ALMs needed) ; 152                                                                                  ;
 ;                                             ;                                                                                      ;
-; Combinational ALUT usage for logic          ; 278                                                                                  ;
+; Combinational ALUT usage for logic          ; 283                                                                                  ;
 ;     -- 7 input functions                    ; 5                                                                                    ;
-;     -- 6 input functions                    ; 19                                                                                   ;
-;     -- 5 input functions                    ; 52                                                                                   ;
-;     -- 4 input functions                    ; 52                                                                                   ;
-;     -- <=3 input functions                  ; 150                                                                                  ;
+;     -- 6 input functions                    ; 14                                                                                   ;
+;     -- 5 input functions                    ; 48                                                                                   ;
+;     -- 4 input functions                    ; 58                                                                                   ;
+;     -- <=3 input functions                  ; 158                                                                                  ;
 ;                                             ;                                                                                      ;
 ; Dedicated logic registers                   ; 20                                                                                   ;
 ;                                             ;                                                                                      ;
@@ -222,8 +222,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                                                                      ;
 ; Maximum fan-out node                        ; sincos_CORDIC_0:u0|dspba_delay:redist3_xMSB_uid80_sincosTest_b_1|delay_signals[0][0] ;
 ; Maximum fan-out                             ; 84                                                                                   ;
-; Total fan-out                               ; 1213                                                                                 ;
-; Average fan-out                             ; 2.99                                                                                 ;
+; Total fan-out                               ; 1210                                                                                 ;
+; Average fan-out                             ; 2.94                                                                                 ;
 +---------------------------------------------+--------------------------------------------------------------------------------------+
 
 
@@ -232,9 +232,9 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------+-----------------------+--------------+
 ; Compilation Hierarchy Node                                     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                               ; Entity Name           ; Library Name ;
 +----------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------+-----------------------+--------------+
-; |sincos                                                        ; 278 (0)             ; 20 (0)                    ; 0                 ; 0          ; 54   ; 0            ; |sincos                                                                           ; sincos                ; work         ;
-;    |seven_display_decoder:u1|                                  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |sincos|seven_display_decoder:u1                                                  ; seven_display_decoder ; work         ;
-;    |seven_display_decoder:u4|                                  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |sincos|seven_display_decoder:u4                                                  ; seven_display_decoder ; work         ;
+; |sincos                                                        ; 283 (0)             ; 20 (0)                    ; 0                 ; 0          ; 54   ; 0            ; |sincos                                                                           ; sincos                ; work         ;
+;    |seven_display_decoder:u3|                                  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |sincos|seven_display_decoder:u3                                                  ; seven_display_decoder ; work         ;
+;    |seven_display_decoder:u6|                                  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |sincos|seven_display_decoder:u6                                                  ; seven_display_decoder ; work         ;
 ;    |sincos_CORDIC_0:u0|                                        ; 264 (263)           ; 20 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |sincos|sincos_CORDIC_0:u0                                                        ; sincos_CORDIC_0       ; work         ;
 ;       |dspba_delay:redist0_yPostExc_uid124_sincosTest_b_1|     ; 0 (0)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |sincos|sincos_CORDIC_0:u0|dspba_delay:redist0_yPostExc_uid124_sincosTest_b_1     ; dspba_delay           ; work         ;
 ;       |dspba_delay:redist1_xPostExc_uid123_sincosTest_b_1|     ; 0 (0)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |sincos|sincos_CORDIC_0:u0|dspba_delay:redist1_xPostExc_uid123_sincosTest_b_1     ; dspba_delay           ; work         ;
@@ -245,6 +245,8 @@ https://fpgasoftware.intel.com/eula.
 ;       |dspba_delay:redist6_firstQuadrant_uid15_sincosTest_b_2| ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |sincos|sincos_CORDIC_0:u0|dspba_delay:redist6_firstQuadrant_uid15_sincosTest_b_2 ; dspba_delay           ; work         ;
 ;       |dspba_delay:redist7_invSignA_uid8_sincosTest_q_2|       ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |sincos|sincos_CORDIC_0:u0|dspba_delay:redist7_invSignA_uid8_sincosTest_q_2       ; dspba_delay           ; work         ;
 ;       |dspba_delay:redist8_signA_uid7_sincosTest_b_2|          ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |sincos|sincos_CORDIC_0:u0|dspba_delay:redist8_signA_uid7_sincosTest_b_2          ; dspba_delay           ; work         ;
+;    |twos_complement:u1|                                        ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |sincos|twos_complement:u1                                                        ; twos_complement       ; work         ;
+;    |twos_complement:u2|                                        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |sincos|twos_complement:u2                                                        ; twos_complement       ; work         ;
 +----------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -406,7 +408,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "seven_display_decoder:u5"                                                                                                                 ;
+; Port Connectivity Checks: "seven_display_decoder:u7"                                                                                                                 ;
 +------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                    ;
 +------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
@@ -415,7 +417,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "seven_display_decoder:u2"                                                                                                                 ;
+; Port Connectivity Checks: "seven_display_decoder:u4"                                                                                                                 ;
 +------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                    ;
 +------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
@@ -511,7 +513,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 20                          ;
 ;     CLR               ; 20                          ;
-; arriav_lcell_comb     ; 284                         ;
+; arriav_lcell_comb     ; 287                         ;
 ;     arith             ; 180                         ;
 ;         0 data inputs ; 14                          ;
 ;         1 data inputs ; 19                          ;
@@ -521,21 +523,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         5 data inputs ; 34                          ;
 ;     extend            ; 5                           ;
 ;         7 data inputs ; 5                           ;
-;     normal            ; 81                          ;
+;     normal            ; 84                          ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 5                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 28                          ;
-;         4 data inputs ; 8                           ;
-;         5 data inputs ; 18                          ;
-;         6 data inputs ; 19                          ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 35                          ;
+;         4 data inputs ; 14                          ;
+;         5 data inputs ; 14                          ;
+;         6 data inputs ; 14                          ;
 ;     shared            ; 18                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 16                          ;
 ; boundary_port         ; 54                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 8.60                        ;
-; Average LUT depth     ; 6.53                        ;
+; Average LUT depth     ; 6.61                        ;
 +-----------------------+-----------------------------+
 
 
@@ -544,7 +546,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -554,7 +556,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Sat Sep 30 17:48:33 2023
+    Info: Processing started: Sun Oct  1 17:35:19 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sincos7 -c sincos7
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -570,17 +572,19 @@ Info (12021): Found 6 design units, including 3 entities, in source file sincos/
     Info (12023): Found entity 1: dspba_delay File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/submodules/dspba_library.vhd Line: 18
     Info (12023): Found entity 2: dspba_sync_reg File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/submodules/dspba_library.vhd Line: 93
     Info (12023): Found entity 3: dspba_pipe File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/submodules/dspba_library.vhd Line: 343
-Info (12021): Found 3 design units, including 3 entities, in source file sincos/synthesis/sincos.v
+Info (12021): Found 4 design units, including 4 entities, in source file sincos/synthesis/sincos.v
     Info (12023): Found entity 1: sincos File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 26
-    Info (12023): Found entity 2: seven_display_decoder File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 51
-    Info (12023): Found entity 3: seven_display_decoder_sign File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 86
+    Info (12023): Found entity 2: seven_display_decoder File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 55
+    Info (12023): Found entity 3: twos_complement File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 75
+    Info (12023): Found entity 4: seven_display_decoder_sign File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 94
 Info (12127): Elaborating entity "sincos" for the top level hierarchy
-Info (12128): Elaborating entity "sincos_CORDIC_0" for hierarchy "sincos_CORDIC_0:u0" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 41
+Info (12128): Elaborating entity "sincos_CORDIC_0" for hierarchy "sincos_CORDIC_0:u0" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 43
 Info (12128): Elaborating entity "dspba_delay" for hierarchy "sincos_CORDIC_0:u0|dspba_delay:redist8_signA_uid7_sincosTest_b_2" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/submodules/sincos_CORDIC_0.vhd Line: 259
 Info (12128): Elaborating entity "dspba_delay" for hierarchy "sincos_CORDIC_0:u0|dspba_delay:redist2_xMSB_uid96_sincosTest_b_1" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/submodules/sincos_CORDIC_0.vhd Line: 450
 Info (12128): Elaborating entity "dspba_delay" for hierarchy "sincos_CORDIC_0:u0|dspba_delay:redist0_yPostExc_uid124_sincosTest_b_1" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/submodules/sincos_CORDIC_0.vhd Line: 682
-Info (12128): Elaborating entity "seven_display_decoder" for hierarchy "seven_display_decoder:u1" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 42
-Info (12128): Elaborating entity "seven_display_decoder_sign" for hierarchy "seven_display_decoder_sign:u3" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 44
+Info (12128): Elaborating entity "twos_complement" for hierarchy "twos_complement:u1" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 44
+Info (12128): Elaborating entity "seven_display_decoder" for hierarchy "seven_display_decoder:u3" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 46
+Info (12128): Elaborating entity "seven_display_decoder_sign" for hierarchy "seven_display_decoder_sign:u5" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 48
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "sin_sev_int[1]" is stuck at GND File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.3/sincos/synthesis/sincos.v Line: 31
@@ -604,14 +608,14 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 339 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 344 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 42 output pins
-    Info (21061): Implemented 285 logic cells
+    Info (21061): Implemented 290 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
-    Info: Peak virtual memory: 4892 megabytes
-    Info: Processing ended: Sat Sep 30 17:48:50 2023
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:41
+    Info: Peak virtual memory: 4884 megabytes
+    Info: Processing ended: Sun Oct  1 17:35:28 2023
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:22
 
 

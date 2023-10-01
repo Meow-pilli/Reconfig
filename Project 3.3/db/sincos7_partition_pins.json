@@ -112,10 +112,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "a[8]",
-					"strict" : false
-				},
-				{
 					"name" : "a[2]",
 					"strict" : false
 				},
@@ -137,6 +133,10 @@
 				},
 				{
 					"name" : "a[7]",
+					"strict" : false
+				},
+				{
+					"name" : "a[8]",
 					"strict" : false
 				},
 				{

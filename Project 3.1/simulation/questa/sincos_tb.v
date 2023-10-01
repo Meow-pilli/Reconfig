@@ -29,7 +29,7 @@ always #5 clk = ~clk;
 
 always @(negedge clk) begin
 	a = 0;
-	#10;
+	#5;
 	a = 0110001110;
 	#10;
 	a = 1110010000;

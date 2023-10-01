@@ -1,12 +1,12 @@
-Fitter Status : Successful - Sat Sep 30 17:49:50 2023
+Fitter Status : Successful - Sun Oct  1 17:36:04 2023
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : sincos7
 Top-level Entity Name : sincos
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 162 / 32,070 ( < 1 % )
-Total registers : 21
+Logic utilization (in ALMs) : 163 / 32,070 ( < 1 % )
+Total registers : 22
 Total pins : 54 / 457 ( 12 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 4,065,280 ( 0 % )

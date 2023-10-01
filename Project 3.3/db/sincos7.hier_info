@@ -11,48 +11,48 @@ a[8] => a[8].IN1
 a[9] => a[9].IN1
 areset => _.IN1
 clk => clk.IN1
-sin_sev_dec[0] <= seven_display_decoder:u4.out
-sin_sev_dec[1] <= seven_display_decoder:u4.out
-sin_sev_dec[2] <= seven_display_decoder:u4.out
-sin_sev_dec[3] <= seven_display_decoder:u4.out
-sin_sev_dec[4] <= seven_display_decoder:u4.out
-sin_sev_dec[5] <= seven_display_decoder:u4.out
-sin_sev_dec[6] <= seven_display_decoder:u4.out
-sin_sev_int[0] <= seven_display_decoder:u5.out
-sin_sev_int[1] <= seven_display_decoder:u5.out
-sin_sev_int[2] <= seven_display_decoder:u5.out
-sin_sev_int[3] <= seven_display_decoder:u5.out
-sin_sev_int[4] <= seven_display_decoder:u5.out
-sin_sev_int[5] <= seven_display_decoder:u5.out
-sin_sev_int[6] <= seven_display_decoder:u5.out
-sin_sev_sign[0] <= seven_display_decoder_sign:u6.out
-sin_sev_sign[1] <= seven_display_decoder_sign:u6.out
-sin_sev_sign[2] <= seven_display_decoder_sign:u6.out
-sin_sev_sign[3] <= seven_display_decoder_sign:u6.out
-sin_sev_sign[4] <= seven_display_decoder_sign:u6.out
-sin_sev_sign[5] <= seven_display_decoder_sign:u6.out
-sin_sev_sign[6] <= seven_display_decoder_sign:u6.out
-cos_sev_dec[0] <= seven_display_decoder:u1.out
-cos_sev_dec[1] <= seven_display_decoder:u1.out
-cos_sev_dec[2] <= seven_display_decoder:u1.out
-cos_sev_dec[3] <= seven_display_decoder:u1.out
-cos_sev_dec[4] <= seven_display_decoder:u1.out
-cos_sev_dec[5] <= seven_display_decoder:u1.out
-cos_sev_dec[6] <= seven_display_decoder:u1.out
-cos_sev_int[0] <= seven_display_decoder:u2.out
-cos_sev_int[1] <= seven_display_decoder:u2.out
-cos_sev_int[2] <= seven_display_decoder:u2.out
-cos_sev_int[3] <= seven_display_decoder:u2.out
-cos_sev_int[4] <= seven_display_decoder:u2.out
-cos_sev_int[5] <= seven_display_decoder:u2.out
-cos_sev_int[6] <= seven_display_decoder:u2.out
-cos_sev_sign[0] <= seven_display_decoder_sign:u3.out
-cos_sev_sign[1] <= seven_display_decoder_sign:u3.out
-cos_sev_sign[2] <= seven_display_decoder_sign:u3.out
-cos_sev_sign[3] <= seven_display_decoder_sign:u3.out
-cos_sev_sign[4] <= seven_display_decoder_sign:u3.out
-cos_sev_sign[5] <= seven_display_decoder_sign:u3.out
-cos_sev_sign[6] <= seven_display_decoder_sign:u3.out
+sin_sev_dec[0] <= seven_display_decoder:u6.out
+sin_sev_dec[1] <= seven_display_decoder:u6.out
+sin_sev_dec[2] <= seven_display_decoder:u6.out
+sin_sev_dec[3] <= seven_display_decoder:u6.out
+sin_sev_dec[4] <= seven_display_decoder:u6.out
+sin_sev_dec[5] <= seven_display_decoder:u6.out
+sin_sev_dec[6] <= seven_display_decoder:u6.out
+sin_sev_int[0] <= seven_display_decoder:u7.out
+sin_sev_int[1] <= seven_display_decoder:u7.out
+sin_sev_int[2] <= seven_display_decoder:u7.out
+sin_sev_int[3] <= seven_display_decoder:u7.out
+sin_sev_int[4] <= seven_display_decoder:u7.out
+sin_sev_int[5] <= seven_display_decoder:u7.out
+sin_sev_int[6] <= seven_display_decoder:u7.out
+sin_sev_sign[0] <= seven_display_decoder_sign:u8.out
+sin_sev_sign[1] <= seven_display_decoder_sign:u8.out
+sin_sev_sign[2] <= seven_display_decoder_sign:u8.out
+sin_sev_sign[3] <= seven_display_decoder_sign:u8.out
+sin_sev_sign[4] <= seven_display_decoder_sign:u8.out
+sin_sev_sign[5] <= seven_display_decoder_sign:u8.out
+sin_sev_sign[6] <= seven_display_decoder_sign:u8.out
+cos_sev_dec[0] <= seven_display_decoder:u3.out
+cos_sev_dec[1] <= seven_display_decoder:u3.out
+cos_sev_dec[2] <= seven_display_decoder:u3.out
+cos_sev_dec[3] <= seven_display_decoder:u3.out
+cos_sev_dec[4] <= seven_display_decoder:u3.out
+cos_sev_dec[5] <= seven_display_decoder:u3.out
+cos_sev_dec[6] <= seven_display_decoder:u3.out
+cos_sev_int[0] <= seven_display_decoder:u4.out
+cos_sev_int[1] <= seven_display_decoder:u4.out
+cos_sev_int[2] <= seven_display_decoder:u4.out
+cos_sev_int[3] <= seven_display_decoder:u4.out
+cos_sev_int[4] <= seven_display_decoder:u4.out
+cos_sev_int[5] <= seven_display_decoder:u4.out
+cos_sev_int[6] <= seven_display_decoder:u4.out
+cos_sev_sign[0] <= seven_display_decoder_sign:u5.out
+cos_sev_sign[1] <= seven_display_decoder_sign:u5.out
+cos_sev_sign[2] <= seven_display_decoder_sign:u5.out
+cos_sev_sign[3] <= seven_display_decoder_sign:u5.out
+cos_sev_sign[4] <= seven_display_decoder_sign:u5.out
+cos_sev_sign[5] <= seven_display_decoder_sign:u5.out
+cos_sev_sign[6] <= seven_display_decoder_sign:u5.out
 
 
 |sincos|sincos_CORDIC_0:u0
@@ -242,7 +242,51 @@ xin[0] => delay_signals[1][0].DATAIN
 xout[0] <= delay_signals[0][0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|sincos|seven_display_decoder:u1
+|sincos|twos_complement:u1
+num[0] => result.DATAA
+num[0] => Add0.IN10
+num[1] => result.DATAA
+num[1] => Add0.IN9
+num[2] => result.DATAA
+num[2] => Add0.IN8
+num[3] => result.DATAA
+num[3] => Add0.IN7
+num[4] => result.OUTPUTSELECT
+num[4] => result.OUTPUTSELECT
+num[4] => result.OUTPUTSELECT
+num[4] => result.OUTPUTSELECT
+num[4] => result.OUTPUTSELECT
+num[4] => Add0.IN6
+result[0] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= result.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sincos|twos_complement:u2
+num[0] => result.DATAA
+num[0] => Add0.IN10
+num[1] => result.DATAA
+num[1] => Add0.IN9
+num[2] => result.DATAA
+num[2] => Add0.IN8
+num[3] => result.DATAA
+num[3] => Add0.IN7
+num[4] => result.OUTPUTSELECT
+num[4] => result.OUTPUTSELECT
+num[4] => result.OUTPUTSELECT
+num[4] => result.OUTPUTSELECT
+num[4] => result.OUTPUTSELECT
+num[4] => Add0.IN6
+result[0] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= result.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sincos|seven_display_decoder:u3
 in[0] => Decoder0.IN2
 in[1] => Decoder0.IN1
 in[2] => Decoder0.IN0
@@ -253,30 +297,6 @@ out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
 out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
 out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|sincos|seven_display_decoder:u2
-in[0] => Decoder0.IN2
-in[1] => Decoder0.IN1
-in[2] => Decoder0.IN0
-out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|sincos|seven_display_decoder_sign:u3
-in => Decoder0.IN0
-out[0] <= <VCC>
-out[1] <= <VCC>
-out[2] <= <VCC>
-out[3] <= <VCC>
-out[4] <= <VCC>
-out[5] <= <VCC>
-out[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |sincos|seven_display_decoder:u4
@@ -292,7 +312,18 @@ out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|sincos|seven_display_decoder:u5
+|sincos|seven_display_decoder_sign:u5
+in => Decoder0.IN0
+out[0] <= <VCC>
+out[1] <= <VCC>
+out[2] <= <VCC>
+out[3] <= <VCC>
+out[4] <= <VCC>
+out[5] <= <VCC>
+out[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sincos|seven_display_decoder:u6
 in[0] => Decoder0.IN2
 in[1] => Decoder0.IN1
 in[2] => Decoder0.IN0
@@ -305,7 +336,20 @@ out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|sincos|seven_display_decoder_sign:u6
+|sincos|seven_display_decoder:u7
+in[0] => Decoder0.IN2
+in[1] => Decoder0.IN1
+in[2] => Decoder0.IN0
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sincos|seven_display_decoder_sign:u8
 in => Decoder0.IN0
 out[0] <= <VCC>
 out[1] <= <VCC>

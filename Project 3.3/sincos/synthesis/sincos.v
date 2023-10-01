@@ -35,16 +35,20 @@ module sincos(
 	output [6:0]cos_sev_sign  // cos sign
 	);
 
-	reg [4:0]temp_cos;
-	reg [4:0]temp_sin;
+	wire [4:0]temp_cos;
+	wire [4:0]temp_sin;
+	reg [4:0]temp_cos_before;
+	reg [4:0]temp_sin_before;
 
-	sincos_CORDIC_0 u0(.a(a), .areset(!areset), .clk(clk), .c(temp_cos), .s(temp_sin)); 
-	seven_display_decoder u1(.in(temp_cos[2:0]), .out(cos_sev_dec));
-	seven_display_decoder u2(.in(temp_cos[3]), .out(cos_sev_int));
-	seven_display_decoder_sign u3(.in(temp_cos[4]), .out(cos_sev_sign));
-	seven_display_decoder u4(.in(temp_sin[2:0]), .out(sin_sev_dec));
-	seven_display_decoder u5(.in(temp_sin[3]), .out(sin_sev_int));
-	seven_display_decoder_sign u6(.in(temp_sin[4]), .out(sin_sev_sign));
+	sincos_CORDIC_0 u0(.a(a), .areset(!areset), .clk(clk), .c(temp_cos_before), .s(temp_sin_before));
+	twos_complement u1(.num(temp_cos_before), .result(temp_cos));
+	twos_complement u2(.num(temp_sin_before), .result(temp_sin));
+	seven_display_decoder u3(.in(temp_cos[2:0]), .out(cos_sev_dec));
+	seven_display_decoder u4(.in(temp_cos[3]), .out(cos_sev_int));
+	seven_display_decoder_sign u5(.in(temp_cos[4]), .out(cos_sev_sign));
+	seven_display_decoder u6(.in(temp_sin[2:0]), .out(sin_sev_dec));
+	seven_display_decoder u7(.in(temp_sin[3]), .out(sin_sev_int));
+	seven_display_decoder_sign u8(.in(temp_sin[4]), .out(sin_sev_sign));
 
 endmodule
 
@@ -67,20 +71,24 @@ always @(*) begin
 end
 endmodule
 
-/*
-module twocompliment(
-	input wire sign;
-	input wire fraction;
-	output reg com_out;
+
+module twos_complement (
+    input [4:0] num,
+    output reg [4:0] result
 );
 
-if(sign == 1)begin
-  assign fraction = ~fraction;
-  assign com_out = fraction + 1;
+reg [4:0] inverted_num;
+
+always @(*) begin
+    inverted_num = (~num);
+    if (num[4] == 1)
+        result = inverted_num + 5'b00001;
+    else
+        result = num;
 end
 
 endmodule
-*/
+
 
 
 module seven_display_decoder_sign(
