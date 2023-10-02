@@ -1,5 +1,5 @@
 Flow report for sincos
-Sun Oct  1 14:32:51 2023
+Sun Oct  1 18:44:32 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +---------------------------------+------------------------------------------------+
-; Flow Status                     ; Successful - Sun Oct  1 14:32:51 2023          ;
+; Flow Status                     ; Successful - Sun Oct  1 18:44:32 2023          ;
 ; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                   ; sincos                                         ;
 ; Top-level Entity Name           ; sincos                                         ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/01/2023 14:30:34 ;
+; Start date & time ; 10/01/2023 18:43:06 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; sincos              ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 176098380631191.169618863425648        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 176098380631191.169620378524580        ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -103,12 +103,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:39     ; 1.0                     ; 4886 MB             ; 00:00:37                           ;
-; Fitter               ; 00:01:06     ; 1.0                     ; 6546 MB             ; 00:01:41                           ;
-; Assembler            ; 00:00:17     ; 1.0                     ; 4874 MB             ; 00:00:09                           ;
-; Timing Analyzer      ; 00:00:09     ; 1.1                     ; 5155 MB             ; 00:00:08                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4729 MB             ; 00:00:02                           ;
-; Total                ; 00:02:13     ; --                      ; --                  ; 00:02:37                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4875 MB             ; 00:00:33                           ;
+; Fitter               ; 00:00:50     ; 1.0                     ; 6541 MB             ; 00:01:38                           ;
+; Assembler            ; 00:00:08     ; 1.0                     ; 4874 MB             ; 00:00:08                           ;
+; Timing Analyzer      ; 00:00:08     ; 1.2                     ; 5153 MB             ; 00:00:09                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4729 MB             ; 00:00:01                           ;
+; Total                ; 00:01:21     ; --                      ; --                  ; 00:02:29                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
