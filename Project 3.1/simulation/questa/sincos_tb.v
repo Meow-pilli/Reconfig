@@ -20,24 +20,28 @@ sincos i1 (				 // port map - connection between master ports and signals/regist
 initial                                                
 begin
 areset = 1;
-clk = 0;                                                                                              
+clk = 1;                                                                                              
 $display("Running testbench");                      
 end  
 
 always #5 clk = ~clk;
 
 
-always @(negedge clk) begin
+initial begin
 	a = 0;
-	#5;
+	#20;
+	a = 0110001110;
+	#20;
+	a = 0011000000;
+	#20;
 	a = 0010000000;
-	#10;
+	#20;
 	a = 0100000000;
-	#10;
+	#20;
 	a = 0110000000;
-	#10;
-	a = 0000001110;
-	#10;
+	#20;
+	a = 0010000000;
+	#40;
 
 /*
   for(i=0;i<=511;i=i+1)

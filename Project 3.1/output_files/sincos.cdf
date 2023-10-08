@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA5) Path("C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/output_files/") File("output_file.jic") MfrSpec(OpMask(1) SEC_Device(EPCS128) Child_OpMask(1 1));
+		Device PartName(5CSEMA5F31) Path("C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 3.1/output_files/") File("sincos.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
