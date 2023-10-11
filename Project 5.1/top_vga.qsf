@@ -19,7 +19,7 @@
 #
 # Quartus Prime
 # Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-# Date created = 13:40:41  October 08, 2023
+# Date created = 19:30:30  October 08, 2023
 #
 # -------------------------------------------------------------------------- #
 #
@@ -41,7 +41,7 @@ set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
 set_global_assignment -name TOP_LEVEL_ENTITY top_vga
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.2
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:40:41  OCTOBER 08, 2023"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:30:30  OCTOBER 08, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.2 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
@@ -54,12 +54,7 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_location_assignment PIN_D11 -to v_sync
-set_location_assignment PIN_AF14 -to sys_clk_in
-set_location_assignment PIN_AA14 -to reset_n
+set_location_assignment PIN_G15 -to blue[6]
 set_location_assignment PIN_A13 -to red[0]
 set_location_assignment PIN_C13 -to red[1]
 set_location_assignment PIN_E13 -to red[2]
@@ -68,10 +63,6 @@ set_location_assignment PIN_C12 -to red[4]
 set_location_assignment PIN_D12 -to red[5]
 set_location_assignment PIN_E12 -to red[6]
 set_location_assignment PIN_F13 -to red[7]
-set_location_assignment PIN_A11 -to pixel_clk_out
-set_location_assignment PIN_C10 -to n_sync
-set_location_assignment PIN_F10 -to n_blank
-set_location_assignment PIN_B11 -to h_sync
 set_location_assignment PIN_J9 -to green[0]
 set_location_assignment PIN_J10 -to green[1]
 set_location_assignment PIN_H12 -to green[2]
@@ -86,14 +77,23 @@ set_location_assignment PIN_H13 -to blue[2]
 set_location_assignment PIN_F14 -to blue[3]
 set_location_assignment PIN_H14 -to blue[4]
 set_location_assignment PIN_F15 -to blue[5]
-set_location_assignment PIN_G15 -to blue[6]
 set_location_assignment PIN_J14 -to blue[7]
-set_global_assignment -name SDC_FILE src/vga_SDC1.sdc
+set_location_assignment PIN_A11 -to pixel_clk_out
+set_location_assignment PIN_C10 -to n_sync
+set_location_assignment PIN_F10 -to n_blank
+set_location_assignment PIN_B11 -to h_sync
+set_location_assignment PIN_D11 -to v_sync
+set_location_assignment PIN_AF14 -to sys_clk_in
+set_location_assignment PIN_AA14 -to reset_n
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name VHDL_FILE "src/vga-controller.vhdl"
 set_global_assignment -name VHDL_FILE src/top_vga.vhdl
 set_global_assignment -name VHDL_FILE src/hw_image_generator.vhdl
+set_global_assignment -name SDC_FILE src/vga_SDC1.sdc
 set_global_assignment -name QIP_FILE dcm_altera.qip
 set_global_assignment -name SIP_FILE dcm_altera.sip
-set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
-set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

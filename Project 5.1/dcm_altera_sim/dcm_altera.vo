@@ -227,7 +227,7 @@ module  dcm_altera
 		dcm_altera_altera_pll_altera_pll_i_639.n_cnt_odd_div_duty_en = "false",
 		dcm_altera_altera_pll_altera_pll_i_639.number_of_clocks = 1,
 		dcm_altera_altera_pll_altera_pll_i_639.operation_mode = "direct",
-		dcm_altera_altera_pll_altera_pll_i_639.output_clock_frequency0 = "108.000000 MHz",
+		dcm_altera_altera_pll_altera_pll_i_639.output_clock_frequency0 = "193.055555 MHz",
 		dcm_altera_altera_pll_altera_pll_i_639.output_clock_frequency1 = "0 MHz",
 		dcm_altera_altera_pll_altera_pll_i_639.output_clock_frequency10 = "0 MHz",
 		dcm_altera_altera_pll_altera_pll_i_639.output_clock_frequency11 = "0 MHz",

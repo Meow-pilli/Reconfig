@@ -1,0 +1,70 @@
+module top_vga (
+  input sys_clk_in,
+  input reset_n,
+  output reg [7:0] red,
+  output reg [7:0] green,
+  output reg [7:0] blue,
+  output pixel_clk_out,
+  output n_sync,
+  output n_blank,
+  output h_sync,
+  output v_sync
+);
+
+// Signal declarations
+reg disp_ena;
+reg [10:0] row;
+reg [10:0] column;
+reg pixel_clk;
+reg reset_inv;
+
+// DCM Altera component
+dcm_altera uut1 (
+  .refclk(sys_clk_in),
+  .rst(reset_inv),
+  .outclk_0(pixel_clk)
+);
+
+// VGA Controller component
+vga_controller uut2 (
+  .pixel_clk(pixel_clk),
+  .reset_n(reset_n),
+  .h_sync(h_sync),
+  .v_sync(v_sync),
+  .disp_ena(disp_ena),
+  .column(column),
+  .row(row),
+  .n_blank(n_blank),
+  .n_sync(n_sync)
+);
+
+// HW Image Generator component
+hw_image_generator uut3 (
+  .disp_ena(disp_ena),
+  .row(row),
+  .column(column),
+  .red(red),
+  .green(green),
+  .blue(blue)
+);
+
+always @(posedge pixel_clk or negedge reset_n) begin
+  if (!reset_n) begin
+    reset_inv <= 1'b1;
+    disp_ena <= 1'b0;
+    row <= 11'b0;
+    column <= 11'b0;
+  end else begin
+    reset_inv <= 1'b0;
+  end
+end
+
+assign pixel_clk_out = pixel_clk;
+
+endmodule
+
+// Define dcm_altera module here with appropriate inputs and outputs
+
+// Define vga_controller module here with appropriate inputs and outputs
+
+// Define hw_image_generator module here with appropriate inputs and outputs

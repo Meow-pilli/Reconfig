@@ -3,19 +3,19 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'uut1|dcm_altera_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 4.006
+Slack : 0.761
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'uut1|dcm_altera_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.374
+Slack : 0.385
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'uut1|dcm_altera_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
-Slack : 0.925
+Slack : 0.647
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'uut1|dcm_altera_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 3.926
+Slack : 1.884
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'sys_clk_in'
@@ -23,7 +23,7 @@ Slack : 9.900
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'uut1|dcm_altera_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 4.195
+Slack : 0.864
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'uut1|dcm_altera_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
@@ -31,11 +31,11 @@ Slack : 0.382
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'uut1|dcm_altera_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
-Slack : 0.925
+Slack : 0.647
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'uut1|dcm_altera_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 3.877
+Slack : 1.835
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'sys_clk_in'
@@ -43,19 +43,19 @@ Slack : 9.926
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'uut1|dcm_altera_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 6.369
+Slack : 2.653
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'uut1|dcm_altera_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.182
+Slack : 0.206
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'uut1|dcm_altera_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
-Slack : 0.925
+Slack : 0.647
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'uut1|dcm_altera_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 4.181
+Slack : 2.136
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'sys_clk_in'
@@ -63,19 +63,19 @@ Slack : 9.643
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'uut1|dcm_altera_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 6.638
+Slack : 2.857
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'uut1|dcm_altera_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.172
+Slack : 0.192
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'uut1|dcm_altera_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
-Slack : 0.925
+Slack : 0.647
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'uut1|dcm_altera_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 4.169
+Slack : 2.128
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'sys_clk_in'
