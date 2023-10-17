@@ -55,7 +55,7 @@
       <property type="string" value="2023/10/16 22:57:17.000" name="fl::timestamp" />
       <property type="string" value="" name="generateFileName" />
       <property type="string" value="bdlpars" name="lang" />
-      <property type="string" value="2023/10/16 23:20:32.000" name="lastModified" />
+      <property type="string" value="2023/10/17 13:48:45.000" name="lastModified" />
       <property type="string" value="" name="librarySelect" />
       <property type="string" value="qts" name="logicSynthesizer" />
       <property type="string" value="2023/10/16 22:34:35.000" name="ls::timestamp" />
@@ -105,13 +105,16 @@
                   <property type="string" value="ave8-auto.MLIB" name="bt::LibraryMlibFile" />
                   <property type="string" value="2023/10/16 23:18:33.000" name="bt::timestamp" />
                   <property type="string" value="ave8_E.v" name="ls::AddFile" />
+                  <property type="string" value="fpga" name="ls::Device" />
                   <property type="string" value="fpga" name="ls::FollowDevice" />
                   <property type="string" value="FC31" name="ls::FollowPack" />
                   <property type="string" value="5CSEMA5" name="ls::FollowPart" />
                   <property type="string" value="-6" name="ls::FollowSpeed" />
                   <property type="string" value="qts" name="ls::FollowSynTool" />
                   <property type="string" value="cycloneV" name="ls::FollowTech" />
-                  <property type="string" value="2023/10/16 23:00:17.000" name="ls::timestamp" />
+                  <property type="string" value="2018/03/22 02:10:29.000" name="ls::FpgaTimeStamp" />
+                  <property type="string" value="Generate" name="ls::Script" />
+                  <property type="string" value="2023/10/17 13:43:33.000" name="ls::timestamp" />
                   <property type="string" value="2023/10/16 23:00:17.000" name="vh::timestamp" />
                   <property type="string" value="2023/10/16 23:00:17.000" name="vl::timestamp" />
                 </properties>
@@ -200,7 +203,35 @@
           </object>
         </objects>
       </object>
-      <object path="logic_synthesis_work" type="Dir4" name="logic_synthesis_work" />
+      <object path="logic_synthesis_work" type="Dir4" name="logic_synthesis_work" >
+        <objects>
+          <object path="ave8" type="LogicSyn" name="ave8" >
+            <properties>
+              <property type="string" value="2023/10/17 13:44:39.000" name="created" />
+            </properties>
+            <objects>
+              <object path="ave8_E.v" type="File3" name="ave8_E.v" />
+              <object path="ave8_E.tcl" type="File3" name="ave8_E.tcl" />
+              <object path="ave8_E.qpf" type="File3" name="ave8_E.qpf" />
+              <object path="ave8_E.fit.rpt" type="File3" name="ave8_E.fit.rpt" />
+              <object path="ave8_E.fit.summary" type="File3" name="ave8_E.fit.summary" />
+              <object path="ave8_E.flow.rpt" type="File3" name="ave8_E.flow.rpt" />
+              <object path="ave8_E.map.rpt" type="File3" name="ave8_E.map.rpt" />
+              <object path="ave8_E.map.summary" type="File3" name="ave8_E.map.summary" />
+              <object path="ave8_E.sta.rpt" type="File3" name="ave8_E.sta.rpt" />
+              <object path="ave8_E.done" type="File3" name="ave8_E.done" />
+              <object path="ave8_E.fit.smsg" type="File3" name="ave8_E.fit.smsg" />
+              <object path="ave8_E.lserr" type="File3" name="ave8_E.lserr" />
+              <object path="ave8_E.pin" type="File3" name="ave8_E.pin" />
+              <object path="ave8_E.qsf" type="File3" name="ave8_E.qsf" />
+              <object path="ave8_E.sdc" type="File3" name="ave8_E.sdc" />
+              <object path="ave8_E.sta.summary" type="File3" name="ave8_E.sta.summary" />
+              <object path="ave8_E.sta.tcl" type="File3" name="ave8_E.sta.tcl" />
+              <object path="ave8_E.v.LSInfo" type="File3" name="ave8_E.v.LSInfo" />
+            </objects>
+          </object>
+        </objects>
+      </object>
       <object path="simulation_work" type="Dir3" name="simulation_work" />
       <object type="ProjectTmp" name="Other files" >
         <objects>
