@@ -2,4 +2,5 @@
 Project 1.1/fulladder_tb.v.out
 Project 1.1/simulation/questa/rtl_work/_opt__lock
 *.flock
-*.vcd
+Project 1/testbench_four_behav.vcd
+Project 1/testbench_four_struct.vcd
