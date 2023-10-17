@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA5F31) Path("C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 5.4/output_files/") File("top_vga.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSEMA5F31) Path("C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 5.2/output_files/") File("top_vga.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

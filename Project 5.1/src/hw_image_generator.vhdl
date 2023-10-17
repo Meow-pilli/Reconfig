@@ -59,12 +59,12 @@ BEGIN
         blue <= "00000000";
 
 		  ELSIF(column >= 1110 AND row >= 325 AND column <= 1140 AND row <= 600) THEN
-        red <= "11100101"; -- D first line
+        red <= "11100101"; -- D left line
         green <= "10001100";
         blue <= "00000000";
 		  
 		  ELSIF(column >= 1110 AND row >= 325 AND column <= 1140 AND row <= 600) THEN
-        red <= "11100101"; -- D first line
+        red <= "11100101"; -- D right line
         green <= "10001100";
         blue <= "00000000";
 		  
