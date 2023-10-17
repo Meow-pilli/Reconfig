@@ -57,7 +57,7 @@
       <property type="string" value="2023/10/17 14:26:30.000" name="fl::timestamp" />
       <property type="string" value="" name="generateFileName" />
       <property type="string" value="bdlpars" name="lang" />
-      <property type="string" value="2023/10/17 14:30:35.000" name="lastModified" />
+      <property type="string" value="2023/10/17 14:49:30.000" name="lastModified" />
       <property type="string" value="" name="librarySelect" />
       <property type="string" value="qts" name="logicSynthesizer" />
       <property type="string" value="2023/10/17 14:23:34.000" name="ls::timestamp" />
@@ -100,7 +100,10 @@
                   <property type="string" value="2" name="bt::ClockResetSyncronizerNum" />
                   <property type="string" value="10" name="bt::ErrorWarningOptionFalseLoopMax" />
                   <property type="string" value="${CYBER_PATH}/packages/cycloneV.BLIB" name="bt::LibraryBlibFile" />
-                  <property type="string" value="${CYBER_PATH}/packages/cycloneV.FLIB" name="bt::LibraryFlibFile" />
+                  <property type="string" value="ave8-auto.FCNT|ave8-amacro-auto.FCNT" name="bt::LibraryFcntFile" />
+                  <property type="string" value="${CYBER_PATH}/packages/cycloneV.FLIB|ave8-auto.FLIB|ave8-amacro-auto.FLIB" name="bt::LibraryFlibFile" />
+                  <property type="string" value="ave8-auto.MCNT" name="bt::LibraryMcntFile" />
+                  <property type="string" value="ave8-auto.MLIB" name="bt::LibraryMlibFile" />
                   <property type="string" value="2023/10/17 14:30:45.000" name="bt::timestamp" />
                   <property type="string" value="ave8_E.v" name="ls::AddFile" />
                   <property type="string" value="fpga" name="ls::FollowDevice" />
@@ -136,6 +139,64 @@
                   <property type="int" value="1" name="extraInfo" />
                 </properties>
               </object>
+              <object path="_VerifyItems" type="PVerifyDir" name="Property Check" />
+              <object path="ave8-amacro-auto.FLIB" type="File2" name="ave8-amacro-auto.FLIB" >
+                <properties>
+                  <property type="bool" value="1" name="using" />
+                </properties>
+              </object>
+              <object path="ave8-auto.FLIB" type="File2" name="ave8-auto.FLIB" >
+                <properties>
+                  <property type="bool" value="1" name="using" />
+                </properties>
+              </object>
+              <object path="ave8-auto.MLIB" type="File2" name="ave8-auto.MLIB" >
+                <properties>
+                  <property type="bool" value="1" name="using" />
+                </properties>
+              </object>
+              <object path="ave8-amacro-auto.FCNT" type="File2" name="ave8-amacro-auto.FCNT" >
+                <properties>
+                  <property type="bool" value="1" name="using" />
+                </properties>
+              </object>
+              <object path="ave8-auto.FCNT" type="File2" name="ave8-auto.FCNT" >
+                <properties>
+                  <property type="bool" value="1" name="using" />
+                </properties>
+              </object>
+              <object path="ave8-auto.MCNT" type="File2" name="ave8-auto.MCNT" >
+                <properties>
+                  <property type="bool" value="1" name="using" />
+                </properties>
+              </object>
+              <object path="ave8.LMSPEC" type="File4" name="ave8.LMSPEC" >
+                <properties>
+                  <property type="bool" value="1" name="grayout" />
+                </properties>
+              </object>
+              <object path="ave8.CSV" type="File3" name="ave8.CSV" />
+              <object path="ave8.LOG.gz" type="File3" name="ave8.LOG.gz" />
+              <object path="ave8.QOR" type="File3" name="ave8.QOR" />
+              <object path="ave8.QOR.HTML" type="File3" name="ave8.QOR.HTML" />
+              <object path="ave8.SUMM" type="File3" name="ave8.SUMM" />
+              <object path="ave8.err" type="File3" name="ave8.err" />
+              <object path="ave8.tips" type="File3" name="ave8.tips" />
+              <object path="ave8_9.BDL" type="File3" name="ave8_9.BDL" />
+              <object path="ave8_9.IFF" type="File3" name="ave8_9.IFF" />
+              <object path="ave8_C.BDL" type="File3" name="ave8_C.BDL" />
+              <object path="ave8_C.IFF" type="File3" name="ave8_C.IFF" />
+              <object path="ave8_E.BDL" type="File3" name="ave8_E.BDL" />
+              <object path="ave8_E.IFF" type="File3" name="ave8_E.IFF" />
+              <object path="ave8_pwr.csv" type="File3" name="ave8_pwr.csv" />
+              <object path="ave8_E.v" type="File3" name="ave8_E.v" />
+              <object path="ave8.SR" type="File3" name="ave8.SR" />
+              <object path="ave8.VSG" type="File3" name="ave8.VSG" />
+              <object path="ave8_C.xml" type="File3" name="ave8_C.xml" />
+              <object path="ave8_E.v.LSInfo" type="File3" name="ave8_E.v.LSInfo" />
+              <object path="ave8_E.v.scuba" type="File3" name="ave8_E.v.scuba" />
+              <object path="ave8_E.vgerr" type="File3" name="ave8_E.vgerr" />
+              <object path="ave8_hier.xml" type="File3" name="ave8_hier.xml" />
             </objects>
           </object>
         </objects>
