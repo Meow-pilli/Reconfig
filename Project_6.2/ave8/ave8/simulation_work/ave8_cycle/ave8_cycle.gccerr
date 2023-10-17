@@ -1,0 +1,4 @@
+updating build dependency...
+g++  -DCYCLE_NUM=-1 -DLOG_STDOUT -DLOG_FILE -O1 -I"/proj/cad/cwb-6.1/osci/include" -I"." -I"/proj/cad/cwb-6.1/linux_x86_64/include" -c ave8_C.cpp -o ave8_C.o
+g++  -DCYCLE_NUM=-1 -DLOG_STDOUT -DLOG_FILE -O1 -I"/proj/cad/cwb-6.1/osci/include" -I"." -I"/proj/cad/cwb-6.1/linux_x86_64/include" -c tb_manual_ave8.cpp -o tb_manual_ave8.o
+g++ -o "ave8_cycle.exe" ave8_C.o tb_manual_ave8.o  -L"/proj/cad/cwb-6.1/linux_x86_64/lib" -lm -lcwbtrace -lz -lpthread "/proj/cad/cwb-6.1/osci/lib-linux64/libsystemc.a"  -Wl,-rpath="/proj/cad/cwb-6.1/linux_x86_64/lib"
