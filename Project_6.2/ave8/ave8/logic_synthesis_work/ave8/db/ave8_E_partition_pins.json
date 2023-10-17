@@ -1,0 +1,81 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ave8_ret[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ave8_ret[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ave8_ret[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ave8_ret[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ave8_ret[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ave8_ret[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ave8_ret[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ave8_ret[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK",
+					"strict" : false
+				},
+				{
+					"name" : "RESET",
+					"strict" : false
+				},
+				{
+					"name" : "in0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "in0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "in0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "in0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "in0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "in0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "in0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "in0[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

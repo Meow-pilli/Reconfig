@@ -25,7 +25,7 @@
   <object type="Root" name="ave8" >
     <properties>
       <property type="string" value="2023/10/17 14:23:26.000" name="created" />
-      <property type="string" value="2023/10/17 14:49:30.000" name="lastModified" />
+      <property type="string" value="2023/10/17 15:08:49.000" name="lastModified" />
       <property type="string" value="Verilog" name="toolbarJump" />
       <property type="string" value="Verilog" name="toolbarRTL" />
     </properties>

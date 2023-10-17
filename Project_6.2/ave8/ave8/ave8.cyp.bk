@@ -57,7 +57,7 @@
       <property type="string" value="2023/10/17 14:26:30.000" name="fl::timestamp" />
       <property type="string" value="" name="generateFileName" />
       <property type="string" value="bdlpars" name="lang" />
-      <property type="string" value="2023/10/17 14:49:30.000" name="lastModified" />
+      <property type="string" value="2023/10/17 15:08:49.000" name="lastModified" />
       <property type="string" value="" name="librarySelect" />
       <property type="string" value="qts" name="logicSynthesizer" />
       <property type="string" value="2023/10/17 14:23:34.000" name="ls::timestamp" />
@@ -201,7 +201,36 @@
           </object>
         </objects>
       </object>
-      <object path="logic_synthesis_work" type="Dir4" name="logic_synthesis_work" />
+      <object path="logic_synthesis_work" type="Dir4" name="logic_synthesis_work" >
+        <objects>
+          <object path="ave8" type="LogicSyn" name="ave8" >
+            <properties>
+              <property type="string" value="2023/10/17 15:05:15.000" name="created" />
+            </properties>
+            <objects>
+              <object path="ave8_E.v" type="File3" name="ave8_E.v" />
+              <object path="ave8_E.tcl" type="File3" name="ave8_E.tcl" />
+              <object path="ave8_E.qpf" type="File3" name="ave8_E.qpf" />
+              <object path="ave8_E.fit.rpt" type="File3" name="ave8_E.fit.rpt" />
+              <object path="ave8_E.fit.summary" type="File3" name="ave8_E.fit.summary" />
+              <object path="ave8_E.flow.rpt" type="File3" name="ave8_E.flow.rpt" />
+              <object path="ave8_E.map.rpt" type="File3" name="ave8_E.map.rpt" />
+              <object path="ave8_E.map.summary" type="File3" name="ave8_E.map.summary" />
+              <object path="ave8_E.sta.rpt" type="File3" name="ave8_E.sta.rpt" />
+              <object path="ave8_E.done" type="File3" name="ave8_E.done" />
+              <object path="ave8_E.fit.smsg" type="File3" name="ave8_E.fit.smsg" />
+              <object path="ave8_E.lserr" type="File3" name="ave8_E.lserr" />
+              <object path="ave8_E.map.smsg" type="File3" name="ave8_E.map.smsg" />
+              <object path="ave8_E.pin" type="File3" name="ave8_E.pin" />
+              <object path="ave8_E.qsf" type="File3" name="ave8_E.qsf" />
+              <object path="ave8_E.sdc" type="File3" name="ave8_E.sdc" />
+              <object path="ave8_E.sta.summary" type="File3" name="ave8_E.sta.summary" />
+              <object path="ave8_E.sta.tcl" type="File3" name="ave8_E.sta.tcl" />
+              <object path="ave8_E.v.LSInfo" type="File3" name="ave8_E.v.LSInfo" />
+            </objects>
+          </object>
+        </objects>
+      </object>
       <object path="simulation_work" type="Dir3" name="simulation_work" />
       <object type="ProjectTmp" name="Other files" >
         <objects>
