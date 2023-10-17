@@ -22,17 +22,18 @@
 >
 ]>
 <root version="6.1.5" >
-  <object type="Root" name="ave8" >
+  <object path="ave8" type="Project" name="ave8" >
     <properties>
-      <property type="string" value="2023/10/16 22:34:30.000" name="created" />
-      <property type="string" value="2023/10/17 13:51:16.000" name="lastModified" />
-      <property type="string" value="Verilog" name="toolbarJump" />
-      <property type="string" value="Verilog" name="toolbarRTL" />
+      <property type="string" value="2023/10/17 14:23:34.000" name="created" />
+      <property type="string" value="2023/10/17 14:23:34.000" name="lastModified" />
     </properties>
     <objects>
-      <object path="ave8/ave8.cyp" type="Project" name="ave8" />
+      <object type="ProjectTmp" name="Other files" />
+      <object type="Testbench" name="testbench" />
+      <object path="logic_synthesis_work" type="Dir4" name="logic_synthesis_work" />
+      <object path="simulation_work" type="Dir3" name="simulation_work" />
+      <object type="Include" name="include" />
+      <object type="Source" name="src" />
     </objects>
   </object>
-  <backup/>
-  <trash/>
 </root>
