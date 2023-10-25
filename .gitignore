@@ -3,4 +3,8 @@ Project 1.1/fulladder_tb.v.out
 Project 1.1/simulation/questa/rtl_work/_opt__lock
 *.flock
 Project 1/testbench_four_behav.vcd
+<<<<<<< HEAD
 Project 1/testbench_four_struct.vcd
+=======
+Project 1/testbench_four_struct.vcd
+>>>>>>> parent of ed42f92 (updated gitignore)
