@@ -1,0 +1,8 @@
+# bmcppgen 3.49
+over32bit	NO
+random_flag	NO
+macro	NO
+vcd_library	YES
+src_file	ave8_0.cpp
+header_file	ave8_0.h
+define_macro	

@@ -1,0 +1,21 @@
+ave8_0.o: ave8_0.cpp ave8_0.h \
+ /proj/cad/cwb-6.1/linux_x86_64/include/cwb_bmsim/Cybc_iovar.h \
+ /proj/cad/cwb-6.1/linux_x86_64/include/var.h \
+ /proj/cad/cwb-6.1/linux_x86_64/include/varop.h \
+ /proj/cad/cwb-6.1/linux_x86_64/include/mt19937ar.h \
+ /proj/cad/cwb-6.1/linux_x86_64/include/cwb_bmsim/bmfifo.h \
+ /proj/cad/cwb-6.1/linux_x86_64/include/cvi_lib.h
+mt19937ar.o: mt19937ar.cpp \
+ /proj/cad/cwb-6.1/linux_x86_64/include/mt19937ar.h
+cvi_lib.o: cvi_lib.cpp /proj/cad/cwb-6.1/linux_x86_64/include/cvi_lib.h
+var.o: var.cpp /proj/cad/cwb-6.1/linux_x86_64/include/var.h \
+ /proj/cad/cwb-6.1/linux_x86_64/include/varop.h
+varop.o: varop.cpp /proj/cad/cwb-6.1/linux_x86_64/include/var.h \
+ /proj/cad/cwb-6.1/linux_x86_64/include/varop.h
+Cybc_iovar.o: Cybc_iovar.cpp \
+ /proj/cad/cwb-6.1/linux_x86_64/include/cwb_bmsim/Cybc_iovar.h \
+ /proj/cad/cwb-6.1/linux_x86_64/include/var.h \
+ /proj/cad/cwb-6.1/linux_x86_64/include/varop.h \
+ /proj/cad/cwb-6.1/linux_x86_64/include/mt19937ar.h \
+ /proj/cad/cwb-6.1/linux_x86_64/include/cwb_bmsim/bmfifo.h \
+ /proj/cad/cwb-6.1/linux_x86_64/include/cvi_lib.h

@@ -1,0 +1,8 @@
+updating build dependency...
+g++  -DMAIN -DLIMITLESS -DVAR32 -O1 -D"C" -I"." -I"/proj/cad/cwb-6.1/linux_x86_64/include" -I"/proj/cad/cwb-6.1/linux_x86_64/include/cwb_bmsim" -I"." -c ave8_0.cpp -o ave8_0.o
+g++  -DMAIN -DLIMITLESS -DVAR32 -O1 -D"C" -I"." -I"/proj/cad/cwb-6.1/linux_x86_64/include" -I"/proj/cad/cwb-6.1/linux_x86_64/include/cwb_bmsim" -I"." -c mt19937ar.cpp -o mt19937ar.o
+g++  -DMAIN -DLIMITLESS -DVAR32 -O1 -D"C" -I"." -I"/proj/cad/cwb-6.1/linux_x86_64/include" -I"/proj/cad/cwb-6.1/linux_x86_64/include/cwb_bmsim" -I"." -c cvi_lib.cpp -o cvi_lib.o
+g++  -DMAIN -DLIMITLESS -DVAR32 -O1 -D"C" -I"." -I"/proj/cad/cwb-6.1/linux_x86_64/include" -I"/proj/cad/cwb-6.1/linux_x86_64/include/cwb_bmsim" -I"." -c var.cpp -o var.o
+g++  -DMAIN -DLIMITLESS -DVAR32 -O1 -D"C" -I"." -I"/proj/cad/cwb-6.1/linux_x86_64/include" -I"/proj/cad/cwb-6.1/linux_x86_64/include/cwb_bmsim" -I"." -c varop.cpp -o varop.o
+g++  -DMAIN -DLIMITLESS -DVAR32 -O1 -D"C" -I"." -I"/proj/cad/cwb-6.1/linux_x86_64/include" -I"/proj/cad/cwb-6.1/linux_x86_64/include/cwb_bmsim" -I"." -c Cybc_iovar.cpp -o Cybc_iovar.o
+g++ -o "ave8_sw.exe" ave8_0.o mt19937ar.o cvi_lib.o var.o varop.o Cybc_iovar.o  -lm

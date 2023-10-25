@@ -55,7 +55,7 @@
       <property type="string" value="2023/10/16 22:57:17.000" name="fl::timestamp" />
       <property type="string" value="" name="generateFileName" />
       <property type="string" value="bdlpars" name="lang" />
-      <property type="string" value="2023/10/17 13:51:16.000" name="lastModified" />
+      <property type="string" value="2023/10/18 18:02:17.000" name="lastModified" />
       <property type="string" value="" name="librarySelect" />
       <property type="string" value="qts" name="logicSynthesizer" />
       <property type="string" value="2023/10/16 22:34:35.000" name="ls::timestamp" />
@@ -213,6 +213,7 @@
               <object path="ave8_E.v" type="File3" name="ave8_E.v" />
               <object path="ave8_E.tcl" type="File3" name="ave8_E.tcl" />
               <object path="ave8_E.qpf" type="File3" name="ave8_E.qpf" />
+              <object path="ave8_E.asm.rpt" type="File3" name="ave8_E.asm.rpt" />
               <object path="ave8_E.fit.rpt" type="File3" name="ave8_E.fit.rpt" />
               <object path="ave8_E.fit.summary" type="File3" name="ave8_E.fit.summary" />
               <object path="ave8_E.flow.rpt" type="File3" name="ave8_E.flow.rpt" />
@@ -221,13 +222,18 @@
               <object path="ave8_E.sta.rpt" type="File3" name="ave8_E.sta.rpt" />
               <object path="ave8_E.done" type="File3" name="ave8_E.done" />
               <object path="ave8_E.fit.smsg" type="File3" name="ave8_E.fit.smsg" />
+              <object path="ave8_E.jdi" type="File3" name="ave8_E.jdi" />
               <object path="ave8_E.lserr" type="File3" name="ave8_E.lserr" />
               <object path="ave8_E.pin" type="File3" name="ave8_E.pin" />
               <object path="ave8_E.qsf" type="File3" name="ave8_E.qsf" />
+              <object path="ave8_E.qws" type="File3" name="ave8_E.qws" />
               <object path="ave8_E.sdc" type="File3" name="ave8_E.sdc" />
+              <object path="ave8_E.sld" type="File3" name="ave8_E.sld" />
+              <object path="ave8_E.sof" type="File3" name="ave8_E.sof" />
               <object path="ave8_E.sta.summary" type="File3" name="ave8_E.sta.summary" />
               <object path="ave8_E.sta.tcl" type="File3" name="ave8_E.sta.tcl" />
               <object path="ave8_E.v.LSInfo" type="File3" name="ave8_E.v.LSInfo" />
+              <object path="c5_pin_model_dump.txt" type="File3" name="c5_pin_model_dump.txt" />
             </objects>
           </object>
         </objects>

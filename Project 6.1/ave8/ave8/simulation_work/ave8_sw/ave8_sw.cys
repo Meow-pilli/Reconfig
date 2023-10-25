@@ -1,0 +1,32 @@
+<!DOCTYPE AQUARIUM_OPTION [
+<!ELEMENT root (properties)>
+<!ELEMENT properties (property)*>
+<!ELEMENT property EMPTY>
+<!ATTLIST property
+   name CDATA #REQUIRED
+   type CDATA #REQUIRED
+   value CDATA #REQUIRED
+>
+]>
+<root>
+  <properties>
+    <property type="string" value="2023/10/24 19:29:29.000" name="bm::timestamp" />
+    <property type="string" value="2023/10/24 19:16:27.000" name="created" />
+    <property type="string" value="2023/10/24 19:16:27.000" name="do::timestamp" />
+    <property type="int" value="268435456" name="extraInfo" />
+    <property type="string" value="C" name="mk::Def" />
+    <property type="string" value="ave8_sw.exe" name="mk::ScenarioTarget" />
+    <property type="string" value="ave8_sw.exe" name="mk::Target" />
+    <property type="string" value="2023/10/24 19:29:29.000" name="mk::timestamp" />
+    <property type="string" value="Off" name="sc::CollectCoverage" />
+    <property type="string" value="2023/10/24 19:16:27.000" name="se::timestamp" />
+    <property type="string" value="auto" name="ss::Execution" />
+    <property type="string" value="ave8_sw" name="ss::Name" />
+    <property type="string" value="ave8" name="ss::Processes" />
+    <property type="string" value="modelsim-all" name="ss::Simulator" />
+    <property type="string" value="SystemC" name="ss::TestbenchType" />
+    <property type="string" value="2023/10/24 19:29:29.000" name="ss::timestamp" />
+    <property type="string" value="ave8_sw.cpp" name="tt::TemplateOut" />
+    <property type="string" value="2023/10/24 19:16:27.000" name="tt::timestamp" />
+  </properties>
+</root>
