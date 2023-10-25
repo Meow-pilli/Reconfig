@@ -3,7 +3,7 @@ bdltran version : 6.10.04 (Linux 64-bit) Thu Mar 22 14:18:17 JST 2018
          (BIF version : 3.41F)
          (LICflex version : 1.53 cylmd)
          make at Thu Mar 22 14:30:59 JST 2018
- Option  -EE -c2000 -s -Zresource_fcnt=GENERATE -Zresource_mcnt=GENERATE -Zdup_reset=YES -Zfolding_sharing=inter_stage -EE -lb /proj/cad/cwb-6.1/packages/cycloneV.BLIB -lfl /proj/cad/cwb-6.1/packages/cycloneV.FLIB +lfl ave8-auto.FLIB +lfl ave8-amacro-auto.FLIB -lfc ave8-auto.FCNT +lfc ave8-amacro-auto.FCNT -lml ave8-auto.MLIB -lmc ave8-auto.MCNT ave8.IFF 
+ Option  -EE -c2000 -s -Zresource_fcnt=USE -Zresource_mcnt=GENERATE -Zdup_reset=YES -Zfolding_sharing=inter_stage -EE -lb /proj/cad/cwb-6.1/packages/cycloneV.BLIB -lfl /proj/cad/cwb-6.1/packages/cycloneV.FLIB +lfl ave8-auto.FLIB +lfl ave8-amacro-auto.FLIB -lfc ave8-auto.FCNT +lfc ave8-amacro-auto.FCNT -lml ave8-auto.MLIB -lmc ave8-auto.MCNT ave8.IFF 
 
 bdlpars  -EE -I../.. -I/proj/cad/cwb-6.1/linux_x86_64/include -info_base_name ave8_sw ../../ave8_sw.c -process=ave8
 
@@ -33,7 +33,7 @@ bdlpars  -EE -I../.. -I/proj/cad/cwb-6.1/linux_x86_64/include -info_base_name av
   Data transfer : 40
 
 #########################  Synthesized Circuit  #########################
-[Performance index max/min/ave] 2 / 2 / 2.00
+[Performance index max/min/ave] 5 / 5 / 5.00
 
   Module Name         : ave8
   Basic Library Name  : CWBSTDBLIB
@@ -44,19 +44,19 @@ bdlpars  -EE -I../.. -I/proj/cad/cwb-6.1/linux_x86_64/include -info_base_name av
   FPGA Speed          : -
 
   Resource Utilization
-    ALUTs             :         69
-    Registers         :         64
+    ALUTs             :         79
+    Registers         :        114
     Block Memory Bits :          0
     DSPs              :          0
 
-  Latency Index       :          1
-  Total States        :          1
+  Latency Index       :          4
+  Total States        :          4
 
   Clock Period        :       20ns
-  Critical Path Delay :    2.054ns
+  Critical Path Delay :   3.5975ns
 
-  Net                 :        144
-  Pin Pair            :        211
+  Net                 :        143
+  Pin Pair            :        444
 
   Port                :         18
     In                :         10

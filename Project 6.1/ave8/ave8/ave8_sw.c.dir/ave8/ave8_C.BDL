@@ -13,10 +13,10 @@
 # PORT relation File %AUTO%.PREL
 # Clock Cycle        200000 (1/10ps).
 # Clock Uncertainty  0-->40000 (1/10ps)
-# Performance index  max/min/ave  2 / 2 / 2.00
+# Performance index  max/min/ave  5 / 5 / 5.00
 # Data-path info.    
 # Bp-Option  -EE -I../.. -I/proj/cad/cwb-6.1/linux_x86_64/include -info_base_name ave8_sw ../../ave8_sw.c -process=ave8
-# Option  -EE -c2000 -s -Zresource_fcnt=GENERATE -Zresource_mcnt=GENERATE -Zdup_reset=YES -Zfolding_sharing=inter_stage -EE -lb /proj/cad/cwb-6.1/packages/cycloneV.BLIB -lfl /proj/cad/cwb-6.1/packages/cycloneV.FLIB +lfl ave8-auto.FLIB +lfl ave8-amacro-auto.FLIB -lfc ave8-auto.FCNT +lfc ave8-amacro-auto.FCNT -lml ave8-auto.MLIB -lmc ave8-auto.MCNT ave8.IFF 
+# Option  -EE -c2000 -s -Zresource_fcnt=USE -Zresource_mcnt=GENERATE -Zdup_reset=YES -Zfolding_sharing=inter_stage -EE -lb /proj/cad/cwb-6.1/packages/cycloneV.BLIB -lfl /proj/cad/cwb-6.1/packages/cycloneV.FLIB +lfl ave8-auto.FLIB +lfl ave8-amacro-auto.FLIB -lfc ave8-auto.FCNT +lfc ave8-amacro-auto.FCNT -lml ave8-auto.MLIB -lmc ave8-auto.MCNT ave8.IFF 
 # Version  bdltran version : 6.10.04  Thu Mar 22 14:18:17 JST 2018
 */
 unsigned var(0:8)  ave8_ret_1 /* line# ../../ave8_sw.c:20 */;
@@ -35,6 +35,11 @@ unsigned reg(0:8)  RG_buffer_3 /* line# ../../ave8_sw.c:16 */;
 unsigned reg(0:8)  RG_buffer_4 /* line# ../../ave8_sw.c:16 */;
 unsigned reg(0:8)  RG_buffer_5 /* line# ../../ave8_sw.c:16 */;
 unsigned reg(0:8)  RG_buffer_6 /* line# ../../ave8_sw.c:16 */;
+unsigned reg(0:9)  RG_07/* Cyber reset_sig = void, other = DC */;
+unsigned reg(0:9)  RG_08/* Cyber reset_sig = void, other = DC */;
+unsigned reg(0:8)  RG_buffer_7/* Cyber reset_sig = void */ /* line# ../../ave8_sw.c:16,20 */;
+unsigned reg(0:11)  RG_10/* Cyber reset_sig = void, other = DC */;
+unsigned reg(0:10)  RG_11/* Cyber reset_sig = void, other = DC */;
 in   unsigned port(0:8)  in0 /* line# ../../ave8_sw.c:20 */;
 out  unsigned port(0:8)  ave8_ret/* Cyber sche = reg */ /* line# ../../ave8_sw.c:20 */;
 unsigned reg(0:8)  ave8_ret_r /* line# ../../ave8_sw.c:20 */;
@@ -43,20 +48,11 @@ unsigned reg(0:8)  ave8_ret_r /* line# ../../ave8_sw.c:20 */;
 process
 ave8()
 {
-    unsigned ter(0:9)  M_17/* Cyber other = DC */;
-    unsigned ter(0:9)  M_16/* Cyber other = DC */;
-    unsigned ter(0:9)  M_15/* Cyber other = DC */;
-    unsigned ter(0:9)  M_14/* Cyber other = DC */;
-    unsigned ter(0:11)  M_121_t/* Cyber other = DC */;
-    unsigned ter(0:10)  M_101_t/* Cyber other = DC */;
     unsigned ter(0:11)  sum1_t/* Cyber other = DC */;
     unsigned ter(0:8)  buffer_a01_t/* Cyber other = DC */;
     unsigned ter(0:8)  buffer_a02_t/* Cyber other = DC */;
     unsigned ter(0:8)  buffer_a03_t/* Cyber other = DC */;
     unsigned ter(0:8)  buffer_a04_t/* Cyber other = DC */;
-    unsigned ter(0:8)  buffer_a05_t/* Cyber other = DC */;
-    unsigned ter(0:8)  buffer_a06_t/* Cyber other = DC */;
-    unsigned ter(0:8)  VR_in0_t/* Cyber other = DC */;
     unsigned var(0:9)  M_131;
     unsigned var(0:11)  M_121;
     unsigned var(0:9)  M_111;
@@ -95,28 +91,42 @@ ST1_00 :
     $
 
 ST1_01 :
-    M_14(0:9) = (unsigned ter(0:9))(buffer_a05_t(0:8) + buffer_a06_t(0:8)); 	/* line# ../../ave8_sw.c:39 */
-    M_121_t(0:11) = (unsigned ter(0:11))(M_101_t(0:10) + M_14(0:9)); 	/* line# ../../ave8_sw.c:39 */
-    ave8_ret_r(0:8) = sum1_t(0:8); 	/* line# ../../ave8_sw.c:43,46 */
-    RG_buffer(0:8)/* Cyber ary_idx = 0 */ = VR_in0_t(0:8); 	/* line# ../../ave8_sw.c:32 */
-    RG_buffer_1(0:8)/* Cyber ary_idx = 1 */ = buffer_a01_t(0:8); 	/* line# ../../ave8_sw.c:28 */
-    RG_buffer_2(0:8)/* Cyber ary_idx = 2 */ = buffer_a02_t(0:8); 	/* line# ../../ave8_sw.c:28 */
-    RG_buffer_3(0:8)/* Cyber ary_idx = 3 */ = buffer_a03_t(0:8); 	/* line# ../../ave8_sw.c:28 */
-    RG_buffer_4(0:8)/* Cyber ary_idx = 4 */ = buffer_a04_t(0:8); 	/* line# ../../ave8_sw.c:28 */
-    RG_buffer_5(0:8)/* Cyber ary_idx = 5 */ = buffer_a05_t(0:8); 	/* line# ../../ave8_sw.c:28 */
-    RG_buffer_6(0:8)/* Cyber ary_idx = 6 */ = buffer_a06_t(0:8); 	/* line# ../../ave8_sw.c:28 */
-    VR_in0_t(0:8) = in0(0:8);
-    buffer_a06_t(0:8) = RG_buffer_5(0:8)/* Cyber ary_idx = 5 */; 	/* line# ../../ave8_sw.c:28 */
-    buffer_a05_t(0:8) = RG_buffer_4(0:8)/* Cyber ary_idx = 4 */; 	/* line# ../../ave8_sw.c:28 */
+    buffer_a01_t(0:8) = RG_buffer(0:8)/* Cyber ary_idx = 0 */; 	/* line# ../../ave8_sw.c:28 */
+    RG_08(0:9) = (unsigned ter(0:9))(buffer_a03_t(0:8) + buffer_a04_t(0:8)); 	/* line# ../../ave8_sw.c:39 */
+    RG_07(0:9) = (unsigned ter(0:9))(buffer_a01_t(0:8) + buffer_a02_t(0:8)); 	/* line# ../../ave8_sw.c:39 */
+    RG_buffer(0:8)/* Cyber ary_idx = 1 */ = buffer_a01_t(0:8); 	/* line# ../../ave8_sw.c:28 */
+    RG_buffer_1(0:8)/* Cyber ary_idx = 2 */ = buffer_a02_t(0:8); 	/* line# ../../ave8_sw.c:28 */
+    RG_buffer_2(0:8)/* Cyber ary_idx = 3 */ = buffer_a03_t(0:8); 	/* line# ../../ave8_sw.c:28 */
+    RG_buffer_3(0:8)/* Cyber ary_idx = 4 */ = buffer_a04_t(0:8); 	/* line# ../../ave8_sw.c:28 */
+    RG_buffer_7(0:8) = in0(0:8);
     buffer_a04_t(0:8) = RG_buffer_3(0:8)/* Cyber ary_idx = 3 */; 	/* line# ../../ave8_sw.c:28 */
     buffer_a03_t(0:8) = RG_buffer_2(0:8)/* Cyber ary_idx = 2 */; 	/* line# ../../ave8_sw.c:28 */
     buffer_a02_t(0:8) = RG_buffer_1(0:8)/* Cyber ary_idx = 1 */; 	/* line# ../../ave8_sw.c:28 */
-    buffer_a01_t(0:8) = RG_buffer(0:8)/* Cyber ary_idx = 0 */; 	/* line# ../../ave8_sw.c:28 */
-    M_15(0:9) = (unsigned ter(0:9))(RG_buffer_6(0:8) + VR_in0_t(0:8)); 	/* line# ../../ave8_sw.c:28,35,39 */
-    sum1_t(0:11) = (unsigned ter(0:11))(M_121_t(0:11) + M_15(0:9)); 	/* line# ../../ave8_sw.c:28,35,39 */
-    M_16(0:9) = (unsigned ter(0:9))(buffer_a03_t(0:8) + buffer_a04_t(0:8)); 	/* line# ../../ave8_sw.c:39 */
-    M_17(0:9) = (unsigned ter(0:9))(buffer_a01_t(0:8) + buffer_a02_t(0:8)); 	/* line# ../../ave8_sw.c:39 */
-    M_101_t(0:10) = (unsigned ter(0:10))(M_17(0:9) + M_16(0:9)); 	/* line# ../../ave8_sw.c:39 */
+    goto ST1_02;
+    $
+
+ST1_02 :
+    RG_11(0:10) = (unsigned ter(0:10))(RG_08(0:9) + RG_07(0:9)); 	/* line# ../../ave8_sw.c:39 */
+    RG_07(0:9) = (unsigned ter(0:9))(RG_buffer_4(0:8)/* Cyber ary_idx = 5 */ + RG_buffer_5(0:8)/* Cyber ary_idx = 6 */); 	/* line# ../../ave8_sw.c:39 */
+    goto ST1_03;
+    $
+
+ST1_03 :
+    RG_10(0:11) = (unsigned ter(0:11))(RG_11(0:10) + RG_07(0:9)); 	/* line# ../../ave8_sw.c:39 */
+    RG_07(0:9) = (unsigned ter(0:9))(RG_buffer_6(0:8)/* Cyber ary_idx = 7 */ + RG_buffer_7(0:8)); 	/* line# ../../ave8_sw.c:35,39 */
+    goto ST1_04;
+    $
+
+ST1_04 :
+    sum1_t(0:11) = (unsigned ter(0:11))(RG_10(0:11) + RG_07(0:9)); 	/* line# ../../ave8_sw.c:39 */
+    ave8_ret_r(0:8) = sum1_t(0:8); 	/* line# ../../ave8_sw.c:43,46 */
+    RG_buffer(0:8)/* Cyber ary_idx = 0 */ = RG_buffer_7(0:8)/* Cyber ary_idx = 0 */; 	/* line# ../../ave8_sw.c:32 */
+    RG_buffer_1(0:8)/* Cyber ary_idx = 1 */ = RG_buffer(0:8)/* Cyber ary_idx = 1 */; 	/* line# ../../ave8_sw.c:28 */
+    RG_buffer_2(0:8)/* Cyber ary_idx = 2 */ = RG_buffer_1(0:8)/* Cyber ary_idx = 2 */; 	/* line# ../../ave8_sw.c:28 */
+    RG_buffer_3(0:8)/* Cyber ary_idx = 3 */ = RG_buffer_2(0:8)/* Cyber ary_idx = 3 */; 	/* line# ../../ave8_sw.c:28 */
+    RG_buffer_4(0:8)/* Cyber ary_idx = 4 */ = RG_buffer_3(0:8)/* Cyber ary_idx = 4 */; 	/* line# ../../ave8_sw.c:28 */
+    RG_buffer_5(0:8)/* Cyber ary_idx = 5 */ = RG_buffer_4(0:8)/* Cyber ary_idx = 5 */; 	/* line# ../../ave8_sw.c:28 */
+    RG_buffer_6(0:8)/* Cyber ary_idx = 6 */ = RG_buffer_5(0:8)/* Cyber ary_idx = 6 */; 	/* line# ../../ave8_sw.c:28 */
     goto ST1_01;
 }
 
@@ -130,8 +140,8 @@ ST1_01 :
 ##@CLK  200000
 ##@UNIT 1/10ps
 ##IDX NAME     LMT  KIND              BITW   DELAY  AREA
-#  1  add8u      4  (u)+              8,9    9487      9
-#  2  add12u     3  (u)+              12,13  10845    13
+#  1  add8u      1  (u)+              8,9    9487      9
+#  2  add12u     1  (u)+              12,13  10845    13
 #@END
 
 #@BLIB /proj/cad/cwb-6.1/packages/cycloneV.BLIB

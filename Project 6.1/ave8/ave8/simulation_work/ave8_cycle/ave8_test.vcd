@@ -1,0 +1,366 @@
+$date
+     Oct 24, 2023       19:41:30
+$end
+
+$version
+              SystemC 2.3.0-ASI --- May 14 2013 20:13:57
+$end
+
+$timescale
+     100 fs
+$end
+
+$scope module SystemC $end
+$scope module user_ave8 $end
+$var wire 1 aad CLOCK $end
+$var wire 1 aaa Cysim_State $end
+$var wire 1 aae RESET $end
+$var wire 8 aac ave8_ret [7:0] $end
+$var wire 8 aab in0 [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions  $end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$comment
+All initial values are dumped below at time 0 sec = 0 timescale units.
+$end
+
+$dumpvars
+0aaa
+b10 aab
+b0 aac
+0aad
+1aae
+$end
+
+#200000
+1aad
+
+#300000
+0aad
+
+#400000
+1aad
+
+#500000
+0aad
+
+#600000
+1aad
+
+#700000
+0aad
+
+#800000
+1aad
+
+#900000
+0aad
+
+#1000000
+1aad
+
+#1100000
+0aad
+
+#1200000
+1aad
+
+#1300000
+0aad
+
+#1400000
+1aad
+
+#1500000
+0aad
+
+#1600000
+1aad
+
+#1700000
+0aad
+
+#1800000
+1aad
+
+#1900000
+0aad
+
+#2000000
+1aad
+
+#2050001
+0aae
+
+#2100000
+0aad
+
+#2200000
+1aad
+
+#2200001
+b101 aab
+
+#2300000
+0aad
+
+#2400000
+1aad
+
+#2400001
+b111 aab
+
+#2500000
+0aad
+
+#2600000
+b1 aac
+1aad
+
+#2600001
+b1001 aab
+
+#2700000
+0aad
+
+#2800000
+b10 aac
+1aad
+
+#2800001
+b10010 aab
+
+#2900000
+0aad
+
+#3000000
+b101 aac
+1aad
+
+#3000001
+b111 aab
+
+#3100000
+0aad
+
+#3200000
+b110 aac
+1aad
+
+#3200001
+b11 aab
+
+#3300000
+0aad
+
+#3400000
+1aad
+
+#3400001
+b10110 aab
+
+#3500000
+0aad
+
+#3600000
+b1001 aac
+1aad
+
+#3600001
+b100 aab
+
+#3700000
+0aad
+
+#3800000
+1aad
+
+#3800001
+b1001 aab
+
+#3900000
+0aad
+
+#4000000
+1aad
+
+#4000001
+b100 aab
+
+#4100000
+0aad
+
+#4200000
+1aad
+
+#4200001
+b110 aab
+
+#4300000
+0aad
+
+#4400000
+1aad
+
+#4400001
+b1111000 aab
+
+#4500000
+0aad
+
+#4600000
+b10101 aac
+1aad
+
+#4600001
+b100 aab
+
+#4700000
+0aad
+
+#4800000
+1aad
+
+#4900000
+0aad
+
+#5000000
+1aad
+
+#5000001
+b100011 aab
+
+#5100000
+0aad
+
+#5200000
+b10111 aac
+1aad
+
+#5200001
+b100 aab
+
+#5300000
+0aad
+
+#5400000
+1aad
+
+#5400001
+b1001 aab
+
+#5500000
+0aad
+
+#5600000
+1aad
+
+#5600001
+b111 aab
+
+#5700000
+0aad
+
+#5800000
+1aad
+
+#5800001
+b101 aab
+
+#5900000
+0aad
+
+#6000000
+1aad
+
+#6000001
+b11 aab
+
+#6100000
+0aad
+
+#6200000
+b1000 aac
+1aad
+
+#6200001
+b111 aab
+
+#6300000
+0aad
+
+#6400000
+b1001 aac
+1aad
+
+#6400001
+b101 aab
+
+#6500000
+0aad
+
+#6600000
+1aad
+
+#6600001
+b11 aab
+
+#6700000
+0aad
+
+#6800000
+1aad
+

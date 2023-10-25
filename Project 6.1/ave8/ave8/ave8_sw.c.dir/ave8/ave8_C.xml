@@ -8,8 +8,8 @@
                 <bitwidth>8</bitwidth>
                 <bitstart>0</bitstart>
                 <is_down>0</is_down>
-                <clock portID="94"/>
-                <reset portID="95" mode="async"/>
+                <clock portID="90"/>
+                <reset portID="91" mode="async"/>
             </register>
             <register id="71">
                 <name>RG_buffer_1</name>
@@ -17,8 +17,8 @@
                 <bitwidth>8</bitwidth>
                 <bitstart>0</bitstart>
                 <is_down>0</is_down>
-                <clock portID="94"/>
-                <reset portID="95" mode="async"/>
+                <clock portID="90"/>
+                <reset portID="91" mode="async"/>
             </register>
             <register id="72">
                 <name>RG_buffer_2</name>
@@ -26,8 +26,8 @@
                 <bitwidth>8</bitwidth>
                 <bitstart>0</bitstart>
                 <is_down>0</is_down>
-                <clock portID="94"/>
-                <reset portID="95" mode="async"/>
+                <clock portID="90"/>
+                <reset portID="91" mode="async"/>
             </register>
             <register id="73">
                 <name>RG_buffer_3</name>
@@ -35,8 +35,8 @@
                 <bitwidth>8</bitwidth>
                 <bitstart>0</bitstart>
                 <is_down>0</is_down>
-                <clock portID="94"/>
-                <reset portID="95" mode="async"/>
+                <clock portID="90"/>
+                <reset portID="91" mode="async"/>
             </register>
             <register id="74">
                 <name>RG_buffer_4</name>
@@ -44,8 +44,8 @@
                 <bitwidth>8</bitwidth>
                 <bitstart>0</bitstart>
                 <is_down>0</is_down>
-                <clock portID="94"/>
-                <reset portID="95" mode="async"/>
+                <clock portID="90"/>
+                <reset portID="91" mode="async"/>
             </register>
             <register id="75">
                 <name>RG_buffer_5</name>
@@ -53,8 +53,8 @@
                 <bitwidth>8</bitwidth>
                 <bitstart>0</bitstart>
                 <is_down>0</is_down>
-                <clock portID="94"/>
-                <reset portID="95" mode="async"/>
+                <clock portID="90"/>
+                <reset portID="91" mode="async"/>
             </register>
             <register id="76">
                 <name>RG_buffer_6</name>
@@ -62,8 +62,16 @@
                 <bitwidth>8</bitwidth>
                 <bitstart>0</bitstart>
                 <is_down>0</is_down>
-                <clock portID="94"/>
-                <reset portID="95" mode="async"/>
+                <clock portID="90"/>
+                <reset portID="91" mode="async"/>
+            </register>
+            <register id="79">
+                <name>RG_buffer_7</name>
+                <sign>unsigned</sign>
+                <bitwidth>8</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+                <clock portID="90"/>
             </register>
             <register id="89">
                 <name>ave8_ret_r</name>
@@ -71,54 +79,72 @@
                 <bitwidth>8</bitwidth>
                 <bitstart>0</bitstart>
                 <is_down>0</is_down>
-                <clock portID="94"/>
-                <reset portID="95" mode="async"/>
+                <clock portID="90"/>
+                <reset portID="91" mode="async"/>
+            </register>
+            <register id="77">
+                <name>RG_07</name>
+                <sign>unsigned</sign>
+                <bitwidth>9</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+                <clock portID="90"/>
+            </register>
+            <register id="78">
+                <name>RG_08</name>
+                <sign>unsigned</sign>
+                <bitwidth>9</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+                <clock portID="90"/>
+            </register>
+            <register id="80">
+                <name>RG_10</name>
+                <sign>unsigned</sign>
+                <bitwidth>11</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+                <clock portID="90"/>
+            </register>
+            <register id="81">
+                <name>RG_11</name>
+                <sign>unsigned</sign>
+                <bitwidth>10</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+                <clock portID="90"/>
             </register>
         </registers>
         <terminals>
-            <terminal id="80">
-                <name>buffer_a06_t</name>
-                <sign>unsigned</sign>
-                <bitwidth>8</bitwidth>
-                <bitstart>0</bitstart>
-                <is_down>0</is_down>
-            </terminal>
-            <terminal id="81">
-                <name>buffer_a05_t</name>
-                <sign>unsigned</sign>
-                <bitwidth>8</bitwidth>
-                <bitstart>0</bitstart>
-                <is_down>0</is_down>
-            </terminal>
-            <terminal id="82">
+            <terminal id="84">
                 <name>buffer_a04_t</name>
                 <sign>unsigned</sign>
                 <bitwidth>8</bitwidth>
                 <bitstart>0</bitstart>
                 <is_down>0</is_down>
             </terminal>
-            <terminal id="83">
+            <terminal id="85">
                 <name>buffer_a03_t</name>
                 <sign>unsigned</sign>
                 <bitwidth>8</bitwidth>
                 <bitstart>0</bitstart>
                 <is_down>0</is_down>
             </terminal>
-            <terminal id="84">
+            <terminal id="86">
                 <name>buffer_a02_t</name>
                 <sign>unsigned</sign>
                 <bitwidth>8</bitwidth>
                 <bitstart>0</bitstart>
                 <is_down>0</is_down>
             </terminal>
-            <terminal id="85">
+            <terminal id="87">
                 <name>buffer_a01_t</name>
                 <sign>unsigned</sign>
                 <bitwidth>8</bitwidth>
                 <bitstart>0</bitstart>
                 <is_down>0</is_down>
             </terminal>
-            <terminal id="86">
+            <terminal id="88">
                 <name>sum1_t</name>
                 <sign>unsigned</sign>
                 <bitwidth>11</bitwidth>
@@ -127,7 +153,7 @@
             </terminal>
         </terminals>
         <ports>
-            <port id="77">
+            <port id="82">
                 <name>in0</name>
                 <direction>in</direction>
                 <sign>unsigned</sign>
@@ -135,7 +161,7 @@
                 <bitstart>0</bitstart>
                 <is_down>0</is_down>
             </port>
-            <port id="78">
+            <port id="83">
                 <name>ave8_ret</name>
                 <direction>out</direction>
                 <sign>unsigned</sign>
@@ -143,7 +169,7 @@
                 <bitstart>0</bitstart>
                 <is_down>0</is_down>
             </port>
-            <port id="94">
+            <port id="90">
                 <name>CLOCK</name>
                 <direction>in</direction>
                 <sign>unsigned</sign>
@@ -151,7 +177,7 @@
                 <bitstart>0</bitstart>
                 <is_down>0</is_down>
             </port>
-            <port id="95">
+            <port id="91">
                 <name>RESET</name>
                 <direction>in</direction>
                 <sign>unsigned</sign>
@@ -166,6 +192,9 @@
         </memories>
         <fsmStates>
             <fsmState id="1"><name>ST1_01</name></fsmState>
+            <fsmState id="2"><name>ST1_02</name></fsmState>
+            <fsmState id="3"><name>ST1_03</name></fsmState>
+            <fsmState id="4"><name>ST1_04</name></fsmState>
         </fsmStates>
     </cycleModelSymbolInfo>
     <langSymbolInfo>
@@ -250,60 +279,123 @@
     <relations>
         <variable_relations>
             <var bdlVarID="4">
-                <expand nestingLevel="1" depth="1" arrayIndex="0" id="97">
+                <expand nestingLevel="1" depth="1" arrayIndex="0" id="93" relationID="1">
                     <reg_relation regID="70">
                         <relation_begin stateID="1" branchID="1"/>
-                        <relation_end stateID="1" branchID="1"/>
+                        <relation_end stateID="4" branchID="4"/>
+                    </reg_relation>
+                    <reg_relation regID="70">
+                        <relation_begin stateID="4" branchID="4"/>
+                        <relation_end stateID="4" branchID="4"/>
                     </reg_relation>
                 </expand>
-                <expand nestingLevel="1" depth="1" arrayIndex="1" id="98">
+                <expand nestingLevel="1" depth="1" arrayIndex="0" id="93" relationID="2">
+                    <reg_relation regID="79"/>
+                </expand>
+                <expand nestingLevel="1" depth="1" arrayIndex="1" id="94" relationID="1">
+                    <reg_relation regID="70">
+                        <relation_begin stateID="1" branchID="1"/>
+                        <relation_end stateID="4" branchID="4"/>
+                    </reg_relation>
+                    <ter_relation terID="87" stateID="1" branchID="1" order="11"/>
+                </expand>
+                <expand nestingLevel="1" depth="1" arrayIndex="1" id="94" relationID="2">
                     <reg_relation regID="71">
                         <relation_begin stateID="1" branchID="1"/>
-                        <relation_end stateID="1" branchID="1"/>
+                        <relation_end stateID="4" branchID="4"/>
                     </reg_relation>
-                    <ter_relation terID="85" stateID="1" branchID="1" order="27"/>
+                    <reg_relation regID="71">
+                        <relation_begin stateID="4" branchID="4"/>
+                        <relation_end stateID="4" branchID="4"/>
+                    </reg_relation>
                 </expand>
-                <expand nestingLevel="1" depth="1" arrayIndex="2" id="99">
+                <expand nestingLevel="1" depth="1" arrayIndex="2" id="95" relationID="1">
+                    <reg_relation regID="71">
+                        <relation_begin stateID="1" branchID="1"/>
+                        <relation_end stateID="4" branchID="4"/>
+                    </reg_relation>
+                    <ter_relation terID="86" stateID="1" branchID="1" order="21"/>
+                </expand>
+                <expand nestingLevel="1" depth="1" arrayIndex="2" id="95" relationID="2">
                     <reg_relation regID="72">
                         <relation_begin stateID="1" branchID="1"/>
-                        <relation_end stateID="1" branchID="1"/>
+                        <relation_end stateID="4" branchID="4"/>
                     </reg_relation>
-                    <ter_relation terID="84" stateID="1" branchID="1" order="26"/>
+                    <reg_relation regID="72">
+                        <relation_begin stateID="4" branchID="4"/>
+                        <relation_end stateID="4" branchID="4"/>
+                    </reg_relation>
                 </expand>
-                <expand nestingLevel="1" depth="1" arrayIndex="3" id="100">
+                <expand nestingLevel="1" depth="1" arrayIndex="3" id="96" relationID="1">
+                    <reg_relation regID="72">
+                        <relation_begin stateID="1" branchID="1"/>
+                        <relation_end stateID="4" branchID="4"/>
+                    </reg_relation>
+                    <ter_relation terID="85" stateID="1" branchID="1" order="20"/>
+                </expand>
+                <expand nestingLevel="1" depth="1" arrayIndex="3" id="96" relationID="2">
                     <reg_relation regID="73">
                         <relation_begin stateID="1" branchID="1"/>
-                        <relation_end stateID="1" branchID="1"/>
+                        <relation_end stateID="4" branchID="4"/>
                     </reg_relation>
-                    <ter_relation terID="83" stateID="1" branchID="1" order="25"/>
+                    <reg_relation regID="73">
+                        <relation_begin stateID="4" branchID="4"/>
+                        <relation_end stateID="4" branchID="4"/>
+                    </reg_relation>
                 </expand>
-                <expand nestingLevel="1" depth="1" arrayIndex="4" id="101">
+                <expand nestingLevel="1" depth="1" arrayIndex="4" id="97" relationID="1">
+                    <reg_relation regID="73">
+                        <relation_begin stateID="1" branchID="1"/>
+                        <relation_end stateID="4" branchID="4"/>
+                    </reg_relation>
+                    <ter_relation terID="84" stateID="1" branchID="1" order="19"/>
+                </expand>
+                <expand nestingLevel="1" depth="1" arrayIndex="4" id="97" relationID="2">
                     <reg_relation regID="74">
                         <relation_begin stateID="1" branchID="1"/>
-                        <relation_end stateID="1" branchID="1"/>
+                        <relation_end stateID="4" branchID="4"/>
                     </reg_relation>
-                    <ter_relation terID="82" stateID="1" branchID="1" order="24"/>
+                    <reg_relation regID="74">
+                        <relation_begin stateID="4" branchID="4"/>
+                        <relation_end stateID="4" branchID="4"/>
+                    </reg_relation>
                 </expand>
-                <expand nestingLevel="1" depth="1" arrayIndex="5" id="102">
+                <expand nestingLevel="1" depth="1" arrayIndex="5" id="98" relationID="1">
+                    <reg_relation regID="74"/>
+                </expand>
+                <expand nestingLevel="1" depth="1" arrayIndex="5" id="98" relationID="2">
                     <reg_relation regID="75">
                         <relation_begin stateID="1" branchID="1"/>
-                        <relation_end stateID="1" branchID="1"/>
+                        <relation_end stateID="4" branchID="4"/>
                     </reg_relation>
-                    <ter_relation terID="81" stateID="1" branchID="1" order="23"/>
+                    <reg_relation regID="75">
+                        <relation_begin stateID="4" branchID="4"/>
+                        <relation_end stateID="4" branchID="4"/>
+                    </reg_relation>
                 </expand>
-                <expand nestingLevel="1" depth="1" arrayIndex="6" id="103">
+                <expand nestingLevel="1" depth="1" arrayIndex="6" id="99" relationID="1">
+                    <reg_relation regID="75"/>
+                </expand>
+                <expand nestingLevel="1" depth="1" arrayIndex="6" id="99" relationID="2">
                     <reg_relation regID="76">
                         <relation_begin stateID="1" branchID="1"/>
-                        <relation_end stateID="1" branchID="1"/>
+                        <relation_end stateID="3" branchID="3"/>
                     </reg_relation>
-                    <ter_relation terID="80" stateID="1" branchID="1" order="22"/>
+                    <reg_relation regID="76">
+                        <relation_begin stateID="4" branchID="4"/>
+                        <relation_end stateID="3" branchID="3"/>
+                    </reg_relation>
+                </expand>
+                <expand nestingLevel="1" depth="1" arrayIndex="7" id="100">
+                    <reg_relation regID="76"/>
                 </expand>
             </var>
             <var bdlVarID="5">
-                <port_relation portID="77"/>
+                <reg_relation regID="79"/>
+                <port_relation portID="82"/>
             </var>
             <var bdlVarID="8">
-                <ter_relation terID="86" stateID="1" branchID="1" order="29"/>
+                <ter_relation terID="88" stateID="4" branchID="4" order="4"/>
             </var>
         </variable_relations>
         <pointer_relations>
@@ -328,8 +420,27 @@
                 <line start="16" end="16"/>
                 <line start="20" end="20"/>
                 <line start="28" end="28"/>
-                <line start="32" end="32"/>
+                <line start="39" end="39"/>
+            </lineinfo>
+        </state_relation>
+        <state_relation stateID="2" branchID="2">
+            <lineinfo fileName="../../ave8_sw.c">
+                <line start="20" end="20"/>
+                <line start="39" end="39"/>
+            </lineinfo>
+        </state_relation>
+        <state_relation stateID="3" branchID="3">
+            <lineinfo fileName="../../ave8_sw.c">
+                <line start="20" end="20"/>
                 <line start="35" end="35"/>
+                <line start="39" end="39"/>
+            </lineinfo>
+        </state_relation>
+        <state_relation stateID="4" branchID="4">
+            <lineinfo fileName="../../ave8_sw.c">
+                <line start="20" end="20"/>
+                <line start="28" end="28"/>
+                <line start="32" end="32"/>
                 <line start="39" end="39"/>
                 <line start="43" end="43"/>
                 <line start="46" end="46"/>

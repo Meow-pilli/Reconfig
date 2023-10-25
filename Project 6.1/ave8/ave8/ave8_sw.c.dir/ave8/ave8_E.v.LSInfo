@@ -4,15 +4,15 @@ iff_filename: "ave8_E.IFF"
 rtl_filename: "ave8_E.v"
 
 timestamp_0: 20231016230017_08960_86503
-timestamp_5: 20231016232832_13905_34102
-timestamp_9: 20231016232833_13905_08229
-timestamp_C: 20231016232833_13905_37528
-timestamp_E: 20231016232833_13905_44161
-timestamp_V: 20231016232834_14288_14141
+timestamp_5: 20231024202752_06015_59812
+timestamp_9: 20231024202752_06015_72953
+timestamp_C: 20231024202752_06015_46885
+timestamp_E: 20231024202753_06015_98670
+timestamp_V: 20231024202753_06063_14539
 
 lang: verilog
 
-gated_clock_register: NONE
+gated_clock_register: EXIST
 
 stall_register: NONE
 
