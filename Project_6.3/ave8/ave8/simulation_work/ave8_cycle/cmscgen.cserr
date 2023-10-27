@@ -1,0 +1,14 @@
+Copyright (C) 1988-2018 NEC Corporation. All rights reserved.
+cmscgen version : 7.40 (Linux 64-bit) Mar  9 2018 21:44:20
+         (BIF version : 3.41z)
+         (LICflex version : 1.53 cylmd)
+         (GEN COMMON version : 3.66)
+Option: -EE -input=file:cycle -compare=cycle -dump=VCD -dump_signal=PORT -org_type=design -enum_int=NO -out_dir=. -file cmscgen_file.ave8.txt 
+I_SC61004: Now processing '../../ave8_sw.c.dir/ave8/ave8_C.IFF'.
+[Information]
+     input  file : ../../ave8_sw.c.dir/ave8/ave8_C.IFF
+     output file : ./ave8_C.cpp
+     output file : ./ave8_C.xml
+     output file : ./ave8_C.h
+     output file : ./ave8_C.MakeInfo
+cmscgen finished successfully.

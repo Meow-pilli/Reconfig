@@ -1,0 +1,7 @@
+
+#@VERSION { 3.00 }
+#@LIB { ave8 }
+#@UNIT 1/10ps
+#@FPGA_FAMILY{cycloneV}
+#@SYN_TOOL{QTS}
+#@END { ave8 }

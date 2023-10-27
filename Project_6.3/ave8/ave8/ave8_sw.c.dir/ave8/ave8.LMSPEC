@@ -1,0 +1,27 @@
+#@VERSION{3.00}
+#@CNT{ave8}
+#@KIND{BASIC_OPERATOR}
+#@CLK 20000
+#@UNIT 1/10ps
+@PROCESS{
+	NAME	ave8
+#	KIND
+#	LIMIT
+#	BITWIDTH
+#	DELAY
+	AREA_REG	104
+	AREA_COMB	81
+	FPGA_MEM_BIT	0
+	NET	134
+	PIN_PAIR	305
+#	SPECULATION
+#	COMMENT
+	DEFMOD {
+		in    unsigned ter(0:8)  in0              /* glo, in0, func_arg_idx = 1 */;
+		out   unsigned ter(0:8)  ave8_ret         /* glo, ave8_ret, org_sig_phyty_reg = YES, ansi_func_return = YES */;
+		clock                    CLOCK            /* c, CLOCK, @clock_period = 2ns, @auto_gen_sig = YES, clock_edge = \pos */;
+		reset                    RESET            /* r, RESET, @auto_gen_sig = YES, reset_mode = async, reset_active = high */;
+	}
+}
+#@HASH{57ef56060a2fc3c1d6fd0a42b4cc2d8c}
+#@END{ave8}

@@ -1,0 +1,66 @@
+Copyright (C) 1988-2018 NEC Corporation. All rights reserved.
+bdltran version : 6.10.04 (Linux 64-bit) Thu Mar 22 14:18:17 JST 2018
+         (BIF version : 3.41F)
+         (LICflex version : 1.53 cylmd)
+         make at Thu Mar 22 14:30:59 JST 2018
+ Option  -EE -c2000 -s -Zresource_fcnt=GENERATE -Zresource_mcnt=GENERATE -Zdup_reset=YES -Zfolding_sharing=inter_stage -EE -lb /proj/cad/cwb-6.1/packages/cycloneV.BLIB -lfl /proj/cad/cwb-6.1/packages/cycloneV.FLIB +lfl ave8-auto.FLIB -lfc ave8-auto.FCNT ave8.IFF 
+
+bdlpars  -EE -I../.. -I/proj/cad/cwb-6.1/linux_x86_64/include -info_base_name ave8_sw ../../ave8_sw.c -process=ave8
+
+############## CyberII started (automatic scheduling mode) ##############
+[Clock period]    200,000 (1/10ps) [define]
+[Datapath delay]  160,000 (1/10ps)
+[Clock uncertainty] 40,000 (1/10ps)
+
+******* Initial # of operations in the input behavior description *******
+ === Operators ===
+  -  :  1  (32bit:1)
+  >  :  1  (32bit:1)
+  -- :  1  (32bit:1)
+  <  :  1  (32bit:1)
+  ++ :  1  (32bit:1)
+  += :  1  (32bit:1)
+  /  :  1  (32bit:1)
+  Data transfer : 22
+
+ === array / memory ===
+  read  :  3
+  write :  2
+
+********* After optimizing & expanding the behavior description *********
+ === Operators ===
+  +  :  7  (8bit:4, 9bit:1, 10bit:1, 11bit:1)
+  Data transfer : 40
+
+#########################  Synthesized Circuit  #########################
+[Performance index max/min/ave] 2 / 2 / 2.00
+
+  Module Name         : ave8
+  Basic Library Name  : CWBSTDBLIB
+
+  FPGA Family         : cycloneV
+  FPGA Device         : -
+  FPGA Package        : -
+  FPGA Speed          : -
+
+  Resource Utilization
+    ALUTs             :         69
+    Registers         :         64
+    Block Memory Bits :          0
+    DSPs              :          0
+
+  Latency Index       :          1
+  Total States        :          1
+
+  Clock Period        :       20ns
+  Critical Path Delay :    2.054ns
+
+  Net                 :        144
+  Pin Pair            :        211
+
+  Port                :         18
+    In                :         10
+    Out               :          8
+
+##### CyberII Normal finish (automatic scheduling mode) [ave8] #####
+

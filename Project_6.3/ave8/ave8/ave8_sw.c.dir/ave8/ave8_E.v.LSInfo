@@ -1,0 +1,24 @@
+LSInfo_version: 1.06
+
+iff_filename: "ave8_E.IFF"
+rtl_filename: "ave8_E.v"
+
+timestamp_0: 20231027161710_10159_04444
+timestamp_5: 20231027161727_10679_98701
+timestamp_9: 20231027161728_10679_72362
+timestamp_C: 20231027161728_10679_89656
+timestamp_E: 20231027161728_10679_27809
+timestamp_V: 20231027161729_10871_34861
+
+lang: verilog
+
+gated_clock_register: EXIST
+
+stall_register: NONE
+
+module_name: ave8
+
+syn_tool: QTS
+start_fpga_info:
+	fpga_family: cycloneV
+end_fpga_info:

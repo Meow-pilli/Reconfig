@@ -1,0 +1,1404 @@
+/*
+* ave8_C.BDL
+# Design Name        ave8
+# FU Library File    /proj/cad/cwb-6.1/packages/cycloneV.FLIB
+# FU Library File    ave8-amacro-auto.FLIB
+# FU Library File    ave8-auto.FLIB
+# FU Constraint File ave8-auto.FCNT
+# FU Constraint File ave8-amacro-auto.FCNT
+# MEM Library File   ave8-auto.MLIB
+# MEM Constraint File ave8-auto.MCNT
+# Basic Library File /proj/cad/cwb-6.1/packages/cycloneV.BLIB
+# PORT Limit File    %AUTO%.PLMT
+# PORT relation File %AUTO%.PREL
+# Clock Cycle        20000 (1/10ps).
+# Clock Uncertainty  0-->4000 (1/10ps)
+# Performance index  max/min/ave  4 / 4 / 4.00
+# Data-path info.    
+# Bp-Option  -EE -I../.. -I/proj/cad/cwb-6.1/linux_x86_64/include -info_base_name ave8_sw ../../ave8_sw.c -process=ave8
+# Option  -EE -c200 -s -Zresource_fcnt=GENERATE -Zresource_mcnt=GENERATE -Zdup_reset=YES -Zfolding_sharing=inter_stage -EE -lb /proj/cad/cwb-6.1/packages/cycloneV.BLIB -lfl /proj/cad/cwb-6.1/packages/cycloneV.FLIB +lfl ave8-amacro-auto.FLIB +lfl ave8-auto.FLIB -lfc ave8-auto.FCNT +lfc ave8-amacro-auto.FCNT -lml ave8-auto.MLIB -lmc ave8-auto.MCNT ave8.IFF 
+# Version  bdltran version : 6.10.04  Thu Mar 22 14:18:17 JST 2018
+*/
+unsigned var(0:8)  ave8_ret_1 /* line# ../../ave8_sw.c:20 */;
+unsigned var(0:8)  buffer_a00/* Cyber ary_idx = 0 */ /* line# ../../ave8_sw.c:16 */;
+unsigned var(0:8)  buffer_a01/* Cyber ary_idx = 1 */ /* line# ../../ave8_sw.c:16 */;
+unsigned var(0:8)  buffer_a02/* Cyber ary_idx = 2 */ /* line# ../../ave8_sw.c:16 */;
+unsigned var(0:8)  buffer_a03/* Cyber ary_idx = 3 */ /* line# ../../ave8_sw.c:16 */;
+unsigned var(0:8)  buffer_a04/* Cyber ary_idx = 4 */ /* line# ../../ave8_sw.c:16 */;
+unsigned var(0:8)  buffer_a05/* Cyber ary_idx = 5 */ /* line# ../../ave8_sw.c:16 */;
+unsigned var(0:8)  buffer_a06/* Cyber ary_idx = 6 */ /* line# ../../ave8_sw.c:16 */;
+unsigned var(0:8)  buffer_a07/* Cyber ary_idx = 7 */ /* line# ../../ave8_sw.c:16 */;
+unsigned reg(0:8)  RG_buffer /* line# ../../ave8_sw.c:16 */;
+unsigned reg(0:8)  RG_buffer_1 /* line# ../../ave8_sw.c:16 */;
+unsigned reg(0:8)  RG_buffer_2 /* line# ../../ave8_sw.c:16 */;
+unsigned reg(0:8)  RG_buffer_3 /* line# ../../ave8_sw.c:16 */;
+unsigned reg(0:8)  RG_buffer_4 /* line# ../../ave8_sw.c:16 */;
+unsigned reg(0:8)  RG_buffer_5 /* line# ../../ave8_sw.c:16 */;
+unsigned reg(0:8)  RG_buffer_6 /* line# ../../ave8_sw.c:16 */;
+unsigned reg(0:10)  RG_07/* Cyber reset_sig = void, other = DC */;
+unsigned reg(0:9)  RG_08/* Cyber reset_sig = void, other = DC */;
+unsigned reg(0:8)  RG_buffer_7/* Cyber reset_sig = void */ /* line# ../../ave8_sw.c:16,20 */;
+unsigned reg(0:11)  RG_10/* Cyber reset_sig = void, other = DC */;
+in   unsigned port(0:8)  in0 /* line# ../../ave8_sw.c:20 */;
+out  unsigned port(0:8)  ave8_ret/* Cyber sche = reg */ /* line# ../../ave8_sw.c:20 */;
+unsigned reg(0:8)  ave8_ret_r /* line# ../../ave8_sw.c:20 */;
+
+/* Cyber default_bit_order = up, func = process */
+process
+ave8()
+{
+    unsigned ter(0:9)  M_15/* Cyber other = DC */;
+    unsigned ter(0:9)  M_14/* Cyber other = DC */;
+    unsigned ter(0:11)  sum1_t/* Cyber other = DC */;
+    unsigned ter(0:8)  buffer_a01_t/* Cyber other = DC */;
+    unsigned ter(0:8)  buffer_a02_t/* Cyber other = DC */;
+    unsigned ter(0:8)  buffer_a03_t/* Cyber other = DC */;
+    unsigned ter(0:8)  buffer_a04_t/* Cyber other = DC */;
+    unsigned ter(0:8)  buffer_a05_t/* Cyber other = DC */;
+    unsigned ter(0:8)  buffer_a06_t/* Cyber other = DC */;
+    unsigned var(0:9)  M_131;
+    unsigned var(0:11)  M_121;
+    unsigned var(0:9)  M_111;
+    unsigned var(0:10)  M_101;
+    unsigned var(0:9)  M_091;
+    unsigned var(0:9)  M_081;
+    unsigned var(0:8)  M_071;
+    unsigned var(0:11)  sum1 /* line# ../../ave8_sw.c:23 */;
+    unsigned var(0:8)  out0_v1 /* line# ../../ave8_sw.c:23 */;
+    signed   var(0:32)  M_13;
+    signed   var(0:12)  M_12;
+    signed   var(0:10)  M_11;
+    signed   var(0:11)  M_10;
+    signed   var(0:10)  M_09;
+    signed   var(0:10)  M_08;
+    signed   var(0:32)  M_07;
+    signed   var(0:11)  M_06;
+    signed   var(0:32)  M_05;
+    signed   var(0:10)  M_04;
+    signed   var(0:32)  M_03;
+    signed   var(0:10)  M_02;
+    signed   var(0:10)  M_01;
+    unsigned var(0:8)  VR_in0 /* line# ../../ave8_sw.c:20 */;
+
+    /* Cyber state = reset */
+ST1_00 :
+    ave8_ret(0:8) ::= ave8_ret_r(0:8); 	/* line# ../../ave8_sw.c:20 */
+    RG_buffer(0:8)/* Cyber ary_idx = 0 */ = (unsigned ter(0:1))(0(0:1)); 	/* line# ../../ave8_sw.c:16 */
+    RG_buffer_6(0:8)/* Cyber ary_idx = 6 */ = (unsigned ter(0:1))(0(0:1)); 	/* line# ../../ave8_sw.c:16 */
+    RG_buffer_5(0:8)/* Cyber ary_idx = 5 */ = (unsigned ter(0:1))(0(0:1)); 	/* line# ../../ave8_sw.c:16 */
+    RG_buffer_4(0:8)/* Cyber ary_idx = 4 */ = (unsigned ter(0:1))(0(0:1)); 	/* line# ../../ave8_sw.c:16 */
+    RG_buffer_3(0:8)/* Cyber ary_idx = 3 */ = (unsigned ter(0:1))(0(0:1)); 	/* line# ../../ave8_sw.c:16 */
+    RG_buffer_2(0:8)/* Cyber ary_idx = 2 */ = (unsigned ter(0:1))(0(0:1)); 	/* line# ../../ave8_sw.c:16 */
+    RG_buffer_1(0:8)/* Cyber ary_idx = 1 */ = (unsigned ter(0:1))(0(0:1)); 	/* line# ../../ave8_sw.c:16 */
+    goto ST1_01;
+    $
+
+ST1_01 :
+    buffer_a01_t(0:8) = RG_buffer(0:8)/* Cyber ary_idx = 0 */; 	/* line# ../../ave8_sw.c:28 */
+    RG_08(0:9) = (unsigned ter(0:9))(buffer_a05_t(0:8) + buffer_a06_t(0:8)); 	/* line# ../../ave8_sw.c:39 */
+    M_14(0:9) = (unsigned ter(0:9))(buffer_a03_t(0:8) + buffer_a04_t(0:8)); 	/* line# ../../ave8_sw.c:39 */
+    M_15(0:9) = (unsigned ter(0:9))(buffer_a01_t(0:8) + buffer_a02_t(0:8)); 	/* line# ../../ave8_sw.c:39 */
+    RG_07(0:10) = (unsigned ter(0:10))(M_15(0:9) + M_14(0:9)); 	/* line# ../../ave8_sw.c:39 */
+    RG_buffer(0:8)/* Cyber ary_idx = 1 */ = buffer_a01_t(0:8); 	/* line# ../../ave8_sw.c:28 */
+    RG_buffer_1(0:8)/* Cyber ary_idx = 2 */ = buffer_a02_t(0:8); 	/* line# ../../ave8_sw.c:28 */
+    RG_buffer_2(0:8)/* Cyber ary_idx = 3 */ = buffer_a03_t(0:8); 	/* line# ../../ave8_sw.c:28 */
+    RG_buffer_3(0:8)/* Cyber ary_idx = 4 */ = buffer_a04_t(0:8); 	/* line# ../../ave8_sw.c:28 */
+    RG_buffer_4(0:8)/* Cyber ary_idx = 5 */ = buffer_a05_t(0:8); 	/* line# ../../ave8_sw.c:28 */
+    RG_buffer_5(0:8)/* Cyber ary_idx = 6 */ = buffer_a06_t(0:8); 	/* line# ../../ave8_sw.c:28 */
+    RG_buffer_7(0:8) = in0(0:8);
+    buffer_a06_t(0:8) = RG_buffer_5(0:8)/* Cyber ary_idx = 5 */; 	/* line# ../../ave8_sw.c:28 */
+    buffer_a05_t(0:8) = RG_buffer_4(0:8)/* Cyber ary_idx = 4 */; 	/* line# ../../ave8_sw.c:28 */
+    buffer_a04_t(0:8) = RG_buffer_3(0:8)/* Cyber ary_idx = 3 */; 	/* line# ../../ave8_sw.c:28 */
+    buffer_a03_t(0:8) = RG_buffer_2(0:8)/* Cyber ary_idx = 2 */; 	/* line# ../../ave8_sw.c:28 */
+    buffer_a02_t(0:8) = RG_buffer_1(0:8)/* Cyber ary_idx = 1 */; 	/* line# ../../ave8_sw.c:28 */
+    goto ST1_02;
+    $
+
+ST1_02 :
+    RG_10(0:11) = (unsigned ter(0:11))(RG_07(0:10) + RG_08(0:9)); 	/* line# ../../ave8_sw.c:39 */
+    RG_08(0:9) = (unsigned ter(0:9))(RG_buffer_6(0:8)/* Cyber ary_idx = 7 */ + RG_buffer_7(0:8)); 	/* line# ../../ave8_sw.c:35,39 */
+    goto ST1_03;
+    $
+
+ST1_03 :
+    sum1_t(0:11) = (unsigned ter(0:11))(RG_10(0:11) + RG_08(0:9)); 	/* line# ../../ave8_sw.c:39 */
+    ave8_ret_r(0:8) = sum1_t(0:8); 	/* line# ../../ave8_sw.c:43,46 */
+    RG_buffer(0:8)/* Cyber ary_idx = 0 */ = RG_buffer_7(0:8)/* Cyber ary_idx = 0 */; 	/* line# ../../ave8_sw.c:32 */
+    RG_buffer_1(0:8)/* Cyber ary_idx = 1 */ = RG_buffer(0:8)/* Cyber ary_idx = 1 */; 	/* line# ../../ave8_sw.c:28 */
+    RG_buffer_2(0:8)/* Cyber ary_idx = 2 */ = RG_buffer_1(0:8)/* Cyber ary_idx = 2 */; 	/* line# ../../ave8_sw.c:28 */
+    RG_buffer_3(0:8)/* Cyber ary_idx = 3 */ = RG_buffer_2(0:8)/* Cyber ary_idx = 3 */; 	/* line# ../../ave8_sw.c:28 */
+    RG_buffer_4(0:8)/* Cyber ary_idx = 4 */ = RG_buffer_3(0:8)/* Cyber ary_idx = 4 */; 	/* line# ../../ave8_sw.c:28 */
+    RG_buffer_5(0:8)/* Cyber ary_idx = 5 */ = RG_buffer_4(0:8)/* Cyber ary_idx = 5 */; 	/* line# ../../ave8_sw.c:28 */
+    RG_buffer_6(0:8)/* Cyber ary_idx = 6 */ = RG_buffer_5(0:8)/* Cyber ary_idx = 6 */; 	/* line# ../../ave8_sw.c:28 */
+    goto ST1_01;
+}
+
+/*
+#@FLIB /proj/cad/cwb-6.1/packages/cycloneV.FLIB
+#@FLIB ave8-amacro-auto.FLIB
+#@FLIB ave8-auto.FLIB
+#@FCNT ave8-auto.FCNT
+#@FCNT ave8-amacro-auto.FCNT
+#@LMT %AUTO%.LMT
+##@CLK  20000
+##@UNIT 1/10ps
+##IDX NAME     LMT  KIND              BITW   DELAY  AREA
+#  1  add8u      4  (u)+              8,9    9487      9
+#  2  add12u     3  (u)+              12,13  10845    13
+#@END
+
+#@BLIB /proj/cad/cwb-6.1/packages/cycloneV.BLIB
+##@VERSION{2.00}
+##@LIB{CWBSTDBLIB}
+##@UNIT 1/10ps
+#@BLIB {
+#    NAME	nmux2_1
+#    KIND	nmux
+#    WAY	2
+#    BITWIDTH	1
+#    DELAY	8490
+#    AREA	1
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	nmux2_2
+#    KIND	nmux
+#    WAY	2
+#    BITWIDTH	2
+#    DELAY	8400
+#    AREA	2
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	nmux2_4
+#    KIND	nmux
+#    WAY	2
+#    BITWIDTH	4
+#    DELAY	8790
+#    AREA	4
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	nmux2_8
+#    KIND	nmux
+#    WAY	2
+#    BITWIDTH	8
+#    DELAY	5000
+#    AREA	1
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	nmux2_16
+#    KIND	nmux
+#    WAY	2
+#    BITWIDTH	16
+#    DELAY	4940
+#    AREA	1
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	nmux2_32
+#    KIND	nmux
+#    WAY	2
+#    BITWIDTH	32
+#    DELAY	6960
+#    AREA	1
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	nmux2_64
+#    KIND	nmux
+#    WAY	2
+#    BITWIDTH	64
+#    DELAY	8651
+#    AREA	1
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	nmux4_1
+#    KIND	nmux
+#    WAY	4
+#    BITWIDTH	1
+#    DELAY	8450
+#    AREA	1
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	nmux4_2
+#    KIND	nmux
+#    WAY	4
+#    BITWIDTH	2
+#    DELAY	14210
+#    AREA	4
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nmux4_4
+#    KIND	nmux
+#    WAY	4
+#    BITWIDTH	4
+#    DELAY	15410
+#    AREA	6
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nmux4_8
+#    KIND	nmux
+#    WAY	4
+#    BITWIDTH	8
+#    DELAY	17160
+#    AREA	10
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nmux4_16
+#    KIND	nmux
+#    WAY	4
+#    BITWIDTH	16
+#    DELAY	19690
+#    AREA	18
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nmux4_32
+#    KIND	nmux
+#    WAY	4
+#    BITWIDTH	32
+#    DELAY	22370
+#    AREA	34
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nmux4_64
+#    KIND	nmux
+#    WAY	4
+#    BITWIDTH	64
+#    DELAY	13908
+#    AREA	66
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nmux8_1
+#    KIND	nmux
+#    WAY	8
+#    BITWIDTH	1
+#    DELAY	17150
+#    AREA	7
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nmux8_2
+#    KIND	nmux
+#    WAY	8
+#    BITWIDTH	2
+#    DELAY	21810
+#    AREA	9
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux8_4
+#    KIND	nmux
+#    WAY	8
+#    BITWIDTH	4
+#    DELAY	23500
+#    AREA	15
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nmux8_8
+#    KIND	nmux
+#    WAY	8
+#    BITWIDTH	8
+#    DELAY	23730
+#    AREA	20
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux8_16
+#    KIND	nmux
+#    WAY	8
+#    BITWIDTH	16
+#    DELAY	25090
+#    AREA	36
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux8_32
+#    KIND	nmux
+#    WAY	8
+#    BITWIDTH	32
+#    DELAY	29330
+#    AREA	68
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux8_64
+#    KIND	nmux
+#    WAY	8
+#    BITWIDTH	64
+#    DELAY	22877
+#    AREA	132
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux16_1
+#    KIND	nmux
+#    WAY	16
+#    BITWIDTH	1
+#    DELAY	25650
+#    AREA	15
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux16_2
+#    KIND	nmux
+#    WAY	16
+#    BITWIDTH	2
+#    DELAY	42710
+#    AREA	41
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	nmux16_4
+#    KIND	nmux
+#    WAY	16
+#    BITWIDTH	4
+#    DELAY	40540
+#    AREA	56
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	nmux16_8
+#    KIND	nmux
+#    WAY	16
+#    BITWIDTH	8
+#    DELAY	42530
+#    AREA	82
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	nmux16_16
+#    KIND	nmux
+#    WAY	16
+#    BITWIDTH	16
+#    DELAY	47610
+#    AREA	138
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux16_32
+#    KIND	nmux
+#    WAY	16
+#    BITWIDTH	32
+#    DELAY	50160
+#    AREA	250
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	nmux16_64
+#    KIND	nmux
+#    WAY	16
+#    BITWIDTH	64
+#    DELAY	28695
+#    AREA	474
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	5
+#}
+#@BLIB {
+#    NAME	nmux32_1
+#    KIND	nmux
+#    WAY	32
+#    BITWIDTH	1
+#    DELAY	30050
+#    AREA	34
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nmux32_2
+#    KIND	nmux
+#    WAY	32
+#    BITWIDTH	2
+#    DELAY	52300
+#    AREA	108
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	6
+#}
+#@BLIB {
+#    NAME	nmux32_4
+#    KIND	nmux
+#    WAY	32
+#    BITWIDTH	4
+#    DELAY	55030
+#    AREA	162
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	6
+#}
+#@BLIB {
+#    NAME	nmux32_8
+#    KIND	nmux
+#    WAY	32
+#    BITWIDTH	8
+#    DELAY	62320
+#    AREA	203
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	7
+#}
+#@BLIB {
+#    NAME	nmux32_16
+#    KIND	nmux
+#    WAY	32
+#    BITWIDTH	16
+#    DELAY	66550
+#    AREA	457
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	6
+#}
+#@BLIB {
+#    NAME	nmux32_32
+#    KIND	nmux
+#    WAY	32
+#    BITWIDTH	32
+#    DELAY	63460
+#    AREA	704
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	6
+#}
+#@BLIB {
+#    NAME	nmux32_64
+#    KIND	nmux
+#    WAY	32
+#    BITWIDTH	64
+#    DELAY	41042
+#    AREA	1344
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	6
+#}
+#@BLIB {
+#    NAME	nmux64_1
+#    KIND	nmux
+#    WAY	64
+#    BITWIDTH	1
+#    DELAY	36140
+#    AREA	80
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nmux64_2
+#    KIND	nmux
+#    WAY	64
+#    BITWIDTH	2
+#    DELAY	68930
+#    AREA	192
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	7
+#}
+#@BLIB {
+#    NAME	nmux64_4
+#    KIND	nmux
+#    WAY	64
+#    BITWIDTH	4
+#    DELAY	65940
+#    AREA	282
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	7
+#}
+#@BLIB {
+#    NAME	nmux64_8
+#    KIND	nmux
+#    WAY	64
+#    BITWIDTH	8
+#    DELAY	66230
+#    AREA	478
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	6
+#}
+#@BLIB {
+#    NAME	nmux64_16
+#    KIND	nmux
+#    WAY	64
+#    BITWIDTH	16
+#    DELAY	70510
+#    AREA	795
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	6
+#}
+#@BLIB {
+#    NAME	nmux64_32
+#    KIND	nmux
+#    WAY	64
+#    BITWIDTH	32
+#    DELAY	52041
+#    AREA	1429
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	7
+#}
+#@BLIB {
+#    NAME	nmux64_64
+#    KIND	nmux
+#    WAY	64
+#    BITWIDTH	64
+#    DELAY	51950
+#    AREA	2697
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	7
+#}
+#@BLIB {
+#    NAME	reg1
+#    KIND	reg
+#    BITWIDTH	1
+#    AREA	1
+#    NET	0
+#    PIN_PAIR	0
+#}
+#@BLIB {
+#    NAME	reg4
+#    KIND	reg
+#    BITWIDTH	4
+#    AREA	4
+#    NET	0
+#    PIN_PAIR	0
+#}
+#@BLIB {
+#    NAME	reg8
+#    KIND	reg
+#    BITWIDTH	8
+#    AREA	8
+#    NET	0
+#    PIN_PAIR	0
+#}
+#@BLIB {
+#    NAME	dec2
+#    KIND	dec
+#    BITWIDTH	2
+#    DELAY	6550
+#    AREA	2
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	dec4
+#    KIND	dec
+#    BITWIDTH	4
+#    DELAY	7520
+#    AREA	4
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	dec8
+#    KIND	dec
+#    BITWIDTH	8
+#    DELAY	8170
+#    AREA	8
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	dec16
+#    KIND	dec
+#    BITWIDTH	16
+#    DELAY	10030
+#    AREA	16
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	dec32
+#    KIND	dec
+#    BITWIDTH	32
+#    DELAY	12270
+#    AREA	32
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	dec64
+#    KIND	dec
+#    BITWIDTH	64
+#    DELAY	14220
+#    AREA	64
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	dec128
+#    KIND	dec
+#    BITWIDTH	128
+#    DELAY	10171
+#    AREA	192
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	dmux2_1
+#    KIND	dmux
+#    WAY	2
+#    BITWIDTH	1
+#    DELAY	7710
+#    AREA	1
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	dmux2_16
+#    KIND	dmux
+#    WAY	2
+#    BITWIDTH	16
+#    DELAY	10460
+#    AREA	16
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	dmux4_1
+#    KIND	dmux
+#    WAY	4
+#    BITWIDTH	1
+#    DELAY	9600
+#    AREA	1
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	dmux4_16
+#    KIND	dmux
+#    WAY	4
+#    BITWIDTH	16
+#    DELAY	14000
+#    AREA	16
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	dmux8_1
+#    KIND	dmux
+#    WAY	8
+#    BITWIDTH	1
+#    DELAY	12740
+#    AREA	2
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	dmux8_16
+#    KIND	dmux
+#    WAY	8
+#    BITWIDTH	16
+#    DELAY	21810
+#    AREA	48
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	dmux16_1
+#    KIND	dmux
+#    WAY	16
+#    BITWIDTH	1
+#    DELAY	17870
+#    AREA	5
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	dmux16_16
+#    KIND	dmux
+#    WAY	16
+#    BITWIDTH	16
+#    DELAY	23600
+#    AREA	80
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	dmux64_1
+#    KIND	dmux
+#    WAY	64
+#    BITWIDTH	1
+#    DELAY	26970
+#    AREA	21
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	dmux64_16
+#    KIND	dmux
+#    WAY	64
+#    BITWIDTH	16
+#    DELAY	35690
+#    AREA	336
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	dmux256_1
+#    KIND	dmux
+#    WAY	256
+#    BITWIDTH	1
+#    DELAY	40030
+#    AREA	85
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	dmux256_16
+#    KIND	dmux
+#    WAY	256
+#    BITWIDTH	16
+#    DELAY	49590
+#    AREA	1360
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	inv
+#    KIND	inv
+#    BITWIDTH	1
+#    DELAY	4880
+#    AREA	1
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	and2
+#    KIND	and
+#    INPUTNUM	2
+#    BITWIDTH	1
+#    DELAY	5680
+#    AREA	1
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	and4
+#    KIND	and
+#    INPUTNUM	4
+#    BITWIDTH	1
+#    DELAY	8620
+#    AREA	1
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	and8
+#    KIND	and
+#    INPUTNUM	8
+#    BITWIDTH	1
+#    DELAY	10720
+#    AREA	2
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	and16
+#    KIND	and
+#    INPUTNUM	16
+#    BITWIDTH	1
+#    DELAY	14970
+#    AREA	4
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	and32
+#    KIND	and
+#    INPUTNUM	32
+#    BITWIDTH	1
+#    DELAY	17990
+#    AREA	7
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	and64
+#    KIND	and
+#    INPUTNUM	64
+#    BITWIDTH	1
+#    DELAY	27480
+#    AREA	14
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	and256
+#    KIND	and
+#    INPUTNUM	256
+#    BITWIDTH	1
+#    DELAY	35590
+#    AREA	55
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	or2
+#    KIND	or
+#    INPUTNUM	2
+#    BITWIDTH	1
+#    DELAY	5680
+#    AREA	1
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	or4
+#    KIND	or
+#    INPUTNUM	4
+#    BITWIDTH	1
+#    DELAY	8620
+#    AREA	1
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	or8
+#    KIND	or
+#    INPUTNUM	8
+#    BITWIDTH	1
+#    DELAY	11450
+#    AREA	2
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	or16
+#    KIND	or
+#    INPUTNUM	16
+#    BITWIDTH	1
+#    DELAY	15510
+#    AREA	4
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	or32
+#    KIND	or
+#    INPUTNUM	32
+#    BITWIDTH	1
+#    DELAY	19600
+#    AREA	7
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	or64
+#    KIND	or
+#    INPUTNUM	64
+#    BITWIDTH	1
+#    DELAY	25740
+#    AREA	14
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	or256
+#    KIND	or
+#    INPUTNUM	256
+#    BITWIDTH	1
+#    DELAY	32400
+#    AREA	55
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	xor2
+#    KIND	xor
+#    INPUTNUM	2
+#    BITWIDTH	1
+#    DELAY	6150
+#    AREA	1
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	xor4
+#    KIND	xor
+#    INPUTNUM	4
+#    BITWIDTH	1
+#    DELAY	8440
+#    AREA	1
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	xor8
+#    KIND	xor
+#    INPUTNUM	8
+#    BITWIDTH	1
+#    DELAY	11070
+#    AREA	2
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	xor16
+#    KIND	xor
+#    INPUTNUM	16
+#    BITWIDTH	1
+#    DELAY	16060
+#    AREA	4
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	xor32
+#    KIND	xor
+#    INPUTNUM	32
+#    BITWIDTH	1
+#    DELAY	18290
+#    AREA	7
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	xor64
+#    KIND	xor
+#    INPUTNUM	64
+#    BITWIDTH	1
+#    DELAY	28960
+#    AREA	14
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	xor256
+#    KIND	xor
+#    INPUTNUM	256
+#    BITWIDTH	1
+#    DELAY	34210
+#    AREA	55
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nand2
+#    KIND	nand
+#    INPUTNUM	2
+#    BITWIDTH	1
+#    DELAY	6590
+#    AREA	1
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	nand4
+#    KIND	nand
+#    INPUTNUM	4
+#    BITWIDTH	1
+#    DELAY	8030
+#    AREA	1
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	nand8
+#    KIND	nand
+#    INPUTNUM	8
+#    BITWIDTH	1
+#    DELAY	10790
+#    AREA	2
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nand16
+#    KIND	nand
+#    INPUTNUM	16
+#    BITWIDTH	1
+#    DELAY	15450
+#    AREA	4
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nand32
+#    KIND	nand
+#    INPUTNUM	32
+#    BITWIDTH	1
+#    DELAY	20160
+#    AREA	7
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nand64
+#    KIND	nand
+#    INPUTNUM	64
+#    BITWIDTH	1
+#    DELAY	22940
+#    AREA	14
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nand256
+#    KIND	nand
+#    INPUTNUM	256
+#    BITWIDTH	1
+#    DELAY	33600
+#    AREA	55
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	nor2
+#    KIND	nor
+#    INPUTNUM	2
+#    BITWIDTH	1
+#    DELAY	6590
+#    AREA	1
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	nor4
+#    KIND	nor
+#    INPUTNUM	4
+#    BITWIDTH	1
+#    DELAY	8030
+#    AREA	1
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	nor8
+#    KIND	nor
+#    INPUTNUM	8
+#    BITWIDTH	1
+#    DELAY	11510
+#    AREA	2
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nor16
+#    KIND	nor
+#    INPUTNUM	16
+#    BITWIDTH	1
+#    DELAY	15620
+#    AREA	4
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nor32
+#    KIND	nor
+#    INPUTNUM	32
+#    BITWIDTH	1
+#    DELAY	18540
+#    AREA	7
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	nor64
+#    KIND	nor
+#    INPUTNUM	64
+#    BITWIDTH	1
+#    DELAY	25160
+#    AREA	14
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	nor256
+#    KIND	nor
+#    INPUTNUM	256
+#    BITWIDTH	1
+#    DELAY	34310
+#    AREA	55
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	xnor2
+#    KIND	xnor
+#    INPUTNUM	2
+#    BITWIDTH	1
+#    DELAY	6150
+#    AREA	1
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	xnor4
+#    KIND	xnor
+#    INPUTNUM	4
+#    BITWIDTH	1
+#    DELAY	8440
+#    AREA	1
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	xnor8
+#    KIND	xnor
+#    INPUTNUM	8
+#    BITWIDTH	1
+#    DELAY	11070
+#    AREA	2
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	xnor16
+#    KIND	xnor
+#    INPUTNUM	16
+#    BITWIDTH	1
+#    DELAY	16060
+#    AREA	4
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	xnor32
+#    KIND	xnor
+#    INPUTNUM	32
+#    BITWIDTH	1
+#    DELAY	18290
+#    AREA	7
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	xnor64
+#    KIND	xnor
+#    INPUTNUM	64
+#    BITWIDTH	1
+#    DELAY	28960
+#    AREA	14
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	3
+#}
+#@BLIB {
+#    NAME	xnor256
+#    KIND	xnor
+#    INPUTNUM	256
+#    BITWIDTH	1
+#    DELAY	34210
+#    AREA	55
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	4
+#}
+#@BLIB {
+#    NAME	consttable2_8
+#    KIND	consttable
+#    SIZE	2
+#    BITWIDTH	8
+#    DELAY	6430
+#    AREA	8
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	consttable2_32
+#    KIND	consttable
+#    SIZE	2
+#    BITWIDTH	32
+#    DELAY	8240
+#    AREA	32
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	consttable16_8
+#    KIND	consttable
+#    SIZE	16
+#    BITWIDTH	8
+#    DELAY	9500
+#    AREA	8
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	consttable16_32
+#    KIND	consttable
+#    SIZE	16
+#    BITWIDTH	32
+#    DELAY	11930
+#    AREA	32
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	consttable64_8
+#    KIND	consttable
+#    SIZE	64
+#    BITWIDTH	8
+#    DELAY	9900
+#    AREA	8
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	consttable64_32
+#    KIND	consttable
+#    SIZE	64
+#    BITWIDTH	32
+#    DELAY	12940
+#    AREA	32
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	1
+#}
+#@BLIB {
+#    NAME	consttable256_8
+#    KIND	consttable
+#    SIZE	256
+#    BITWIDTH	8
+#    DELAY	22950
+#    AREA	40
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+#@BLIB {
+#    NAME	consttable256_32
+#    KIND	consttable
+#    SIZE	256
+#    BITWIDTH	32
+#    DELAY	25640
+#    AREA	160
+#    NET	0
+#    PIN_PAIR	0
+#    LSTAGE	2
+#}
+##@END{CWBSTDBLIB}
+#@END
+*/
