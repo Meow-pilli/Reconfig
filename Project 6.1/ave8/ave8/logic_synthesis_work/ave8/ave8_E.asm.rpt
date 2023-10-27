@@ -1,5 +1,5 @@
 Assembler report for ave8_E
-Tue Oct 17 14:13:01 2023
+Thu Oct 26 22:37:50 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 6.1/ave8/ave8/logic_synthesis_work/ave8/ave8_E.sof
+  5. Assembler Device Options: C:/Users/sxc210186/OneDrive - The University of Texas at Dallas/Documents/ave8/ave8_E.sof
   6. Assembler Messages
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Oct 17 14:13:01 2023 ;
+; Assembler Status      ; Successful - Thu Oct 26 22:37:50 2023 ;
 ; Revision Name         ; ave8_E                                ;
 ; Top-level Entity Name ; ave8                                  ;
 ; Family                ; Cyclone V                             ;
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+---------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                               ;
-+---------------------------------------------------------------------------------------------------------+
-; File Name                                                                                               ;
-+---------------------------------------------------------------------------------------------------------+
-; C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 6.1/ave8/ave8/logic_synthesis_work/ave8/ave8_E.sof ;
-+---------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                 ;
++-------------------------------------------------------------------------------------------+
+; File Name                                                                                 ;
++-------------------------------------------------------------------------------------------+
+; C:/Users/sxc210186/OneDrive - The University of Texas at Dallas/Documents/ave8/ave8_E.sof ;
++-------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 6.1/ave8/ave8/logic_synthesis_work/ave8/ave8_E.sof ;
-+----------------+------------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                          ;
-+----------------+------------------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x00B034CC                                                                                                       ;
-; Checksum       ; 0x00B034CC                                                                                                       ;
-+----------------+------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/sxc210186/OneDrive - The University of Texas at Dallas/Documents/ave8/ave8_E.sof ;
++----------------+----------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                            ;
++----------------+----------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x00B081B9                                                                                         ;
+; Checksum       ; 0x00B081B9                                                                                         ;
++----------------+----------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -78,14 +78,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Tue Oct 17 14:12:51 2023
+    Info: Processing started: Thu Oct 26 22:37:40 2023
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off ave8_E -c ave8_E
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4880 megabytes
-    Info: Processing ended: Tue Oct 17 14:13:01 2023
+    Info: Peak virtual memory: 4877 megabytes
+    Info: Processing ended: Thu Oct 26 22:37:50 2023
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
 
 

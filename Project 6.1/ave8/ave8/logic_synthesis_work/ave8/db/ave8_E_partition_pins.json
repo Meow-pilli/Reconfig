@@ -4,35 +4,83 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "ave8_ret[7]",
+					"name" : "seven_display_units[6]",
 					"strict" : false
 				},
 				{
-					"name" : "ave8_ret[6]",
+					"name" : "seven_display_units[5]",
 					"strict" : false
 				},
 				{
-					"name" : "ave8_ret[5]",
+					"name" : "seven_display_units[4]",
 					"strict" : false
 				},
 				{
-					"name" : "ave8_ret[4]",
+					"name" : "seven_display_units[3]",
 					"strict" : false
 				},
 				{
-					"name" : "ave8_ret[3]",
+					"name" : "seven_display_units[2]",
 					"strict" : false
 				},
 				{
-					"name" : "ave8_ret[2]",
+					"name" : "seven_display_units[1]",
 					"strict" : false
 				},
 				{
-					"name" : "ave8_ret[1]",
+					"name" : "seven_display_units[0]",
 					"strict" : false
 				},
 				{
-					"name" : "ave8_ret[0]",
+					"name" : "seven_display_tens[6]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_display_tens[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_display_tens[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_display_tens[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_display_tens[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_display_tens[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_display_tens[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_display_hun[6]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_display_hun[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_display_hun[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_display_hun[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_display_hun[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_display_hun[0]",
 					"strict" : false
 				},
 				{
@@ -44,11 +92,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "in0[4]",
+					"name" : "in0[1]",
 					"strict" : false
 				},
 				{
-					"name" : "in0[3]",
+					"name" : "in0[0]",
 					"strict" : false
 				},
 				{
@@ -56,11 +104,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "in0[1]",
+					"name" : "in0[3]",
 					"strict" : false
 				},
 				{
-					"name" : "in0[0]",
+					"name" : "in0[4]",
 					"strict" : false
 				},
 				{

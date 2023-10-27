@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ave8_E
-Tue Oct 17 14:12:08 2023
+Thu Oct 26 22:36:59 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -14,10 +14,11 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "ave8_add12u_11:INST_add12u_11_1"
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "seven_display_decoder:u3"
+ 10. Port Connectivity Checks: "ave8_old:u0|ave8_add12u_11:INST_add12u_11_1"
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -44,14 +45,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Oct 17 14:12:08 2023          ;
+; Analysis & Synthesis Status     ; Successful - Thu Oct 26 22:36:59 2023          ;
 ; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                   ; ave8_E                                         ;
 ; Top-level Entity Name           ; ave8                                           ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
 ; Total registers                 ; 64                                             ;
-; Total pins                      ; 18                                             ;
+; Total pins                      ; 31                                             ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0                                              ;
 ; Total DSP Blocks                ; 0                                              ;
@@ -168,13 +169,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                          ; Library ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------+---------+
-; ave8_E.v                         ; yes             ; User Verilog HDL File  ; C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 6.1/ave8/ave8/logic_synthesis_work/ave8/ave8_E.v ;         ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                          ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                            ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------+---------+
+; ave8_E.v                         ; yes             ; User Verilog HDL File  ; C:/Users/sxc210186/OneDrive - The University of Texas at Dallas/Documents/ave8/ave8_E.v ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -182,38 +183,42 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 38          ;
+; Estimate of Logic utilization (ALMs needed) ; 41          ;
 ;                                             ;             ;
-; Combinational ALUT usage for logic          ; 42          ;
+; Combinational ALUT usage for logic          ; 59          ;
 ;     -- 7 input functions                    ; 0           ;
 ;     -- 6 input functions                    ; 0           ;
 ;     -- 5 input functions                    ; 0           ;
 ;     -- 4 input functions                    ; 0           ;
-;     -- <=3 input functions                  ; 42          ;
+;     -- <=3 input functions                  ; 59          ;
 ;                                             ;             ;
 ; Dedicated logic registers                   ; 64          ;
 ;                                             ;             ;
-; I/O pins                                    ; 18          ;
+; I/O pins                                    ; 31          ;
 ;                                             ;             ;
 ; Total DSP Blocks                            ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; CLOCK~input ;
 ; Maximum fan-out                             ; 64          ;
-; Total fan-out                               ; 351         ;
-; Average fan-out                             ; 2.47        ;
+; Total fan-out                               ; 424         ;
+; Average fan-out                             ; 2.29        ;
 +---------------------------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                ;
-+------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+-------------+--------------+
-; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name           ; Entity Name ; Library Name ;
-+------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+-------------+--------------+
-; |ave8                        ; 42 (0)              ; 64 (64)                   ; 0                 ; 0          ; 18   ; 0            ; |ave8                         ; ave8        ; work         ;
-;    |ave8_add8u:INST_add8u_1| ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ave8|ave8_add8u:INST_add8u_1 ; ave8_add8u  ; work         ;
-;    |ave8_add8u:INST_add8u_3| ; 21 (21)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ave8|ave8_add8u:INST_add8u_3 ; ave8_add8u  ; work         ;
-;    |ave8_add8u:INST_add8u_4| ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ave8|ave8_add8u:INST_add8u_4 ; ave8_add8u  ; work         ;
-+------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+-------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                         ;
++---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+-----------------------+--------------+
+; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Entity Name           ; Library Name ;
++---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+-----------------------+--------------+
+; |ave8                           ; 59 (0)              ; 64 (0)                    ; 0                 ; 0          ; 31   ; 0            ; |ave8                                     ; ave8                  ; work         ;
+;    |ave8_old:u0|                ; 42 (0)              ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |ave8|ave8_old:u0                         ; ave8_old              ; work         ;
+;       |ave8_add8u:INST_add8u_1| ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ave8|ave8_old:u0|ave8_add8u:INST_add8u_1 ; ave8_add8u            ; work         ;
+;       |ave8_add8u:INST_add8u_2| ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ave8|ave8_old:u0|ave8_add8u:INST_add8u_2 ; ave8_add8u            ; work         ;
+;       |ave8_add8u:INST_add8u_3| ; 21 (21)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ave8|ave8_old:u0|ave8_add8u:INST_add8u_3 ; ave8_add8u            ; work         ;
+;    |seven_display_decoder:u1|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ave8|seven_display_decoder:u1            ; seven_display_decoder ; work         ;
+;    |seven_display_decoder:u2|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ave8|seven_display_decoder:u2            ; seven_display_decoder ; work         ;
+;    |seven_display_decoder:u3|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ave8|seven_display_decoder:u3            ; seven_display_decoder ; work         ;
++---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -232,8 +237,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "seven_display_decoder:u3"                                                                                                                 ;
++------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                    ;
++------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; in   ; Input ; Warning  ; Input port expression (2 bits) is smaller than the input port (3 bits) it drives.  Extra input bit(s) "in[0..0]" will be connected to GND. ;
++------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ave8_add12u_11:INST_add12u_11_1"                                                         ;
+; Port Connectivity Checks: "ave8_old:u0|ave8_add12u_11:INST_add12u_11_1"                                             ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port      ; Type   ; Severity ; Details                                                                             ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -248,18 +262,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 64                          ;
 ;     CLR               ; 64                          ;
-; arriav_lcell_comb     ; 42                          ;
+; arriav_lcell_comb     ; 61                          ;
 ;     arith             ; 11                          ;
 ;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 10                          ;
+;     normal            ; 19                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 14                          ;
 ;     shared            ; 31                          ;
 ;         0 data inputs ; 5                           ;
 ;         1 data inputs ; 2                           ;
 ;         3 data inputs ; 24                          ;
-; boundary_port         ; 18                          ;
+; boundary_port         ; 31                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 3.20                        ;
+; Average LUT depth     ; 3.03                        ;
 +-----------------------+-----------------------------+
 
 
@@ -278,32 +297,39 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Tue Oct 17 14:11:53 2023
+    Info: Processing started: Thu Oct 26 22:36:48 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ave8_E -c ave8_E
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 5 design units, including 5 entities, in source file ave8_e.v
-    Info (12023): Found entity 1: ave8 File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 6.1/ave8/ave8/logic_synthesis_work/ave8/ave8_E.v Line: 12
-    Info (12023): Found entity 2: ave8_add12u_11_10 File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 6.1/ave8/ave8/logic_synthesis_work/ave8/ave8_E.v Line: 114
-    Info (12023): Found entity 3: ave8_add12u_11_11 File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 6.1/ave8/ave8/logic_synthesis_work/ave8/ave8_E.v Line: 123
-    Info (12023): Found entity 4: ave8_add12u_11 File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 6.1/ave8/ave8/logic_synthesis_work/ave8/ave8_E.v Line: 132
-    Info (12023): Found entity 5: ave8_add8u File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 6.1/ave8/ave8/logic_synthesis_work/ave8/ave8_E.v Line: 141
+Info (12021): Found 7 design units, including 7 entities, in source file ave8_e.v
+    Info (12023): Found entity 1: ave8 File: C:/Users/sxc210186/OneDrive - The University of Texas at Dallas/Documents/ave8/ave8_E.v Line: 12
+    Info (12023): Found entity 2: ave8_old File: C:/Users/sxc210186/OneDrive - The University of Texas at Dallas/Documents/ave8/ave8_E.v Line: 29
+    Info (12023): Found entity 3: ave8_add12u_11_10 File: C:/Users/sxc210186/OneDrive - The University of Texas at Dallas/Documents/ave8/ave8_E.v Line: 131
+    Info (12023): Found entity 4: ave8_add12u_11_11 File: C:/Users/sxc210186/OneDrive - The University of Texas at Dallas/Documents/ave8/ave8_E.v Line: 140
+    Info (12023): Found entity 5: ave8_add12u_11 File: C:/Users/sxc210186/OneDrive - The University of Texas at Dallas/Documents/ave8/ave8_E.v Line: 149
+    Info (12023): Found entity 6: ave8_add8u File: C:/Users/sxc210186/OneDrive - The University of Texas at Dallas/Documents/ave8/ave8_E.v Line: 158
+    Info (12023): Found entity 7: seven_display_decoder File: C:/Users/sxc210186/OneDrive - The University of Texas at Dallas/Documents/ave8/ave8_E.v Line: 167
 Info (12127): Elaborating entity "ave8" for the top level hierarchy
-Info (12128): Elaborating entity "ave8_add12u_11_10" for hierarchy "ave8_add12u_11_10:INST_add12u_11_10_1" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 6.1/ave8/ave8/logic_synthesis_work/ave8/ave8_E.v Line: 48
-Info (12128): Elaborating entity "ave8_add12u_11_11" for hierarchy "ave8_add12u_11_11:INST_add12u_11_11_1" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 6.1/ave8/ave8/logic_synthesis_work/ave8/ave8_E.v Line: 50
-Info (12128): Elaborating entity "ave8_add12u_11" for hierarchy "ave8_add12u_11:INST_add12u_11_1" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 6.1/ave8/ave8/logic_synthesis_work/ave8/ave8_E.v Line: 51
-Info (12128): Elaborating entity "ave8_add8u" for hierarchy "ave8_add8u:INST_add8u_1" File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 6.1/ave8/ave8/logic_synthesis_work/ave8/ave8_E.v Line: 52
+Info (12128): Elaborating entity "ave8_old" for hierarchy "ave8_old:u0" File: C:/Users/sxc210186/OneDrive - The University of Texas at Dallas/Documents/ave8/ave8_E.v Line: 22
+Info (12128): Elaborating entity "ave8_add12u_11_10" for hierarchy "ave8_old:u0|ave8_add12u_11_10:INST_add12u_11_10_1" File: C:/Users/sxc210186/OneDrive - The University of Texas at Dallas/Documents/ave8/ave8_E.v Line: 65
+Info (12128): Elaborating entity "ave8_add12u_11_11" for hierarchy "ave8_old:u0|ave8_add12u_11_11:INST_add12u_11_11_1" File: C:/Users/sxc210186/OneDrive - The University of Texas at Dallas/Documents/ave8/ave8_E.v Line: 67
+Info (12128): Elaborating entity "ave8_add12u_11" for hierarchy "ave8_old:u0|ave8_add12u_11:INST_add12u_11_1" File: C:/Users/sxc210186/OneDrive - The University of Texas at Dallas/Documents/ave8/ave8_E.v Line: 68
+Info (12128): Elaborating entity "ave8_add8u" for hierarchy "ave8_old:u0|ave8_add8u:INST_add8u_1" File: C:/Users/sxc210186/OneDrive - The University of Texas at Dallas/Documents/ave8/ave8_E.v Line: 69
+Info (12128): Elaborating entity "seven_display_decoder" for hierarchy "seven_display_decoder:u1" File: C:/Users/sxc210186/OneDrive - The University of Texas at Dallas/Documents/ave8/ave8_E.v Line: 23
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "seven_display_hun[5]" is stuck at GND File: C:/Users/sxc210186/OneDrive - The University of Texas at Dallas/Documents/ave8/ave8_E.v Line: 16
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 116 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 146 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 98 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4840 megabytes
-    Info: Processing ended: Tue Oct 17 14:12:08 2023
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:34
+    Info (21059): Implemented 21 output pins
+    Info (21061): Implemented 115 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4847 megabytes
+    Info: Processing ended: Thu Oct 26 22:36:59 2023
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:23
 
 
