@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu Oct 26 22:37:36 2023
+Fitter Status : Successful - Fri Oct 27 17:45:40 2023
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : ave8_E
 Top-level Entity Name : ave8
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 30 / 32,070 ( < 1 % )
-Total registers : 67
+Logic utilization (in ALMs) : 31 / 32,070 ( < 1 % )
+Total registers : 68
 Total pins : 31 / 457 ( 7 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 4,065,280 ( 0 % )

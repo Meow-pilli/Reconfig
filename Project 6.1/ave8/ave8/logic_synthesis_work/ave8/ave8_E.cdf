@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA5F31) Path("C:/Users/sxc210186/OneDrive - The University of Texas at Dallas/Documents/ave8/") File("ave8_E.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSEMA5F31) Path("C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 6.1/ave8/ave8/logic_synthesis_work/ave8/") File("ave8_E.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

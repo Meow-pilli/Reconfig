@@ -19,7 +19,7 @@ module ave8(in0 ,seven_display_units, seven_display_tens, seven_display_hun ,CLO
 
 	wire [0:7]temp; // STORED ave8_ret in temp
 
-	ave8_old u0(.in0(in0), .ave8_ret(temp), .CLOCK(CLOCK), .RESET(RESET));
+	ave8_old u0(.in0(in0), .ave8_ret(temp), .CLOCK(CLOCK), .RESET(!RESET));
 	seven_display_decoder u1(.in(temp[0:2]), .out(seven_display_units));
 	seven_display_decoder u2(.in(temp[3:5]), .out(seven_display_tens));
 	seven_display_decoder u3(.in(temp[6:7]), .out(seven_display_hun));
@@ -170,14 +170,14 @@ module seven_display_decoder(
 );
 always @(*) begin
     case(in)
-        3'b000: out = 7'b1000000; // Display 0
-        3'b001: out = 7'b1111001; // Display 1
-        3'b010: out = 7'b0100100; // Display 2
-        3'b011: out = 7'b0110000; // Display 3
-        3'b100: out = 7'b0011001; // Display 4
-        3'b101: out = 7'b0010010; // Display 5
-        3'b110: out = 7'b0000010; // Display 6
-        3'b111: out = 7'b1111000; // Display 7
+        3'b000: out = 7'b0000001; // Display 0
+        3'b100: out = 7'b1001111; // Display 1
+        3'b010: out = 7'b0010010; // Display 2
+        3'b110: out = 7'b0000110; // Display 3
+        3'b001: out = 7'b1001100; // Display 4
+        3'b101: out = 7'b0100100; // Display 5
+        3'b011: out = 7'b0100000; // Display 6
+        3'b111: out = 7'b0001111; // Display 7
         default: out = 7'b1111111; // Turn off all segments for unknown input
     endcase
 end

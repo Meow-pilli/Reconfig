@@ -64,6 +64,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "seven_display_hun[5]",
+					"strict" : false
+				},
+				{
 					"name" : "seven_display_hun[4]",
 					"strict" : false
 				},
@@ -92,11 +96,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "in0[1]",
+					"name" : "in0[0]",
 					"strict" : false
 				},
 				{
-					"name" : "in0[0]",
+					"name" : "in0[1]",
 					"strict" : false
 				},
 				{

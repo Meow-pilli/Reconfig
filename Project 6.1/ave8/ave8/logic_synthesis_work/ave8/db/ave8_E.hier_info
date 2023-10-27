@@ -7,29 +7,29 @@ in0[3] => in0[3].IN1
 in0[2] => in0[2].IN1
 in0[1] => in0[1].IN1
 in0[0] => in0[0].IN1
-seven_display_units[6] << seven_display_decoder:u1.out
-seven_display_units[5] << seven_display_decoder:u1.out
-seven_display_units[4] << seven_display_decoder:u1.out
-seven_display_units[3] << seven_display_decoder:u1.out
-seven_display_units[2] << seven_display_decoder:u1.out
-seven_display_units[1] << seven_display_decoder:u1.out
-seven_display_units[0] << seven_display_decoder:u1.out
-seven_display_tens[6] << seven_display_decoder:u2.out
-seven_display_tens[5] << seven_display_decoder:u2.out
-seven_display_tens[4] << seven_display_decoder:u2.out
-seven_display_tens[3] << seven_display_decoder:u2.out
-seven_display_tens[2] << seven_display_decoder:u2.out
-seven_display_tens[1] << seven_display_decoder:u2.out
-seven_display_tens[0] << seven_display_decoder:u2.out
-seven_display_hun[6] << seven_display_decoder:u3.out
-seven_display_hun[5] << seven_display_decoder:u3.out
-seven_display_hun[4] << seven_display_decoder:u3.out
-seven_display_hun[3] << seven_display_decoder:u3.out
-seven_display_hun[2] << seven_display_decoder:u3.out
-seven_display_hun[1] << seven_display_decoder:u3.out
-seven_display_hun[0] << seven_display_decoder:u3.out
+seven_display_units[6] <= seven_display_decoder:u1.out
+seven_display_units[5] <= seven_display_decoder:u1.out
+seven_display_units[4] <= seven_display_decoder:u1.out
+seven_display_units[3] <= seven_display_decoder:u1.out
+seven_display_units[2] <= seven_display_decoder:u1.out
+seven_display_units[1] <= seven_display_decoder:u1.out
+seven_display_units[0] <= seven_display_decoder:u1.out
+seven_display_tens[6] <= seven_display_decoder:u2.out
+seven_display_tens[5] <= seven_display_decoder:u2.out
+seven_display_tens[4] <= seven_display_decoder:u2.out
+seven_display_tens[3] <= seven_display_decoder:u2.out
+seven_display_tens[2] <= seven_display_decoder:u2.out
+seven_display_tens[1] <= seven_display_decoder:u2.out
+seven_display_tens[0] <= seven_display_decoder:u2.out
+seven_display_hun[6] <= seven_display_decoder:u3.out
+seven_display_hun[5] <= seven_display_decoder:u3.out
+seven_display_hun[4] <= seven_display_decoder:u3.out
+seven_display_hun[3] <= seven_display_decoder:u3.out
+seven_display_hun[2] <= seven_display_decoder:u3.out
+seven_display_hun[1] <= seven_display_decoder:u3.out
+seven_display_hun[0] <= seven_display_decoder:u3.out
 CLOCK => CLOCK.IN1
-RESET => RESET.IN1
+RESET => _.IN1
 
 
 |ave8|ave8_old:u0
@@ -393,38 +393,38 @@ o1[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 in[2] => Decoder0.IN2
 in[1] => Decoder0.IN1
 in[0] => Decoder0.IN0
-out[6] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[5] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-out[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ave8|seven_display_decoder:u2
 in[2] => Decoder0.IN2
 in[1] => Decoder0.IN1
 in[0] => Decoder0.IN0
-out[6] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[5] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-out[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ave8|seven_display_decoder:u3
 in[2] => Decoder0.IN2
 in[1] => Decoder0.IN1
 in[0] => Decoder0.IN0
-out[6] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[5] <= out.DB_MAX_OUTPUT_PORT_TYPE
-out[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-out[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
