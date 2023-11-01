@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at ave8_E.v(50): always construct contains both blocking and non-blocking assignments File: C:/Users/sxc210186/Documents/GitHub/Reconfig/Project 6.1/ave8/ave8/logic_synthesis_work/ave8/ave8_E.v Line: 50

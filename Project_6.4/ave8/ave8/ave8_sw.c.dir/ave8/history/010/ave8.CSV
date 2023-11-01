@@ -1,0 +1,2 @@
+AREA,state,FU,REG,MUX,DEC,pin_pair,net,max,min,ave,MISC,MEM,CP_delay,sim,Pmax,Pmin,Pave,Latency,BlockMemoryBit,DSP
+77,1,69,64,8,0,243,153,2,2,2.00,0,0,2.054ns,-,-,-,-,1,0,0

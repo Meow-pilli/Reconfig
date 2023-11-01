@@ -1,0 +1,25 @@
+// verilog_out version 6.89.1
+// options:  veriloggen -EE ave8_E.IFF
+// bdlpars options:  -EE -I../.. -I/proj/cad/cwb-6.1/linux_x86_64/include -info_base_name ave8_sw ../../ave8_sw.c -process=ave8
+// bdltran options:  -EE -c2000 -s -Zresource_fcnt=GENERATE -Zresource_mcnt=GENERATE -Zdup_reset=YES -Zfolding_sharing=inter_stage -EE -lb /proj/cad/cwb-6.1/packages/cycloneV.BLIB -lfl /proj/cad/cwb-6.1/packages/cycloneV.FLIB +lfl ave8-amacro-auto.FLIB +lfl ave8-auto.FLIB -lfc ave8-auto.FCNT +lfc ave8-amacro-auto.FCNT -lml ave8-auto.MLIB -lmc ave8-auto.MCNT ave8.IFF 
+// timestamp_0: 20231029152159_09837_52563
+// timestamp_5: 20231029152206_10178_48104
+// timestamp_9: 20231029152207_10178_98788
+// timestamp_C: 20231029152207_10178_68678
+// timestamp_E: 20231029152207_10178_38958
+// timestamp_V: 20231029152208_10378_42514
+
+module ave8 ( ave8_ret ,CLOCK ,RESET );
+output	[0:7]	ave8_ret ;	// line#=../../ave8_sw.c:15
+input		CLOCK ;
+input		RESET ;
+reg	[0:7]	ave8_ret_r ;	// line#=../../ave8_sw.c:15
+
+assign	ave8_ret = ave8_ret_r ;	// line#=../../ave8_sw.c:15
+always @ ( posedge CLOCK or posedge RESET )	// line#=../../ave8_sw.c:63,65
+	if ( RESET )
+		ave8_ret_r <= 8'h00 ;
+	else
+		ave8_ret_r <= 8'h06 ;
+
+endmodule

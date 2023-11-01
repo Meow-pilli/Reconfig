@@ -1,0 +1,14 @@
+-- begin_signature
+-- ave8
+-- end_signature
+WIDTH=4;
+DEPTH=3;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	2 :	XXXX;
+	1 :	XXXX;
+	0 :	0000;
+END;

@@ -1,0 +1,305 @@
+
+Cyber Synthesis Report
+
+===========
+; Summary ;
+===========
+
+  Module Name         : ave8
+  Basic Library Name  : CWBSTDBLIB
+
+  FPGA Family         : cycloneV
+  FPGA Device         : -
+  FPGA Package        : -
+  FPGA Speed          : -
+
+  Resource Utilization
+    ALUTs             :         78
+    Registers         :         64
+    Block Memory Bits :          0
+    DSPs              :          0
+
+  Latency Index       :          1
+  Total States        :          1
+
+  Clock Period        :       20ns
+  Critical Path Delay :    3.372ns
+
+  Net                 :         96
+  Pin Pair            :        251
+
+  Port                :         19
+    In                :         11
+    Out               :          8
+
+========================
+; Resource Utilization ;
+========================
+
+  Total :
+    ALUTs             :         78
+    Registers         :         64
+    Block Memory Bits :          0
+    DSPs              :          0
+
+===================
+; Functional Unit ;
+===================
+
+    FU Name               Slice    Reg  Delay  Pipeline  Block   Count
+                           LUTs          (ns)    Stage   Memory
+                                                         Bits
+    ------------------------------------------------------------------
+    add12u_11                13      0   1.08         -       0      1
+    add12u_11_10             13      0   1.08         -       0      1
+    add12u_11_11             13      0   1.08         -       0      1
+    add8u                     9      0   0.95         -       0      4
+
+  Unused Functional Units :
+    ---------------------------------------------------
+    None
+
+============
+; Register ;
+============
+
+     Used      Declared                 Used
+      Bit           Bit      Count       Bit  * Count
+    -------------------------------------------------
+        0             8          1                  0
+    -------------------------------------------------
+        8             8          8                 64
+    -------------------------------------------------
+    Total                                          64
+
+===============
+; Multiplexer ;
+===============
+
+   8 bit:  3way: 8 
+   Total : 192 (# of Fanins)
+
+===========
+; Decoder ;
+===========
+
+    None
+
+==========
+; Memory ;
+==========
+
+    None
+
+===========
+; Latency ;
+===========
+
+    Total:
+        Type          : S
+        Latency       : 1
+        Latency Index : 1
+        State No.     : 1
+        Folding Loop  : -
+        Folding Stages: - , Total Folding States: - , Hazard: -
+        User Operator : -
+        Sub Loops     : -
+        Line          : ../../ave8_sw.c:20
+
+=======
+; FSM ;
+=======
+
+  Total States      :          1
+  #FSM              :          0
+  States/FSM        :          -
+  FSM Decoder Delay :          -
+
+=========
+; Delay ;
+=========
+
+  Clock Period        :       20ns
+  Critical Path Delay :    3.372ns
+
+              Subtotal
+      Class       (ns)    Ratio
+      -------------------------
+      IN           0.00      0%
+      FU           2.05     60%
+      MUX          1.32     39%
+      DEC          0.00      0%
+      MISC         0.00      0%
+      MEM          0.00      0%
+      -------------------------
+      Total        3.37
+
+    Path: #1
+                                                                Arrival
+                                                          Delay    Time Logic
+      Name                 / Port [Signal              ]   (ns)   (ns)  Stage
+      -----------------------------------------------------------------------
+      RG_buffer_3          / dout [                    ]      -    0.00     0
+      add8u@3              / o1   [add8u3ot            ]   0.95    0.95     9
+      add12u_11_10@1       / o1   [add12u_11_101ot     ]   0.07    1.02     9
+      add12u_11_11@1       / o1   [add12u_11_111ot     ]   0.52    1.53    14
+      add12u_11@1          / o1   [add12u_111ot        ]   0.52    2.05    19
+      _NMUX_185            / o1   [ave8_ret_r          ]   1.32    3.37    21
+      ave8_ret_r           / din  [                    ]      -    3.37    21
+
+  False Path                    :  Unchecked
+  Multi Cycle Path              :  Unchecked
+  False Loop/Combinational Loop :          0
+  Latch (bit)                   :          0
+
+========
+; Wire ;
+========
+
+  Total Net Count      :       96
+  Total Pin Pair Count :      251
+  Const Fanout         :        0
+
+  Net Count :
+         Bit       Net    Bit*Net
+     ----------------------------
+           1        11         11
+           8        18        144
+           9         4         36
+          10         1         10
+          11         2         22
+     ----------------------------
+       Total                  223
+
+  Pin Pair Count :
+      Fanout    Bit    Count   Subtotal
+    -----------------------------------
+           9      1        2         18
+           8      1        1          8
+           3      8        6        144
+           2      8        3         48
+           1     11        1         11
+           1     10        1         10
+           1      9        4         36
+           1      8       10         80
+           1      1        8          8
+    -----------------------------------
+       Total                        363
+
+  Fanout for Consts:
+      Value    Fanout
+          0         0
+          1         0
+    ------------------
+      Total         0
+
+  Clock Fanout:
+      Name                         Count
+      ----------------------------------
+      CLOCK(0:1)                       9
+
+  Reset Fanout:
+      Name                         Count
+      ----------------------------------
+      RESET(0:1)                       8
+
+  Register Fanin/Fanout Cone Size:
+
+    Fanin: (Top 10 Registers)
+      Register Name                              Cone Size
+      ----------------------------------------------------
+      ave8_ret_r(0:8)                                   11
+      RG_buffer(0:8)                                     3
+      RG_buffer_1(0:8)                                   3
+      RG_buffer_2(0:8)                                   3
+      RG_buffer_3(0:8)                                   3
+      RG_buffer_4(0:8)                                   3
+      RG_buffer_5(0:8)                                   3
+      RG_buffer_6(0:8)                                   3
+      RG_out0_v(0:8)                                     0
+
+    Fanout: (Top 10 Registers)
+      Register Name                              Cone Size
+      ----------------------------------------------------
+      RG_buffer(0:8)                                     3
+      RG_buffer_1(0:8)                                   3
+      RG_buffer_2(0:8)                                   3
+      RG_buffer_3(0:8)                                   3
+      RG_buffer_4(0:8)                                   3
+      RG_buffer_5(0:8)                                   3
+      ave8_ret_r(0:8)                                    2
+      RG_buffer_6(0:8)                                   2
+      RG_out0_v(0:8)                                     1
+
+  Routability:
+
+    Top 25 Nets
+    sorted by "Total" (Total Pin Pair)
+      Net Name                                    Total      Max
+      -----------------------------------------------------------------
+      RG_buffer(0:8)                                 24        3 ( 8bit)
+      RG_buffer_1(0:8)                               24        3 ( 8bit)
+      RG_buffer_2(0:8)                               24        3 ( 8bit)
+      RG_buffer_3(0:8)                               24        3 ( 8bit)
+      RG_buffer_4(0:8)                               24        3 ( 8bit)
+      RG_buffer_5(0:8)                               24        3 ( 8bit)
+      RG_buffer_6(0:8)                               16        2 ( 8bit)
+      in0(0:8)                                       16        2 ( 8bit)
+      ave8_ret_r(0:8)                                16        2 ( 8bit)
+      add12u_11_111ot(0:11)                          11        1 (11bit)
+      add12u_11_101ot(0:10)                          10        1 (10bit)
+      enable(0:1)                                     9        9 ( 1bit)
+      CLOCK(0:1)                                      9        9 ( 1bit)
+      add8u1ot(0:9)                                   9        1 ( 9bit)
+      add8u2ot(0:9)                                   9        1 ( 9bit)
+      add8u3ot(0:9)                                   9        1 ( 9bit)
+      add8u4ot(0:9)                                   9        1 ( 9bit)
+      RESET(0:1)                                      8        8 ( 1bit)
+      RG_out0_v(0:8)                                  8        1 ( 8bit)
+      add12u_111ot(0:11)                              8        1 ( 8bit)
+      _NMUX_171(0:8)                                  8        1 ( 8bit)
+      _NMUX_173(0:8)                                  8        1 ( 8bit)
+      _NMUX_175(0:8)                                  8        1 ( 8bit)
+      _NMUX_177(0:8)                                  8        1 ( 8bit)
+      _NMUX_179(0:8)                                  8        1 ( 8bit)
+
+    Top 25 Nets
+    sorted by "Max" (Maximum Fanout)
+      Net Name                                    Total      Max
+      -----------------------------------------------------------------
+      enable(0:1)                                     9        9 ( 1bit)
+      CLOCK(0:1)                                      9        9 ( 1bit)
+      RESET(0:1)                                      8        8 ( 1bit)
+      RG_buffer(0:8)                                 24        3 ( 8bit)
+      RG_buffer_1(0:8)                               24        3 ( 8bit)
+      RG_buffer_2(0:8)                               24        3 ( 8bit)
+      RG_buffer_3(0:8)                               24        3 ( 8bit)
+      RG_buffer_4(0:8)                               24        3 ( 8bit)
+      RG_buffer_5(0:8)                               24        3 ( 8bit)
+      RG_buffer_6(0:8)                               16        2 ( 8bit)
+      in0(0:8)                                       16        2 ( 8bit)
+      ave8_ret_r(0:8)                                16        2 ( 8bit)
+      add12u_11_111ot(0:11)                          11        1 (11bit)
+      add12u_11_101ot(0:10)                          10        1 (10bit)
+      add8u1ot(0:9)                                   9        1 ( 9bit)
+      add8u2ot(0:9)                                   9        1 ( 9bit)
+      add8u3ot(0:9)                                   9        1 ( 9bit)
+      add8u4ot(0:9)                                   9        1 ( 9bit)
+      RG_out0_v(0:8)                                  8        1 ( 8bit)
+      add12u_111ot(0:11)                              8        1 ( 8bit)
+      _NMUX_171(0:8)                                  8        1 ( 8bit)
+      _NMUX_173(0:8)                                  8        1 ( 8bit)
+      _NMUX_175(0:8)                                  8        1 ( 8bit)
+      _NMUX_177(0:8)                                  8        1 ( 8bit)
+      _NMUX_179(0:8)                                  8        1 ( 8bit)
+
+================
+; Primary Port ;
+================
+
+    Name               Type   Bitw
+    ------------------------------
+      in0               in      8
+      enable            in      1
+      ave8_ret          out     8
+

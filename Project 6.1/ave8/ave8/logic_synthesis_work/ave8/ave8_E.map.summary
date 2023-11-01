@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Fri Oct 27 17:45:06 2023
+Analysis & Synthesis Status : Successful - Sun Oct 29 23:27:59 2023
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : ave8_E
 Top-level Entity Name : ave8
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 64
-Total pins : 31
+Total registers : 0
+Total pins : 32
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0
