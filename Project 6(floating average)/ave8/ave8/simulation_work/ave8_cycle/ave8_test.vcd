@@ -1,0 +1,456 @@
+$date
+     Oct 29, 2023       20:09:47
+$end
+
+$version
+              SystemC 2.3.0-ASI --- May 14 2013 20:13:57
+$end
+
+$timescale
+     100 fs
+$end
+
+$scope module SystemC $end
+$scope module user_ave8 $end
+$var wire 1 aae CLOCK $end
+$var wire 1 aaa Cysim_State $end
+$var wire 1 aaf RESET $end
+$var wire 8 aad ave8_ret [7:0] $end
+$var wire 1 aac enable $end
+$var wire 8 aab in0 [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions  $end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$comment
+All initial values are dumped below at time 0 sec = 0 timescale units.
+$end
+
+$dumpvars
+0aaa
+b10 aab
+0aac
+b0 aad
+0aae
+1aaf
+$end
+
+#100000
+1aae
+
+#150000
+0aae
+
+#200000
+1aae
+
+#250000
+0aae
+
+#300000
+1aae
+
+#350000
+0aae
+
+#400000
+1aae
+
+#450000
+0aae
+
+#500000
+1aae
+
+#550000
+0aae
+
+#600000
+1aae
+
+#650000
+0aae
+
+#700000
+1aae
+
+#750000
+0aae
+
+#800000
+1aae
+
+#850000
+0aae
+
+#900000
+1aae
+
+#950000
+0aae
+
+#1000000
+1aae
+
+#1050000
+0aae
+
+#1100000
+1aae
+
+#1150000
+0aae
+
+#1200000
+1aae
+
+#1250000
+0aae
+
+#1300000
+1aae
+
+#1350000
+0aae
+
+#1400000
+1aae
+
+#1450000
+0aae
+
+#1500000
+1aae
+
+#1550000
+0aae
+
+#1600000
+1aae
+
+#1650000
+0aae
+
+#1700000
+1aae
+
+#1750000
+0aae
+
+#1800000
+1aae
+
+#1850000
+0aae
+
+#1900000
+1aae
+
+#1950000
+0aae
+
+#2000000
+1aae
+
+#2025001
+0aaf
+
+#2050000
+0aae
+
+#2100000
+1aae
+
+#2100001
+b101 aab
+
+#2150000
+0aae
+
+#2200000
+1aae
+
+#2200001
+b111 aab
+
+#2250000
+0aae
+
+#2300000
+b1 aad
+1aae
+
+#2300001
+b1001 aab
+
+#2350000
+0aae
+
+#2400000
+b10 aad
+1aae
+
+#2400001
+b10010 aab
+
+#2450000
+0aae
+
+#2500000
+b101 aad
+1aae
+
+#2500001
+b111 aab
+
+#2550000
+0aae
+
+#2600000
+b110 aad
+1aae
+
+#2600001
+b11 aab
+
+#2650000
+0aae
+
+#2700000
+1aae
+
+#2700001
+b10110 aab
+
+#2750000
+0aae
+
+#2800000
+b1001 aad
+1aae
+
+#2800001
+b100 aab
+
+#2850000
+0aae
+
+#2900000
+1aae
+
+#2900001
+b1001 aab
+
+#2950000
+0aae
+
+#3000000
+1aae
+
+#3000001
+b100 aab
+
+#3050000
+0aae
+
+#3100000
+1aae
+
+#3100001
+b110 aab
+
+#3150000
+0aae
+
+#3200000
+1aae
+
+#3200001
+b1111000 aab
+
+#3250000
+0aae
+
+#3300000
+b10101 aad
+1aae
+
+#3300001
+b100 aab
+
+#3350000
+0aae
+
+#3400000
+1aae
+
+#3450000
+0aae
+
+#3500000
+1aae
+
+#3500001
+b100011 aab
+
+#3550000
+0aae
+
+#3600000
+b10111 aad
+1aae
+
+#3600001
+b100 aab
+
+#3650000
+0aae
+
+#3700000
+1aae
+
+#3700001
+b1001 aab
+
+#3750000
+0aae
+
+#3800000
+1aae
+
+#3800001
+b111 aab
+
+#3850000
+0aae
+
+#3900000
+1aae
+
+#3900001
+b101 aab
+
+#3950000
+0aae
+
+#4000000
+1aae
+
+#4000001
+b11 aab
+
+#4050000
+0aae
+
+#4100000
+b1000 aad
+1aae
+
+#4100001
+b111 aab
+
+#4150000
+0aae
+
+#4200000
+b1001 aad
+1aae
+
+#4200001
+b101 aab
+
+#4250000
+0aae
+
+#4300000
+1aae
+
+#4300001
+b11 aab
+
+#4350000
+0aae
+
+#4400000
+b101 aad
+1aae
+
+#4450000
+0aae
+
+#4500000
+1aae
+

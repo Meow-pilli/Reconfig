@@ -1,0 +1,2 @@
+ave8_C.o: ave8_C.cpp ave8_C.h \
+ /proj/cad/cwb-6.1/linux_x86_64/include/cwb_trace.h

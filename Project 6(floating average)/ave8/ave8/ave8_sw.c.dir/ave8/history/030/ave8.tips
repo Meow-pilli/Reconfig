@@ -1,0 +1,10 @@
+H_BT9003: "reg" variable is used in automatic scheduling mode.
+ [Tips] Use "var" or logic type, if possible, which possibly can reduce the number of cycles.
+H_BT9009: Bitwidths of right and left operands are different.
+ [Tips] Casting can reduce area when the maximum value is known.
+        example)
+         var(1..0) a,b,c;
+         var(2..0) x; 
+         x = a+b+c;   ->  (var (1..0))x =a+b+c;
+	[Source Lines]
+	30(../../ave8_sw.c):         for(i=0; i<1000000000 ; i++){

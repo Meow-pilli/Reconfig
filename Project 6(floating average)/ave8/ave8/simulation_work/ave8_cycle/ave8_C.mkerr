@@ -1,0 +1,6 @@
+Copyright (C) 1988-2018 NEC Corporation. All rights reserved.
+mkmfsim version : 2.27 (Linux 64-bit) Fri Mar  9 15:57:32 JST 2018
+         (BIF version : 3.41D)
+Option: -EE -GNU -I. -log_stdout -log_file -target ave8_cycle.exe ave8_C.MakeInfo 
+I_MK8000: Created Makefile(Makefile.GNU)
+mkmfsim finished successfully.

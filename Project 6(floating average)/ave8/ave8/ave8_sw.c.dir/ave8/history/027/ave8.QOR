@@ -1,0 +1,239 @@
+
+Cyber Synthesis Report
+
+===========
+; Summary ;
+===========
+
+  Module Name         : ave8
+  Basic Library Name  : CWBSTDBLIB
+
+  FPGA Family         : cycloneV
+  FPGA Device         : -
+  FPGA Package        : -
+  FPGA Speed          : -
+
+  Resource Utilization
+    ALUTs             :          2
+    Registers         :          2
+    Block Memory Bits :          0
+    DSPs              :          0
+
+  Latency Index       :          2
+  Total States        :          2
+
+  Clock Period        :       10ns
+  Critical Path Delay :        0ns
+
+  Net                 :         12
+  Pin Pair            :         14
+
+  Port                :          2
+    In                :          2
+    Out               :          0
+
+========================
+; Resource Utilization ;
+========================
+
+  Total :
+    ALUTs             :          2
+    Registers         :          2
+    Block Memory Bits :          0
+    DSPs              :          0
+
+===================
+; Functional Unit ;
+===================
+
+    FU Name               Slice    Reg  Delay  Pipeline  Block   Count
+                           LUTs          (ns)    Stage   Memory
+                                                         Bits
+    ------------------------------------------------------------------
+    None
+
+  Unused Functional Units :
+    ---------------------------------------------------
+    None
+
+============
+; Register ;
+============
+
+     Used      Declared                 Used
+      Bit           Bit      Count       Bit  * Count
+    -------------------------------------------------
+        2             2          1                  2
+    -------------------------------------------------
+    Total                                           2
+
+===============
+; Multiplexer ;
+===============
+
+    None
+
+===========
+; Decoder ;
+===========
+
+    None
+
+==========
+; Memory ;
+==========
+
+    None
+
+===========
+; Latency ;
+===========
+
+    Total:
+        Type          : S
+        Latency       : 1 + L1
+        Latency Index : 2
+        State No.     : 1, 2
+        Folding Loop  : -
+        Folding Stages: - , Total Folding States: - , Hazard: -
+        User Operator : -
+        Sub Loops     : L1
+        Line          : -
+    L1:
+        Type          : S
+        Latency       : 1 * N1    [N1 >= 1]
+        Latency Index : 1
+        State No.     : 2
+        Folding Loop  : -
+        Folding Stages: - , Total Folding States: - , Hazard: -
+        User Operator : -
+        Sub Loops     : -
+        Line          : ../../ave8_sw.c:30
+
+=======
+; FSM ;
+=======
+
+  Total States      :          2
+  #FSM              :          1
+  States/FSM        :          1
+  FSM Decoder Delay :    0.655ns
+
+=========
+; Delay ;
+=========
+
+  Clock Period        :       10ns
+  Critical Path Delay :        0ns
+
+              Subtotal
+      Class       (ns)    Ratio
+      -------------------------
+      IN           0.00      0%
+      FU           0.00      0%
+      MUX          0.00      0%
+      DEC          0.00      0%
+      MISC         0.00      0%
+      MEM          0.00      0%
+      -------------------------
+      Total        0.00
+
+    Path: #1
+                                                                Arrival
+                                                          Delay    Time Logic
+      Name                 / Port [Signal              ]   (ns)   (ns)  Stage
+      -----------------------------------------------------------------------
+      _STREG_6             / dout [                    ]      -    0.00     0
+      _STDEC_7             / o1   [                    ]   0.00    0.00     0
+      ST1_01d              / o1   [                    ]   0.00    0.00     0
+
+  False Path                    :  Unchecked
+  Multi Cycle Path              :  Unchecked
+  False Loop/Combinational Loop :          0
+  Latch (bit)                   :          0
+
+========
+; Wire ;
+========
+
+  Total Net Count      :       12
+  Total Pin Pair Count :       14
+  Const Fanout         :        0
+
+  Net Count :
+         Bit       Net    Bit*Net
+     ----------------------------
+           1         2          2
+           2         2          4
+     ----------------------------
+       Total                    6
+
+  Pin Pair Count :
+      Fanout    Bit    Count   Subtotal
+    -----------------------------------
+           2      2        1          4
+           1      2        1          2
+           1      1        2          2
+    -----------------------------------
+       Total                          8
+
+  Fanout for Consts:
+      Value    Fanout
+          0         0
+          1         0
+    ------------------
+      Total         0
+
+  Clock Fanout:
+      Name                         Count
+      ----------------------------------
+      CLOCK(0:1)                       1
+
+  Reset Fanout:
+      Name                         Count
+      ----------------------------------
+      RESET(0:1)                       1
+
+  Register Fanin/Fanout Cone Size:
+
+    Fanin: (Top 10 Registers)
+      Register Name                              Cone Size
+      ----------------------------------------------------
+      _STREG_6(0:2)                                      1
+
+    Fanout: (Top 10 Registers)
+      Register Name                              Cone Size
+      ----------------------------------------------------
+      _STREG_6(0:2)                                      1
+
+  Routability:
+
+    Top 25 Nets
+    sorted by "Total" (Total Pin Pair)
+      Net Name                                    Total      Max
+      -----------------------------------------------------------------
+      _STREG_6(0:2)                                   4        2 ( 2bit)
+      _STNSL_8(0:2)                                   2        1 ( 2bit)
+      CLOCK(0:1)                                      1        1 ( 1bit)
+      RESET(0:1)                                      1        1 ( 1bit)
+      ST1_01d(0:1)                                    0        0 ( 1bit)
+      ST1_02d(0:1)                                    0        0 ( 1bit)
+
+    Top 25 Nets
+    sorted by "Max" (Maximum Fanout)
+      Net Name                                    Total      Max
+      -----------------------------------------------------------------
+      _STREG_6(0:2)                                   4        2 ( 2bit)
+      _STNSL_8(0:2)                                   2        1 ( 2bit)
+      CLOCK(0:1)                                      1        1 ( 1bit)
+      RESET(0:1)                                      1        1 ( 1bit)
+      ST1_01d(0:1)                                    0        0 ( 1bit)
+      ST1_02d(0:1)                                    0        0 ( 1bit)
+
+================
+; Primary Port ;
+================
+
+    Name               Type   Bitw
+    ------------------------------
+
