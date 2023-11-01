@@ -1,9 +1,0 @@
-Copyright (C) 1988-2018 NEC Corporation. All rights reserved.
-LSscrgen version : 5.5.17 (Linux 64-bit) 13:22:20 Feb 22 2018
-         (BIF version : 3.41B)
-         (LICflex version : 1.53 cylmd)
-         (GEN COMMON version : 3.68)
-Constraints file is generated: [ave8_E.sdc]
-STA script file is generated: [ave8_E.sta.tcl]
-Script file is generated: [ave8_E.tcl]
-LSscrgen finished successfully.

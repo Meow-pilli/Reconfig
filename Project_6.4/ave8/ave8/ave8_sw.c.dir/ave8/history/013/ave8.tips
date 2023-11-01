@@ -1,6 +1,0 @@
-H_BT9003: "reg" variable is used in automatic scheduling mode.
- [Tips] Use "var" or logic type, if possible, which possibly can reduce the number of cycles.
-H_BT9008: The bitwidth of value assigned to variable output_value1 (bitwidth 8) is 3 or below.
- [Tips] Reduce the bitwidth for the variable.
-	[Source Lines]
-	63(../../ave8_sw.c):     output_value = digit1 + digit2;

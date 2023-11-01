@@ -1,3 +1,0 @@
-0001	20231029120610-000	ave8_sw.c	ave8	FileSource
-0002	20231029120610-000	ave8_sw.c.dir	ave8	Dir1
-0003	20231029145041-000	ave8_E.v	ave8/logic_synthesis_work/ave8	File3
