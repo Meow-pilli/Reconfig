@@ -9,5 +9,5 @@ Design and implementation of various projects on cyclone V FPGA
 <br/>
 <br/>
 
-Install [Quartus Prime Lite](https://www.google.com/url?sa=i&url=https%3A%2F%2Fnl.mouser.com%2Fnew%2Fterasic-technologies%2Fterasic-cyclone-v-gx-starter-kit%2F&psig=AOvVaw28a3CAVmITFx6-3loDcdsK&ust=1698888751483000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCJD-zsvWoYIDFQAAAAAdAAAAABAD) and get [License](https://licensing.intel.com/psg/s/?language=en_US) of questa RTL simulator for any other troubleshooting refer this [video](https://www.youtube.com/watch?v=W7ijDRdqEKQ) 
+Install [Quartus Prime Lite](https://www.intel.com/content/www/us/en/software-kit/785086/intel-quartus-prime-lite-edition-design-software-version-22-1-2-for-windows.html?) and get [License](https://licensing.intel.com/psg/s/?language=en_US) of questa RTL simulator for any other troubleshooting refer this [video](https://www.youtube.com/watch?v=W7ijDRdqEKQ) 
 
