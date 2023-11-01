@@ -4,7 +4,7 @@
 Design and implementation of various projects on cyclone V FPGA
 <br/>
 <br/>
-<img src="https://www.mouser.com/images/marketingid/2014/microsites/109264031/Front%20Overview.png">
+<img src="https://raw.githubusercontent.com/Nived151/Reconfig/main/Assets/Front%20Overview.png">
 
 <br/>
 <br/>
