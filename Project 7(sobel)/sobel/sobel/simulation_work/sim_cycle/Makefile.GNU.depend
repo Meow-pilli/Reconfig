@@ -1,0 +1,2 @@
+sobel_C.o: sobel_C.cpp sobel_C.h \
+ /proj/cad/cwb-6.1/linux_x86_64/include/cwb_trace.h

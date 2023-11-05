@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<sourceInfo version="1.00">
+    <hierInfo>
+        <processes>
+            <process name="sobel" type="process" file="sobel.IFF">
+            </process>
+        </processes>
+    </hierInfo>
+    <fileInfo>
+        <sourcefiles>
+            <sourcefile name="../../sobel.c" timestamp="20231104220435"/>
+            <sourcefile name="../../attrs191.h" timestamp="20231103183743"/>
+        </sourcefiles>
+    </fileInfo>
+</sourceInfo>

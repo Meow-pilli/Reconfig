@@ -1,0 +1,33 @@
+<!DOCTYPE AQUARIUM_OPTION [
+<!ELEMENT root (properties)>
+<!ELEMENT properties (property)*>
+<!ELEMENT property EMPTY>
+<!ATTLIST property
+   name CDATA #REQUIRED
+   type CDATA #REQUIRED
+   value CDATA #REQUIRED
+>
+]>
+<root>
+  <properties>
+    <property type="string" value="2023/10/31 16:56:48.000" name="created" />
+    <property type="string" value="2023/10/31 16:56:49.000" name="do::timestamp" />
+    <property type="int" value="16777216" name="extraInfo" />
+    <property type="string" value="gcc" name="mk::CompilerCommand" />
+    <property type="string" value="C|TB" name="mk::Def" />
+    <property type="string" value="sim_sw.exe" name="mk::ScenarioTarget" />
+    <property type="string" value="CCompiler" name="mk::SimLevel" />
+    <property type="string" value="sim_sw.exe" name="mk::Target" />
+    <property type="string" value="2023/10/31 17:03:13.000" name="mk::timestamp" />
+    <property type="string" value="Off" name="sc::CollectCoverage" />
+    <property type="string" value="2023/10/31 16:56:49.000" name="se::timestamp" />
+    <property type="string" value="auto" name="ss::Execution" />
+    <property type="string" value="2023/10/31 16:58:10.000" name="ss::LastCompiled" />
+    <property type="string" value="sim_sw" name="ss::Name" />
+    <property type="string" value="cc" name="ss::SimLevel" />
+    <property type="string" value="modelsim-all" name="ss::Simulator" />
+    <property type="string" value="sobel.c" name="ss::Source" />
+    <property type="string" value="SystemC" name="ss::TestbenchType" />
+    <property type="string" value="2023/10/31 16:57:11.000" name="ss::timestamp" />
+  </properties>
+</root>

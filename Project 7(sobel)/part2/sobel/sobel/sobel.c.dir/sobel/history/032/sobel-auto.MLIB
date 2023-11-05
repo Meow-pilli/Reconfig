@@ -1,0 +1,7 @@
+
+#@VERSION { 3.00 }
+#@LIB { sobel }
+#@UNIT 1/10ps
+#@FPGA_FAMILY{cycloneV}
+#@SYN_TOOL{QTS}
+#@END { sobel }

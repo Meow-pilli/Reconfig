@@ -1,0 +1,63 @@
+I_BT1173: LOG file is generated. (sobel.LOG.gz)
+I_BT1921: License has been successfully obtained by FLEXlm.
+I_BT2619: Synthesize in FPGA (cycloneV) mode.
+I_BT6773: The BLIB and FLIB files are loaded.
+	/home/010/s/sx/sxc210186/Reconfig/Project_7.1/part2/part2 source_sobel_exploration/cycloneV.BLIB
+	/home/010/s/sx/sxc210186/Reconfig/Project_7.1/part2/part2 source_sobel_exploration/cycloneV.FLIB
+	sobel-auto.FLIB
+	sobel-amacro-auto.FLIB
+I_BT4169: All signals are synthesized as ascending bit-order because all declared signals are of ascending bit-order.
+I_BT4607: for loop is unrolled
+	[Source Lines]
+	57(../../sobel.c):      for(X=0;X< 3;X++){
+I_BT4607: for loop is unrolled
+	[Source Lines]
+	56(../../sobel.c):    for(Y=2;Y>0;Y--){
+I_BT4607: for loop is unrolled
+	[Source Lines]
+	63(../../sobel.c):        for(X=0; X<SIZE_BUFFER; X++)
+I_BT4607: for loop is unrolled
+	[Source Lines]
+	74(../../sobel.c):    for(rowOffset = -1; rowOffset <= 1; rowOffset++){
+I_BT4442: Array signal Gy is expanded at dimension #2 from right.
+	[Source Lines]
+	50(../../sobel.c):   char Gy[3][3] /* ATTR3 */={{1, 2, 1},
+I_BT4442: Array signal Gx is expanded at dimension #2 from right.
+	[Source Lines]
+	45(../../sobel.c):   char Gx[3][3] /* ATTR2 */  ={{1 ,0 ,-1},
+I_BT4442: Array signal line_buffer is expanded at dimension #2 from right.
+	[Source Lines]
+	29(../../sobel.c): unsigned char line_buffer[SIZE_BUFFER][SIZE_BUFFER];
+I_BT5035: Unspecified information (e.g. AREA/DELAY/NET) of combinational array (Gy_0_a) in FCNT file estimated from basic library file (/home/010/s/sx/sxc210186/Reconfig/Project_7.1/part2/part2 source_sobel_exploration/cycloneV.BLIB).
+I_BT4121: Array Gy_0_a is synthesized as a combinational circuit.
+I_BT5047: Array reference Gy_1_a replaced by constant because constant array is initialized with same values.
+I_BT5035: Unspecified information (e.g. AREA/DELAY/NET) of combinational array (Gy_2_a) in FCNT file estimated from basic library file (/home/010/s/sx/sxc210186/Reconfig/Project_7.1/part2/part2 source_sobel_exploration/cycloneV.BLIB).
+I_BT4121: Array Gy_2_a is synthesized as a combinational circuit.
+I_BT4121: Array Gx_0_a is synthesized as a combinational circuit.
+I_BT4121: Array Gx_1_a is synthesized as a combinational circuit.
+I_BT4121: Array Gx_2_a is synthesized as a combinational circuit.
+I_BT4393: No memory required. Empty memory library file (sobel-auto.MLIB) generated.
+ [Action] Change type of array to 'mem' if required.
+          <OR> Specify appropriate "-a*" or "-ap*" options.
+I_BT4394: No memory required. Empty memory constraint file (sobel-auto.MCNT) generated.
+ [Action] Change type of array to 'mem' if required.
+          <OR> Specify appropriate "-a*" or "-ap*" options.
+I_BT4389: Overwrite memory library file / memory constraint file.
+	sobel-auto.MLIB
+	sobel-auto.MCNT
+I_BT4395: 12 functional units templates are generated.
+I_BT4392: No arithmetic macro functional unit required.
+I_BT4319: Empty FLIB file (sobel-amacro-auto.FLIB) generated. No functional units required.
+ [Action] If required, confirm the description.
+I_BT4318: Empty FCNT file (sobel-amacro-auto.FCNT) generated. No functional units required.
+ [Action] If required, confirm the description.
+I_BT4384: Overwrite functional unit library files / functional unit constraint files.
+	sobel-auto.FLIB
+	sobel-auto.FCNT
+	sobel-amacro-auto.FLIB
+	sobel-amacro-auto.FCNT
+I_BT4392: No arithmetic macro functional unit required.
+I_BT1190: The following ERROR/WARNING/INFO/TIPS exist.
+	29 information  exist
+	 1 tips         exist
+	---> SEE sobel.err FILE and sobel.tips FILE for DETAILS

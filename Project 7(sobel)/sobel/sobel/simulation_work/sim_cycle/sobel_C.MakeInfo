@@ -1,0 +1,13 @@
+# cmscgen version : 7.40
+# options : -EE -input=file:cycle -compare=cycle -b10 -dump=VCD -dump_signal=PORT -org_type=design -enum_int=NO -out_dir=. -file cmscgen_file.sobel.txt 
+# checksum : 00000233f64638a8b9651f69393e913dc5ad801cad1e99c8
+# timestamp_C : 20231031144337_25543_06192
+Option  	-EE -input=file:cycle -compare=cycle -b10 -dump=VCD -dump_signal=PORT -org_type=design -enum_int=NO -out_dir=. -file cmscgen_file.sobel.txt 
+signed_flag	mixsigned
+random_flag	NO
+macro	NO
+src_file	sobel_C.cpp
+header_file	sobel_C.h
+carry_flag	ON
+file_path	.
+debug_model	NO

@@ -1,0 +1,35 @@
+<!DOCTYPE AQUARIUM_OPTION [
+<!ELEMENT root (properties)>
+<!ELEMENT properties (property)*>
+<!ELEMENT property EMPTY>
+<!ATTLIST property
+   name CDATA #REQUIRED
+   type CDATA #REQUIRED
+   value CDATA #REQUIRED
+>
+]>
+<root>
+  <properties>
+    <property type="string" value="sobel" name="Process" />
+    <property type="string" value="Analyzed" name="State" />
+    <property type="string" value="2000" name="bt::Clock" />
+    <property type="string" value="2" name="bt::ClockResetSyncronizerNum" />
+    <property type="string" value="10" name="bt::ErrorWarningOptionFalseLoopMax" />
+    <property type="string" value="/home/010/s/sx/sxc210186/Reconfig/Project_7.1/part2/part2 source_sobel_exploration/cycloneV.BLIB" name="bt::LibraryBlibFile" />
+    <property type="string" value="sobel-auto.FCNT|sobel-amacro-auto.FCNT" name="bt::LibraryFcntFile" />
+    <property type="string" value="/home/010/s/sx/sxc210186/Reconfig/Project_7.1/part2/part2 source_sobel_exploration/cycloneV.FLIB|sobel-auto.FLIB|sobel-amacro-auto.FLIB" name="bt::LibraryFlibFile" />
+    <property type="string" value="sobel-auto.MCNT" name="bt::LibraryMcntFile" />
+    <property type="string" value="sobel-auto.MLIB" name="bt::LibraryMlibFile" />
+    <property type="string" value="2023/11/04 17:01:32.000" name="bt::timestamp" />
+    <property type="string" value="sobel_E.v" name="ls::AddFile" />
+    <property type="string" value="fpga" name="ls::FollowDevice" />
+    <property type="string" value="FC31" name="ls::FollowPack" />
+    <property type="string" value="5CSEMA5" name="ls::FollowPart" />
+    <property type="string" value="-6" name="ls::FollowSpeed" />
+    <property type="string" value="qts" name="ls::FollowSynTool" />
+    <property type="string" value="cycloneV" name="ls::FollowTech" />
+    <property type="string" value="2023/11/04 16:39:17.000" name="ls::timestamp" />
+    <property type="string" value="2023/11/04 16:39:17.000" name="vh::timestamp" />
+    <property type="string" value="2023/11/04 16:39:17.000" name="vl::timestamp" />
+  </properties>
+</root>

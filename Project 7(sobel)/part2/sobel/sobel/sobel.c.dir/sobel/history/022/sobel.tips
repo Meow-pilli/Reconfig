@@ -1,0 +1,20 @@
+H_BT9003: "reg" variable is used in automatic scheduling mode.
+ [Tips] Use "var" or logic type, if possible, which possibly can reduce the number of cycles.
+H_BT9008: The bitwidth of value assigned to variable M_041 (bitwidth 2) is 1 or below.
+ [Tips] Reduce the bitwidth for the variable.
+	[Source Lines]
+	78(../../sobel.c):        sumY = sumY + line_buffer[1 +rowOffset][1-colOffset] * Gy[1+rowOffset][1+colOffset];
+	[Source Lines]
+	78(../../sobel.c):        sumY = sumY + line_buffer[1 +rowOffset][1-colOffset] * Gy[1+rowOffset][1+colOffset];
+	[Source Lines]
+	78(../../sobel.c):        sumY = sumY + line_buffer[1 +rowOffset][1-colOffset] * Gy[1+rowOffset][1+colOffset];
+H_BT9012: The cycle has been increased the number of decoders of the register array for array input_row is limited.
+ [Tips] Increasing decoders can improve circuit performance.
+        example)
+        reg(0:8) ary[3]/* Cyber rw_port = RW2 */ "2" means decoder number.
+H_BT9011: The cycle has been increased because the number of read ports for array input_row is limited.
+ [Tips] Increasing read ports can reduce the number of cycles.
+H_BT9012: The cycle has been increased the number of decoders of the register array for array line_buffer_a_2 is limited.
+ [Tips] Increasing decoders can improve circuit performance.
+        example)
+        reg(0:8) ary[3]/* Cyber rw_port = RW2 */ "2" means decoder number.

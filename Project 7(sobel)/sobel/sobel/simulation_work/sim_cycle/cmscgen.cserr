@@ -1,0 +1,14 @@
+Copyright (C) 1988-2018 NEC Corporation. All rights reserved.
+cmscgen version : 7.40 (Linux 64-bit) Mar  9 2018 21:44:20
+         (BIF version : 3.41z)
+         (LICflex version : 1.53 cylmd)
+         (GEN COMMON version : 3.66)
+Option: -EE -input=file:cycle -compare=cycle -b10 -dump=VCD -dump_signal=PORT -org_type=design -enum_int=NO -out_dir=. -file cmscgen_file.sobel.txt 
+I_SC61004: Now processing '../../sobel.c.dir/sobel/sobel_C.IFF'.
+[Information]
+     input  file : ../../sobel.c.dir/sobel/sobel_C.IFF
+     output file : ./sobel_C.cpp
+     output file : ./sobel_C.xml
+     output file : ./sobel_C.h
+     output file : ./sobel_C.MakeInfo
+cmscgen finished successfully.

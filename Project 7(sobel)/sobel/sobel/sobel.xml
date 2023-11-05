@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<sourceInfo version="1.00">
+    <hierInfo>
+        <processes>
+            <process name="sobel" type="process" file="sobel.IFF">
+            </process>
+        </processes>
+    </hierInfo>
+    <fileInfo>
+        <sourcefiles>
+            <sourcefile name="../../sobel.c" timestamp="20231103000010"/>
+            <sourcefile name="/proj/cad/cwb-6.1/linux_x86_64/include/cwb_sc/cwb_f2i.h" timestamp="20180322070928"/>
+        </sourcefiles>
+    </fileInfo>
+</sourceInfo>

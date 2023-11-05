@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<debugInfo version="3.30">
+    <cycleModelSymbolInfo>
+        <registers>
+            <register id="145">
+                <name>RG_line_buffer</name>
+                <sign>unsigned</sign>
+                <bitwidth>8</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+                <clock portID="191"/>
+                <reset portID="192" mode="async"/>
+            </register>
+            <register id="146">
+                <name>RG_line_buffer_1</name>
+                <sign>unsigned</sign>
+                <bitwidth>8</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+                <clock portID="191"/>
+                <reset portID="192" mode="async"/>
+            </register>
+            <register id="147">
+                <name>RG_line_buffer_2</name>
+                <sign>unsigned</sign>
+                <bitwidth>8</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+                <clock portID="191"/>
+                <reset portID="192" mode="async"/>
+            </register>
+            <register id="190">
+                <name>sobel_ret_r</name>
+                <sign>unsigned</sign>
+                <bitwidth>8</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+                <clock portID="191"/>
+                <reset portID="192" mode="async"/>
+            </register>
+        </registers>
+        <terminals>
+            <terminal id="152">
+                <name>VR_input_row_a00_t</name>
+                <sign>unsigned</sign>
+                <bitwidth>8</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+            </terminal>
+            <terminal id="153">
+                <name>VR_input_row_a01_t</name>
+                <sign>unsigned</sign>
+                <bitwidth>8</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+            </terminal>
+            <terminal id="154">
+                <name>VR_input_row_a02_t</name>
+                <sign>unsigned</sign>
+                <bitwidth>8</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+            </terminal>
+            <terminal id="155">
+                <name>line_buffer_2_a_a01_t</name>
+                <sign>unsigned</sign>
+                <bitwidth>8</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+            </terminal>
+            <terminal id="156">
+                <name>line_buffer_0_a_a00_t</name>
+                <sign>unsigned</sign>
+                <bitwidth>8</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+            </terminal>
+            <terminal id="157">
+                <name>line_buffer_1_a_a00_t</name>
+                <sign>unsigned</sign>
+                <bitwidth>8</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+            </terminal>
+            <terminal id="158">
+                <name>line_buffer_2_a_a00_t</name>
+                <sign>unsigned</sign>
+                <bitwidth>8</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+            </terminal>
+            <terminal id="159">
+                <name>sumX3_t</name>
+                <sign>signed</sign>
+                <bitwidth>11</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+            </terminal>
+            <terminal id="162">
+                <name>sumY3_t</name>
+                <sign>signed</sign>
+                <bitwidth>11</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+            </terminal>
+            <terminal id="163">
+                <name>sumX1_t</name>
+                <sign>unsigned</sign>
+                <bitwidth>10</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+            </terminal>
+            <terminal id="164">
+                <name>sumX1_t1</name>
+                <sign>unsigned</sign>
+                <bitwidth>10</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+            </terminal>
+            <terminal id="165">
+                <name>sumY1_t</name>
+                <sign>unsigned</sign>
+                <bitwidth>10</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+            </terminal>
+            <terminal id="166">
+                <name>sumY1_t1</name>
+                <sign>unsigned</sign>
+                <bitwidth>10</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+            </terminal>
+            <terminal id="167">
+                <name>sumX2_t</name>
+                <sign>unsigned</sign>
+                <bitwidth>8</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+            </terminal>
+            <terminal id="168">
+                <name>sumY2_t</name>
+                <sign>unsigned</sign>
+                <bitwidth>8</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+            </terminal>
+            <terminal id="169">
+                <name>SUM1_t</name>
+                <sign>unsigned</sign>
+                <bitwidth>9</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+            </terminal>
+            <terminal id="170">
+                <name>SUM2_t</name>
+                <sign>unsigned</sign>
+                <bitwidth>8</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+            </terminal>
+            <terminal id="178">
+                <name>sumX1_t2</name>
+                <sign>unsigned</sign>
+                <bitwidth>10</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+            </terminal>
+            <terminal id="179">
+                <name>sumY1_t2</name>
+                <sign>unsigned</sign>
+                <bitwidth>10</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+            </terminal>
+        </terminals>
+        <ports>
+            <port id="148">
+                <name>input_row_a00</name>
+                <direction>in</direction>
+                <sign>unsigned</sign>
+                <bitwidth>8</bitwidth>
+                <bitstart>7</bitstart>
+                <is_down>1</is_down>
+            </port>
+            <port id="149">
+                <name>input_row_a01</name>
+                <direction>in</direction>
+                <sign>unsigned</sign>
+                <bitwidth>8</bitwidth>
+                <bitstart>7</bitstart>
+                <is_down>1</is_down>
+            </port>
+            <port id="150">
+                <name>input_row_a02</name>
+                <direction>in</direction>
+                <sign>unsigned</sign>
+                <bitwidth>8</bitwidth>
+                <bitstart>7</bitstart>
+                <is_down>1</is_down>
+            </port>
+            <port id="151">
+                <name>sobel_ret</name>
+                <direction>out</direction>
+                <sign>unsigned</sign>
+                <bitwidth>8</bitwidth>
+                <bitstart>7</bitstart>
+                <is_down>1</is_down>
+            </port>
+            <port id="191">
+                <name>CLOCK</name>
+                <direction>in</direction>
+                <sign>unsigned</sign>
+                <bitwidth>1</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>1</is_down>
+            </port>
+            <port id="192">
+                <name>RESET</name>
+                <direction>in</direction>
+                <sign>unsigned</sign>
+                <bitwidth>1</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>1</is_down>
+            </port>
+        </ports>
+        <hier_ports>
+        </hier_ports>
+        <memories>
+        </memories>
+        <fsmStates>
+            <fsmState id="1"><name>ST1_01</name></fsmState>
+        </fsmStates>
+    </cycleModelSymbolInfo>
+    <langSymbolInfo>
+        <structs>
+        </structs>
+        <bdlVars>
+            <bdlVar id="1" array="yes">
+                <scope><name>sobel</name></scope>
+                <name>input_row</name>
+                <dim>1</dim>
+                <element depth="1">3</element>
+                <direction></direction>
+                <sign>unsigned</sign>
+                <physic>var</physic>
+                <org_type>unsigned char</org_type>
+                <bitwidth>8</bitwidth>
+                <bitstart>7</bitstart>
+                <is_down>1</is_down>
+                <address></address>
+                <category>Internal</category>
+                <line fileName="../../sobel.c" start="37" end="37"/>
+            </bdlVar>
+            <bdlVar id="2">
+                <scope><name>sobel</name></scope>
+                <name>X</name>
+                <direction></direction>
+                <sign>unsigned</sign>
+                <physic>var</physic>
+                <org_type>unsigned int</org_type>
+                <bitwidth>32</bitwidth>
+                <bitstart>31</bitstart>
+                <is_down>1</is_down>
+                <address></address>
+                <category>Internal</category>
+                <line fileName="../../sobel.c" start="39" end="39"/>
+            </bdlVar>
+            <bdlVar id="3">
+                <scope><name>sobel</name></scope>
+                <name>Y</name>
+                <direction></direction>
+                <sign>unsigned</sign>
+                <physic>var</physic>
+                <org_type>unsigned int</org_type>
+                <bitwidth>32</bitwidth>
+                <bitstart>31</bitstart>
+                <is_down>1</is_down>
+                <address></address>
+                <category>Internal</category>
+                <line fileName="../../sobel.c" start="39" end="39"/>
+            </bdlVar>
+            <bdlVar id="4">
+                <scope><name>sobel</name></scope>
+                <name>sumX</name>
+                <direction></direction>
+                <sign>signed</sign>
+                <physic>var</physic>
+                <org_type>int</org_type>
+                <bitwidth>32</bitwidth>
+                <bitstart>31</bitstart>
+                <is_down>1</is_down>
+                <address></address>
+                <category>Internal</category>
+                <line fileName="../../sobel.c" start="40" end="40"/>
+            </bdlVar>
+            <bdlVar id="5">
+                <scope><name>sobel</name></scope>
+                <name>sumY</name>
+                <direction></direction>
+                <sign>signed</sign>
+                <physic>var</physic>
+                <org_type>int</org_type>
+                <bitwidth>32</bitwidth>
+                <bitstart>31</bitstart>
+                <is_down>1</is_down>
+                <address></address>
+                <category>Internal</category>
+                <line fileName="../../sobel.c" start="40" end="40"/>
+            </bdlVar>
+            <bdlVar id="6">
+                <scope><name>sobel</name></scope>
+                <name>SUM</name>
+                <direction></direction>
+                <sign>signed</sign>
+                <physic>var</physic>
+                <org_type>int</org_type>
+                <bitwidth>32</bitwidth>
+                <bitstart>31</bitstart>
+                <is_down>1</is_down>
+                <address></address>
+                <category>Internal</category>
+                <line fileName="../../sobel.c" start="41" end="41"/>
+            </bdlVar>
+            <bdlVar id="7">
+                <scope><name>sobel</name></scope>
+                <name>rowOffset</name>
+                <direction></direction>
+                <sign>signed</sign>
+                <physic>var</physic>
+                <org_type>int</org_type>
+                <bitwidth>32</bitwidth>
+                <bitstart>31</bitstart>
+                <is_down>1</is_down>
+                <address></address>
+                <category>Internal</category>
+                <line fileName="../../sobel.c" start="41" end="41"/>
+            </bdlVar>
+            <bdlVar id="8">
+                <scope><name>sobel</name></scope>
+                <name>colOffset</name>
+                <direction></direction>
+                <sign>signed</sign>
+                <physic>var</physic>
+                <org_type>int</org_type>
+                <bitwidth>32</bitwidth>
+                <bitstart>31</bitstart>
+                <is_down>1</is_down>
+                <address></address>
+                <category>Internal</category>
+                <line fileName="../../sobel.c" start="41" end="41"/>
+            </bdlVar>
+            <bdlVar id="9">
+                <scope><name>sobel</name></scope>
+                <name>output_row</name>
+                <direction></direction>
+                <sign>unsigned</sign>
+                <physic>var</physic>
+                <org_type>unsigned char</org_type>
+                <bitwidth>8</bitwidth>
+                <bitstart>7</bitstart>
+                <is_down>1</is_down>
+                <address></address>
+                <category>Internal</category>
+                <line fileName="../../sobel.c" start="42" end="42"/>
+            </bdlVar>
+            <bdlVar id="10" array="yes">
+                <scope><name>sobel</name></scope>
+                <name>Gx</name>
+                <dim>2</dim>
+                <element depth="1">3</element>
+                <element depth="2">3</element>
+                <direction></direction>
+                <sign>signed</sign>
+                <physic>var</physic>
+                <org_type>char</org_type>
+                <bitwidth>8</bitwidth>
+                <bitstart>7</bitstart>
+                <is_down>1</is_down>
+                <address></address>
+                <category>Internal</category>
+                <line fileName="../../sobel.c" start="44" end="44"/>
+            </bdlVar>
+            <bdlVar id="11" array="yes">
+                <scope><name>sobel</name></scope>
+                <name>Gy</name>
+                <dim>2</dim>
+                <element depth="1">3</element>
+                <element depth="2">3</element>
+                <direction></direction>
+                <sign>signed</sign>
+                <physic>var</physic>
+                <org_type>char</org_type>
+                <bitwidth>8</bitwidth>
+                <bitstart>7</bitstart>
+                <is_down>1</is_down>
+                <address></address>
+                <category>Internal</category>
+                <line fileName="../../sobel.c" start="49" end="49"/>
+            </bdlVar>
+            <bdlVar id="12" array="yes">
+                <name>line_buffer</name>
+                <dim>2</dim>
+                <element depth="1">3</element>
+                <element depth="2">3</element>
+                <direction></direction>
+                <sign>unsigned</sign>
+                <physic>var</physic>
+                <org_type>unsigned char</org_type>
+                <bitwidth>8</bitwidth>
+                <bitstart>7</bitstart>
+                <is_down>1</is_down>
+                <address></address>
+                <category>External</category>
+                <line fileName="../../sobel.c" start="28" end="28"/>
+            </bdlVar>
+        </bdlVars>
+        <pointers>
+            <pointer id="381">
+                <scope><name>sobel</name></scope>
+                <name>*(&amp;input_row[0] + X)</name>
+                <sign>unsigned</sign>
+                <physic>var</physic>
+                <org_type>unsigned char</org_type>
+                <bitwidth>8</bitwidth>
+                <bitstart>0</bitstart>
+                <is_down>0</is_down>
+                <line fileName="../../sobel.c" start="63" end="63"/>
+            </pointer>
+        </pointers>
+    </langSymbolInfo>
+    <relations>
+        <variable_relations>
+            <var bdlVarID="1">
+                <expand nestingLevel="1" depth="1" arrayIndex="0" id="390">
+                    <port_relation portID="148"/>
+                    <ter_relation terID="152" stateID="1" branchID="11" order="40"/>
+                </expand>
+                <expand nestingLevel="1" depth="1" arrayIndex="1" id="391">
+                    <port_relation portID="149"/>
+                    <ter_relation terID="153" stateID="1" branchID="11" order="41"/>
+                </expand>
+                <expand nestingLevel="1" depth="1" arrayIndex="2" id="392">
+                    <port_relation portID="150"/>
+                    <ter_relation terID="154" stateID="1" branchID="11" order="42"/>
+                </expand>
+            </var>
+            <var bdlVarID="4">
+                <ter_relation terID="178" stateID="1" branchID="10" order="32"/>
+                <ter_relation terID="167" stateID="1" branchID="7" order="24"/>
+                <ter_relation terID="167" stateID="1" branchID="8" order="26"/>
+                <ter_relation terID="164" stateID="1" branchID="9" order="29"/>
+                <ter_relation terID="164" stateID="1" branchID="10" order="33"/>
+                <ter_relation terID="163" stateID="1" branchID="9" order="30"/>
+                <ter_relation terID="159" stateID="1" branchID="11" order="47"/>
+            </var>
+            <var bdlVarID="5">
+                <ter_relation terID="179" stateID="1" branchID="6" order="20"/>
+                <ter_relation terID="168" stateID="1" branchID="3" order="12"/>
+                <ter_relation terID="168" stateID="1" branchID="4" order="14"/>
+                <ter_relation terID="166" stateID="1" branchID="5" order="17"/>
+                <ter_relation terID="166" stateID="1" branchID="6" order="21"/>
+                <ter_relation terID="165" stateID="1" branchID="5" order="18"/>
+                <ter_relation terID="162" stateID="1" branchID="11" order="50"/>
+            </var>
+            <var bdlVarID="6">
+                <ter_relation terID="170" stateID="1" branchID="1" order="7"/>
+                <ter_relation terID="170" stateID="1" branchID="2" order="9"/>
+                <ter_relation terID="169" stateID="1" branchID="11" order="51"/>
+            </var>
+            <var bdlVarID="12">
+                <expand nestingLevel="1" depth="1" arrayIndex="0" id="383">
+                    <expand nestingLevel="2" depth="2" arrayIndex="0" id="394">
+                        <ter_relation terID="156" stateID="1" branchID="11" order="44"/>
+                    </expand>
+                    <expand nestingLevel="2" depth="2" arrayIndex="2" id="384">
+                        <reg_relation regID="145">
+                            <relation_begin stateID="1" branchID="11"/>
+                            <relation_end stateID="1" branchID="11"/>
+                        </reg_relation>
+                    </expand>
+                </expand>
+                <expand nestingLevel="1" depth="1" arrayIndex="1" id="385">
+                    <expand nestingLevel="2" depth="2" arrayIndex="0" id="395">
+                        <ter_relation terID="157" stateID="1" branchID="11" order="45"/>
+                    </expand>
+                    <expand nestingLevel="2" depth="2" arrayIndex="2" id="386">
+                        <reg_relation regID="146">
+                            <relation_begin stateID="1" branchID="11"/>
+                            <relation_end stateID="1" branchID="11"/>
+                        </reg_relation>
+                    </expand>
+                </expand>
+                <expand nestingLevel="1" depth="1" arrayIndex="2" id="387">
+                    <expand nestingLevel="2" depth="2" arrayIndex="0" id="396">
+                        <ter_relation terID="158" stateID="1" branchID="11" order="46"/>
+                    </expand>
+                    <expand nestingLevel="2" depth="2" arrayIndex="1" id="393">
+                        <ter_relation terID="155" stateID="1" branchID="11" order="43"/>
+                    </expand>
+                    <expand nestingLevel="2" depth="2" arrayIndex="2" id="388">
+                        <reg_relation regID="147">
+                            <relation_begin stateID="1" branchID="11"/>
+                            <relation_end stateID="1" branchID="11"/>
+                        </reg_relation>
+                    </expand>
+                </expand>
+            </var>
+        </variable_relations>
+        <pointer_relations>
+        </pointer_relations>
+    </relations>
+    <structureInfo>
+        <loops>
+        </loops>
+        <functions>
+            <function id="1" process="yes">
+                <name>sobel</name>
+                <line fileName="../../sobel.c" start="37" end="93"/>
+                <instance num="0"/>
+            </function>
+        </functions>
+        <blocks>
+        </blocks>
+    </structureInfo>
+    <state_line_relation>
+        <state_relation stateID="1" branchID="1">
+            <lineinfo fileName="../../sobel.c">
+                <line start="37" end="37"/>
+                <line start="57" end="57"/>
+                <line start="63" end="63"/>
+                <line start="74" end="75"/>
+                <line start="81" end="82"/>
+                <line start="84" end="85"/>
+                <line start="87" end="87"/>
+                <line start="89" end="89"/>
+                <line start="92" end="93"/>
+            </lineinfo>
+        </state_relation>
+        <state_relation stateID="1" branchID="2">
+            <lineinfo fileName="../../sobel.c">
+                <line start="37" end="37"/>
+                <line start="57" end="57"/>
+                <line start="63" end="63"/>
+                <line start="74" end="75"/>
+                <line start="81" end="82"/>
+                <line start="84" end="85"/>
+                <line start="87" end="87"/>
+                <line start="89" end="89"/>
+                <line start="92" end="93"/>
+            </lineinfo>
+        </state_relation>
+        <state_relation stateID="1" branchID="3">
+            <lineinfo fileName="../../sobel.c">
+                <line start="37" end="37"/>
+                <line start="57" end="57"/>
+                <line start="63" end="63"/>
+                <line start="74" end="75"/>
+                <line start="81" end="82"/>
+                <line start="84" end="85"/>
+                <line start="87" end="87"/>
+                <line start="89" end="89"/>
+                <line start="92" end="93"/>
+            </lineinfo>
+        </state_relation>
+        <state_relation stateID="1" branchID="4">
+            <lineinfo fileName="../../sobel.c">
+                <line start="37" end="37"/>
+                <line start="57" end="57"/>
+                <line start="63" end="63"/>
+                <line start="74" end="75"/>
+                <line start="81" end="82"/>
+                <line start="84" end="85"/>
+                <line start="87" end="87"/>
+                <line start="89" end="89"/>
+                <line start="92" end="93"/>
+            </lineinfo>
+        </state_relation>
+        <state_relation stateID="1" branchID="5">
+            <lineinfo fileName="../../sobel.c">
+                <line start="37" end="37"/>
+                <line start="57" end="57"/>
+                <line start="63" end="63"/>
+                <line start="74" end="75"/>
+                <line start="81" end="82"/>
+                <line start="84" end="85"/>
+                <line start="87" end="87"/>
+                <line start="89" end="89"/>
+                <line start="92" end="93"/>
+            </lineinfo>
+        </state_relation>
+        <state_relation stateID="1" branchID="6">
+            <lineinfo fileName="../../sobel.c">
+                <line start="37" end="37"/>
+                <line start="57" end="57"/>
+                <line start="63" end="63"/>
+                <line start="74" end="75"/>
+                <line start="81" end="82"/>
+                <line start="84" end="85"/>
+                <line start="87" end="87"/>
+                <line start="89" end="89"/>
+                <line start="92" end="93"/>
+            </lineinfo>
+        </state_relation>
+        <state_relation stateID="1" branchID="7">
+            <lineinfo fileName="../../sobel.c">
+                <line start="37" end="37"/>
+                <line start="57" end="57"/>
+                <line start="63" end="63"/>
+                <line start="74" end="75"/>
+                <line start="81" end="82"/>
+                <line start="84" end="85"/>
+                <line start="87" end="87"/>
+                <line start="89" end="89"/>
+                <line start="92" end="93"/>
+            </lineinfo>
+        </state_relation>
+        <state_relation stateID="1" branchID="8">
+            <lineinfo fileName="../../sobel.c">
+                <line start="37" end="37"/>
+                <line start="57" end="57"/>
+                <line start="63" end="63"/>
+                <line start="74" end="75"/>
+                <line start="81" end="82"/>
+                <line start="84" end="85"/>
+                <line start="87" end="87"/>
+                <line start="89" end="89"/>
+                <line start="92" end="93"/>
+            </lineinfo>
+        </state_relation>
+        <state_relation stateID="1" branchID="9">
+            <lineinfo fileName="../../sobel.c">
+                <line start="37" end="37"/>
+                <line start="57" end="57"/>
+                <line start="63" end="63"/>
+                <line start="74" end="75"/>
+                <line start="81" end="82"/>
+                <line start="84" end="85"/>
+                <line start="87" end="87"/>
+                <line start="89" end="89"/>
+                <line start="92" end="93"/>
+            </lineinfo>
+        </state_relation>
+        <state_relation stateID="1" branchID="10">
+            <lineinfo fileName="../../sobel.c">
+                <line start="37" end="37"/>
+                <line start="57" end="57"/>
+                <line start="63" end="63"/>
+                <line start="74" end="75"/>
+                <line start="81" end="82"/>
+                <line start="84" end="85"/>
+                <line start="87" end="87"/>
+                <line start="89" end="89"/>
+                <line start="92" end="93"/>
+            </lineinfo>
+        </state_relation>
+        <state_relation stateID="1" branchID="11">
+            <lineinfo fileName="../../sobel.c">
+                <line start="37" end="37"/>
+                <line start="57" end="57"/>
+                <line start="63" end="63"/>
+                <line start="74" end="75"/>
+                <line start="81" end="82"/>
+                <line start="84" end="85"/>
+                <line start="87" end="87"/>
+                <line start="89" end="89"/>
+                <line start="92" end="93"/>
+            </lineinfo>
+        </state_relation>
+    </state_line_relation>
+    <stage_line_relation>
+    </stage_line_relation>
+    <codeInfo></codeInfo>
+    <processInfo>
+        <name>sobel</name>
+        <modelInfo>
+            <name>sobel</name>
+            <file></file>
+        </modelInfo>
+    </processInfo>
+    <childProcessInfo>
+    </childProcessInfo>
+</debugInfo>

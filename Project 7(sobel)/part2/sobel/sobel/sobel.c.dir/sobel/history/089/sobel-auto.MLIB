@@ -1,0 +1,21 @@
+
+#@VERSION { 3.00 }
+#@LIB { sobel }
+#@UNIT 1/10ps
+#@FPGA_FAMILY{cycloneV}
+#@SYN_TOOL{QTS}
+@MLIB {
+     NAME	MEMB3W9
+     KIND	R1
+     BITWIDTH	3
+     DELAY	x2
+     WORD	9
+     MEM_SYNTH	BLOCK
+     WRITE_SYNC	YES
+     DEFMOD {
+         in             ter (0:4)      RA1              /* ra:1 */;
+         out            ter (0:3)      RD1              /* rd:1 */;
+         in             ter (0:1)      RCLK1            /* rclk:1 */;
+     }
+}
+#@END { sobel }

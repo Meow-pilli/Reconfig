@@ -1,0 +1,30 @@
+EARLY_POWER_ESTIMATOR_FILE_FORMAT_VERSION,6
+PROJECT,"sobel"
+TIME,"2023/10/31 14:43:38"
+FAMILY,"Stratix IV"
+DEVICE,"5CEBA2"
+PART,"5CEBA2F17A7"
+POWER_USE_DEVICE_CHARACTERISTICS,"TYPICAL"
+POWER_AUTO_COMPUTE_TJ,"ON"
+POWER_TJ_VALUE,"25"
+POWER_USE_CUSTOM_COOLING_SOLUTION,"OFF"
+MIN_JUNCTION_TEMPERATURE,"0"
+MAX_JUNCTION_TEMPERATURE,"85"
+POWER_PRESET_COOLING_SOLUTION,"23 mm heat sink with 200 LFpM airflow"
+POWER_BOARD_THERMAL_MODEL,"None (Conservative)"
+POWER_USE_TA_VALUE,"25.00"
+POWER_BOARD_TEMPERATURE,"-1.00"
+POWER_OJC_VALUE,"0.10"
+POWER_OCS_VALUE,"0.10"
+POWER_OSA_VALUE,"3.20"
+POWER_OJB_VALUE,"-1.00"
+VCCIO,,1A,2.50,1C,2.50,2C,2.50,2A,2.50,3A,2.50,3C,2.50,4C,2.50,4A,2.50,5A,2.50,5C,2.50,6C,2.50,6A,2.50,7A,2.50,7C,2.50,8C,2.50,8A,2.50,QL11,0.00,QL1,0.00,QL0,0.00,QL10,0.00,QR10,0.00,QR0,0.00,QR1,0.00,QR11,0.00,
+VCCPD,,1A,2.50,1C,2.50,2C,2.50,2A,2.50,3A,2.50,3C,2.50,4C,2.50,4A,2.50,5A,2.50,5C,2.50,6C,2.50,6A,2.50,7A,2.50,7C,2.50,8C,2.50,8A,2.50,QL11,0.00,QL1,0.00,QL0,0.00,QL10,0.00,QR10,0.00,QR0,0.00,QR1,0.00,QR11,0.00,
+RAIL_VOLTAGES,,VCC,0.900,VCCPT,1.500,VCCA_PLL,2.500,VCCD_PLL,0.900,VCCPGM,1.800,VCC_CLKIN,2.500,VCCBAT,3.000,VCCHIP_L,0.000,VCCT_L,0.000,VCCL_GXBL,0.000,VCCR_L,0.000,VCCA_L (3.0V),0.000,VCCA_L (2.5V),0.000,VCCH_GXBL (1.4V),0.000,VCCH_GXBL (1.5V),0.000,VCCHIP_R,0.000,VCCT_R,0.000,VCCL_GXBR,0.000,VCCR_R,0.000,VCCA_R (3.0V),0.000,VCCA_R (2.5V),0.000,VCCH_GXBR (1.4V),0.000,VCCH_GXBR (1.5V),0.000,VCCAUX,2.500,
+HIGH_SPEED,,NUM_HIGH_SPEED_LAB_TILES,4,NUM_LAB_TILES_USED,4,NUM_HIGH_SPEED_M9K block_TILES,1,NUM_M9K block_TILES_USED,1,
+BLOCK,Combinational cell,count,175,avg_toggle_rate,"0.2000",avg_toggle_rate_ratio,"0.2000",avg_fanout,"1.0000",fmax,"50.0000"
+BLOCK,Register cell,count,32,avg_toggle_rate,"0.2000",avg_toggle_rate_ratio,"0.2000",avg_fanout,"1.0000",fmax,"50.0000"
+BLOCK,Clock control block,count,1,avg_toggle_rate,"0.2000",avg_toggle_rate_ratio,"0.00",avg_fanout,"1.0000",fmax,"50.0000",global_type,"GCLK",global_clk_ena_static_prob,"1",global_type_usage,"Clock",num_raw_fanout,"4",num_lc_comb_fanout,"0",num_lc_ff_fanout,"4",sum_lc_ff_clkena_static_prob,"50.0",avg_lc_ff_clk_ena_static_prob,"0.5",num_pin_fanout,"0",num_m512_fanout,"0",num_m4k_fanout,"1",num_mram_fanout,"0",num_mlab_fanout,"0",num_dsp_fanout,"0",num_dsp9x9_fanout,"0",num_misc_fanout,"0"
+BLOCK,I/O pad,count,24,avg_toggle_rate,"0.2000",avg_toggle_rate_ratio,"0.2000",avg_fanout,"1.0000",fmax,"50.0000",io_mode,"INPUT_PIN",output_load,"0",io_standard,"2_5",drive_strength,"DEFAULT",is_ddr,"0",input_termination,"OFF",output_termination,"OFF",output_termination_sp,"0",output_ena_static_prob,"0",vod,"-1",slew_rate,"-1"
+BLOCK,I/O pad,count,1,avg_toggle_rate,"0.2000",avg_toggle_rate_ratio,"0.2000",avg_fanout,"1.0000",fmax,"50.0000",io_mode,"INPUT_PIN",output_load,"0",io_standard,"2_5",drive_strength,"DEFAULT",is_ddr,"0",input_termination,"OFF",output_termination,"OFF",output_termination_sp,"0",output_ena_static_prob,"0",vod,"-1",slew_rate,"-1"
+BLOCK,I/O pad,count,8,avg_toggle_rate,"0.2000",avg_toggle_rate_ratio,"0.2000",avg_fanout,"1.00",fmax,"50.0000",io_mode,"OUTPUT_PIN",output_load,"0",io_standard,"2_5",drive_strength,"DEFAULT",is_ddr,"0",input_termination,"OFF",output_termination,"OFF",output_termination_sp,"0",output_ena_static_prob,"0",vod,"-1",slew_rate,"-1"

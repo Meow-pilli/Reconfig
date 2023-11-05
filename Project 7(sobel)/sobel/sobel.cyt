@@ -1,0 +1,44 @@
+<!DOCTYPE AQUARIUM [
+<!ELEMENT root (object , (backup , trash)?)>
+<!ELEMENT object (properties, objects)?>
+<!ELEMENT backup EMPTY>
+<!ELEMENT trash (properties)?>
+<!ATTLIST root
+   version CDATA #REQUIRED
+>
+<!ATTLIST object
+   type CDATA #REQUIRED
+   name CDATA #REQUIRED
+   path CDATA #IMPLIED
+   ref (true|false) "false"
+>
+<!ELEMENT objects (object)*>
+<!ELEMENT properties (property)*>
+<!ELEMENT property EMPTY>
+<!ATTLIST property
+   name CDATA #REQUIRED
+   type CDATA #REQUIRED
+   value CDATA #REQUIRED
+>
+]>
+<root version="6.1.5" >
+  <object type="Root" name="sobel" >
+    <properties>
+      <property type="string" value="2023/10/31 13:17:52.000" name="created" />
+      <property type="string" value="2023/11/02 19:32:06.000" name="lastModified" />
+      <property type="string" value="Verilog" name="toolbarJump" />
+      <property type="string" value="Verilog" name="toolbarRTL" />
+    </properties>
+    <objects>
+      <object path="sobel/sobel.cyp" type="Project" name="sobel" />
+    </objects>
+  </object>
+  <backup/>
+  <trash>
+    <properties>
+      <properties>
+        <property type="int" value="22" name="index" />
+      </properties>
+    </properties>
+  </trash>
+</root>

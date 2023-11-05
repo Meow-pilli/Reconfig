@@ -1,0 +1,372 @@
+
+Cyber Synthesis Report
+
+===========
+; Summary ;
+===========
+
+  Module Name         : sobel
+  Basic Library Name  : CWBSTDBLIB
+
+  FPGA Family         : cycloneV
+  FPGA Device         : -
+  FPGA Package        : -
+  FPGA Speed          : -
+
+  Resource Utilization
+    ALUTs             :        516
+    Registers         :         96
+    Block Memory Bits :         93
+    DSPs              :          4
+
+  Latency Index       :          9
+  Total States        :          5
+
+  Clock Period        :       20ns
+  Critical Path Delay :  15.0686ns
+
+  Net                 :        613
+  Pin Pair            :      1,457
+
+  Port                :         34
+    In                :         26
+    Out               :          8
+
+========================
+; Resource Utilization ;
+========================
+
+  Total :
+    ALUTs             :        516
+    Registers         :         96
+    Block Memory Bits :         93
+    DSPs              :          4
+
+===================
+; Functional Unit ;
+===================
+
+    FU Name               Slice    Reg  Delay  Pipeline  Block   Count
+                           LUTs          (ns)    Stage   Memory
+                                                         Bits
+    ------------------------------------------------------------------
+    add12s_11                13      0   1.08         -       0      1
+    add32s                   33      0   1.76         -       0      1
+    add32s_32                33      0   1.76         -       0      1
+    add32s_32_1              33      0   1.76         -       0      1
+    incr2s                    3      0   0.21         -       0      2
+    mul12s_10                 1      0   1.72         -       0      1
+    mul12s_10_9               1      0   1.72         -       0      2
+    mul8u                     1      0   1.49         -       0      1
+    sub32s                   33      0   1.79         -       0      1
+    sub32s_32                33      0   1.79         -       0      2
+    sub32s_32_1              33      0   1.79         -       0      2
+
+  Unused Functional Units :
+    ---------------------------------------------------
+    None
+
+============
+; Register ;
+============
+
+     Used      Declared                 Used
+      Bit           Bit      Count       Bit  * Count
+    -------------------------------------------------
+        1             1          1                  1
+    -------------------------------------------------
+        2             2          2                  4
+    -------------------------------------------------
+        3             3          1                  3
+    -------------------------------------------------
+        8             8          3                 24
+    -------------------------------------------------
+       32            32          2                 64
+    -------------------------------------------------
+    Total                                          96
+
+===============
+; Multiplexer ;
+===============
+
+   2 bit:  2way: 3 ,  3way: 2 
+   8 bit:  2way: 5 ,  3way: 3 
+  32 bit:  2way: 2 ,  3way: 2 ,  5way: 1 
+   Total : 656 (# of Fanins)
+
+===========
+; Decoder ;
+===========
+
+    None
+
+==========
+; Memory ;
+==========
+
+                                                               Block         (shared/
+                                                               Memory         outside)
+    Name                   Type   Kind     Bit  Word  Area     Bits    Count  Count
+    ----------------------------------------------------------------------------------
+    MEMB3W3                -      R1         3     3     -          9      1      0
+    MEM_line_buffer_a_0    LUT    R4,W1      8     3     0         24      0      0
+    MEM_line_buffer_a_1    LUT    R1,W1      8     3     0         24      0      0
+    MEM_line_buffer_a_2    LUT    R3,W1      8     3     0         24      0      0
+    MEMB2W3                -      R1         2     3     -          6      2      0
+
+===========
+; Latency ;
+===========
+
+    Total:
+        Type          : S
+        Latency       : 3 + L1
+        Latency Index : 9
+        State No.     : 1, 2, 3, 4, 5
+        Folding Loop  : -
+        Folding Stages: - , Total Folding States: - , Hazard: -
+        User Operator : -
+        Sub Loops     : L1
+        Line          : ../../sobel.c:38
+    L1:
+        Type          : S
+        Latency       : 2 * 3
+        Latency Index : 6
+        State No.     : 4, 5
+        Folding Loop  : -
+        Folding Stages: - , Total Folding States: - , Hazard: -
+        User Operator : -
+        Sub Loops     : -
+        Line          : ../../sobel.c:74
+
+=======
+; FSM ;
+=======
+
+  Total States      :          5
+  #FSM              :          1
+  States/FSM        :          4
+  FSM Decoder Delay :    0.817ns
+
+=========
+; Delay ;
+=========
+
+  Clock Period        :       20ns
+  Critical Path Delay :  15.0686ns
+
+              Subtotal
+      Class       (ns)    Ratio
+      -------------------------
+      IN           0.00      0%
+      FU           6.39     42%
+      MUX          3.02     20%
+      DEC          0.00      0%
+      MISC         5.66     37%
+      MEM          0.00     <1%
+      -------------------------
+      Total       15.07
+
+    Path: #1
+                                                                Arrival
+                                                          Delay    Time Logic
+      Name                 / Port [Signal              ]   (ns)   (ns)  Stage
+      -----------------------------------------------------------------------
+      Gy_a_21              / o1   [Gy_a_21.RD1         ]   0.00    0.00     0
+      mul12s_10_9@2        / o1   [mul12s_10_92ot      ]   1.55    1.55     1
+      add32s_32_1@1        / o1   [add32s_32_11ot      ]   1.76    3.31    34
+      add32s_32@1          / o1   [add32s_321ot        ]   0.52    3.83    43
+      sub32s_32_1@1        / o1   [sub32s_32_11ot      ]   0.80    4.63    57
+      _NMUX_627            / o1   [sumY_t2             ]   0.85    5.48    58
+      _ROR_1724            / o1   [                    ]   1.96    7.44    60
+      _LOGIC_1722          / o1   [C_02                ]   0.66    8.10    61
+      _LOGIC_1922          / o1   [                    ]   0.42    8.52    62
+      _NMUX_635            / o1   [add32s1i2           ]   1.51   10.03    65
+      add32s@1             / o1   [add32s1ot           ]   1.76   11.79    98
+      _ROR_1736            / o1   [                    ]   1.96   13.75   100
+      _LOGIC_1734          / o1   [C_03                ]   0.66   14.41   101
+      _NOT_1929            / o1   [                    ]   0.00   14.41   101
+      _NMUX_630            / o1   [SUM3_t              ]   0.66   15.07   102
+      _NOT_1374            / o1   [                    ]   0.00   15.07   102
+      _NMUX_632            / o1   [sobel_ret_r         ]   0.00   15.07   102
+      sobel_ret_r          / din  [                    ]      -   15.07   102
+
+  False Path                    :  Unchecked
+  Multi Cycle Path              :  Unchecked
+  False Loop/Combinational Loop :          0
+  Latch (bit)                   :          0
+
+========
+; Wire ;
+========
+
+  Total Net Count      :      613
+  Total Pin Pair Count :    1,457
+  Const Fanout         :      207
+
+  Net Count :
+         Bit       Net    Bit*Net
+     ----------------------------
+           1        30         30
+           2        12         24
+           3         3          9
+           8        23        184
+           9         3         27
+          10         1         10
+          11         1         11
+          32        16        512
+     ----------------------------
+       Total                  807
+
+  Pin Pair Count :
+      Fanout    Bit    Count   Subtotal
+    -----------------------------------
+          15      1        1         15
+          10      2        1         20
+          10      1        1         10
+           9      1        1          9
+           8      1        2         16
+           7      1        1          7
+           6     24        1        144
+           5      8        1         40
+           5      1        2         10
+           4      8        1         32
+           4      1        1          4
+           3     31        2        186
+           3      8        2         48
+           3      2        1          6
+           3      1        1          3
+           2     32        1         64
+           2     24        1         48
+           2      8        2         32
+           2      3        1          6
+           2      1        8         16
+           1     32       11        352
+           1     11        1         11
+           1     10        1         10
+           1      9        3         27
+           1      8       19        152
+           1      3        2          6
+           1      2        9         18
+           1      1       16         16
+    -----------------------------------
+       Total                      1,308
+
+  Fanout for Consts:
+      Value    Fanout
+          0       192
+          1        15
+    ------------------
+      Total       207
+
+  Clock Fanout:
+      Name                         Count
+      ----------------------------------
+      CLOCK(0:1)                      15
+
+  Reset Fanout:
+      Name                         Count
+      ----------------------------------
+      RESET(0:1)                       2
+
+  Register Fanin/Fanout Cone Size:
+
+    Fanin: (Top 10 Registers)
+      Register Name                              Cone Size
+      ----------------------------------------------------
+      sobel_ret_r(0:8)                                  18
+      RG_sumX(0:32)                                     17
+      RG_sumY(0:32)                                      9
+      RG_VR_input_row_1(0:8)                             4
+      RG_rowOffset(0:2)                                  3
+      RG_VR_input_row(0:8)                               3
+      _STREG_105(0:3)                                    2
+      RG_06(0:1)                                         1
+      RG_05(0:2)                                         1
+
+    Fanout: (Top 10 Registers)
+      Register Name                              Cone Size
+      ----------------------------------------------------
+      _STREG_105(0:3)                                   17
+      RG_rowOffset(0:2)                                 11
+      RG_VR_input_row_1(0:8)                             5
+      RG_VR_input_row(0:8)                               4
+      RG_sumY(0:32)                                      3
+      RG_06(0:1)                                         3
+      sobel_ret_r(0:8)                                   2
+      RG_sumX(0:32)                                      2
+      RG_05(0:2)                                         1
+
+  Routability:
+
+    Top 25 Nets
+    sorted by "Total" (Total Pin Pair)
+      Net Name                                    Total      Max
+      -----------------------------------------------------------------
+      RG_sumX(0:32)                                 184        6 (24bit)
+      add32s1ot(0:32)                                98        5 ( 1bit)
+      add32s_321ot(0:32)                             98        5 ( 1bit)
+      RG_sumY(0:32)                                  64        2 (32bit)
+      sumY_t2(0:32)                                  56        2 (24bit)
+      line_buffer_a_2.RD2(0:8)                       32        4 ( 8bit)
+      add32s1i1(0:32)                                32        1 (32bit)
+      add32s1i2(0:32)                                32        1 (32bit)
+      sub32s1ot(0:32)                                32        1 (32bit)
+      add32s_32_11ot(0:32)                           32        1 (32bit)
+      sub32s_321ot(0:32)                             32        1 (32bit)
+      sub32s_322ot(0:32)                             32        1 (32bit)
+      sub32s_32_11ot(0:32)                           32        1 (32bit)
+      sub32s_32_12ot(0:32)                           32        1 (32bit)
+      _DMUX_575(0:32)                                32        1 (32bit)
+      _NMUX_621(0:32)                                32        1 (32bit)
+      _NMUX_623(0:32)                                32        1 (32bit)
+      RG_VR_input_row_1(0:8)                         24        3 ( 8bit)
+      line_buffer_a_2.RD3(0:8)                       24        3 ( 8bit)
+      incr2s2ot(0:2)                                 20       10 ( 2bit)
+      RG_VR_input_row(0:8)                           16        2 ( 8bit)
+      sobel_ret_r(0:8)                               16        2 ( 8bit)
+      CLOCK(0:1)                                     15       15 ( 1bit)
+      add12s_111ot(0:11)                             11        1 (11bit)
+      ST1_03d(0:1)                                   10       10 ( 1bit)
+
+    Top 25 Nets
+    sorted by "Max" (Maximum Fanout)
+      Net Name                                    Total      Max
+      -----------------------------------------------------------------
+      CLOCK(0:1)                                     15       15 ( 1bit)
+      incr2s2ot(0:2)                                 20       10 ( 2bit)
+      ST1_03d(0:1)                                   10       10 ( 1bit)
+      U_09(0:1)                                       9        9 ( 1bit)
+      ST1_01d(0:1)                                    8        8 ( 1bit)
+      ST1_04d(0:1)                                    8        8 ( 1bit)
+      ST1_02d(0:1)                                    7        7 ( 1bit)
+      RG_sumX(0:32)                                 184        6 (24bit)
+      add32s1ot(0:32)                                98        5 ( 1bit)
+      add32s_321ot(0:32)                             98        5 ( 1bit)
+      line_buffer_a_2.RD2(0:8)                       32        4 ( 8bit)
+      incr2s1ot(0:2)                                  5        4 ( 1bit)
+      RG_VR_input_row_1(0:8)                         24        3 ( 8bit)
+      line_buffer_a_2.RD3(0:8)                       24        3 ( 8bit)
+      RG_rowOffset(0:2)                               6        3 ( 2bit)
+      M_73(0:1)                                       3        3 ( 1bit)
+      RG_sumY(0:32)                                  64        2 (32bit)
+      sumY_t2(0:32)                                  56        2 (24bit)
+      RG_VR_input_row(0:8)                           16        2 ( 8bit)
+      sobel_ret_r(0:8)                               16        2 ( 8bit)
+      _STREG_105(0:3)                                 6        2 ( 3bit)
+      RG_06(0:1)                                      2        2 ( 1bit)
+      RESET(0:1)                                      2        2 ( 1bit)
+      ST1_05d(0:1)                                    2        2 ( 1bit)
+      U_02(0:1)                                       2        2 ( 1bit)
+
+================
+; Primary Port ;
+================
+
+    Name               Type   Bitw
+    ------------------------------
+      input_row_a00     in      8
+      input_row_a01     in      8
+      input_row_a02     in      8
+      sobel_ret         out     8
+

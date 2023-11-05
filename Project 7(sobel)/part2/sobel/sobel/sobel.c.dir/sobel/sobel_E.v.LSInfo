@@ -1,0 +1,24 @@
+LSInfo_version: 1.06
+
+iff_filename: "sobel_E.IFF"
+rtl_filename: "sobel_E.v"
+
+timestamp_0: 20231104170132_08601_41389
+timestamp_5: 20231104170132_08643_30672
+timestamp_9: 20231104170134_08643_16779
+timestamp_C: 20231104170134_08643_90785
+timestamp_E: 20231104170134_08643_20267
+timestamp_V: 20231104170135_09274_34383
+
+lang: verilog
+
+gated_clock_register: NONE
+
+stall_register: NONE
+
+module_name: sobel
+
+syn_tool: QTS
+start_fpga_info:
+	fpga_family: cycloneV
+end_fpga_info:

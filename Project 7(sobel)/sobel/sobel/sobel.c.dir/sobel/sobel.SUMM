@@ -1,0 +1,71 @@
+Copyright (C) 1988-2018 NEC Corporation. All rights reserved.
+bdltran version : 6.10.04 (Linux 64-bit) Thu Mar 22 14:18:17 JST 2018
+         (BIF version : 3.41F)
+         (LICflex version : 1.53 cylmd)
+         make at Thu Mar 22 14:30:59 JST 2018
+ Option  -EE -c2000 -s -Zresource_fcnt=GENERATE -Zresource_mcnt=GENERATE -Zdup_reset=YES -Zfolding_sharing=inter_stage -EE -lb /proj/cad/cwb-6.1/packages/cycloneV.BLIB -lfl /proj/cad/cwb-6.1/packages/cycloneV.FLIB sobel.IFF 
+
+scpars  -EE -info_base_name sobel ../../sobel.c
+
+############## CyberII started (automatic scheduling mode) ##############
+[Clock period]    200,000 (1/10ps) [define]
+[Datapath delay]  160,000 (1/10ps)
+[Clock uncertainty] 40,000 (1/10ps)
+
+******* Initial # of operations in the input behavior description *******
+ === Operators ===
+  >  :  4  (32bit:4)
+  -- :  1  (32bit:1)
+  <  :  4  (32bit:4)
+  ++ :  4  (32bit:4)
+  -  :  6  (8bit:1, 32bit:5)
+  <= :  2  (32bit:2)
+  +  : 10  (32bit:10)
+  *  :  2  (8bit:2)
+  Data transfer : 83
+
+ === array / memory ===
+  read  :  6
+  write :  2
+
+********* After optimizing & expanding the behavior description *********
+ === Operators ===
+  -  :  7  (8bit:2, 9bit:2, 11bit:3)
+  +  :  6  (8bit:2, 9bit:1, 10bit:1, 11bit:2)
+  ~  :  1  (8bit:1)
+  &> :  2  (1bit:2)
+  |> :  3  (1bit:1, 2bit:2)
+  Data transfer : 75
+
+#########################  Synthesized Circuit  #########################
+[Performance index max/min/ave] 1 / 1 / 1.00
+
+  Module Name         : sobel
+  Basic Library Name  : CWBSTDBLIB
+
+  FPGA Family         : cycloneV
+  FPGA Device         : -
+  FPGA Package        : -
+  FPGA Speed          : -
+
+  Resource Utilization
+    ALUTs             :        175
+    Registers         :         32
+    Block Memory Bits :          0
+    DSPs              :          0
+
+  Latency Index       :          1
+  Total States        :          1
+
+  Clock Period        :       20ns
+  Critical Path Delay :    6.289ns
+
+  Net                 :        204
+  Pin Pair            :        344
+
+  Port                :         34
+    In                :         26
+    Out               :          8
+
+##### CyberII Normal finish (automatic scheduling mode) [sobel] #####
+

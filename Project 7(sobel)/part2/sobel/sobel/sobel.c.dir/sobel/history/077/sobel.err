@@ -1,0 +1,48 @@
+I_BT1173: LOG file is generated. (sobel.LOG.gz)
+I_BT1921: License has been successfully obtained by FLEXlm.
+I_BT2619: Synthesize in FPGA (cycloneV) mode.
+I_BT6773: The BLIB and FLIB files are loaded.
+	/home/010/s/sx/sxc210186/Reconfig/Project_7.1/part2/part2 source_sobel_exploration/cycloneV.BLIB
+	/home/010/s/sx/sxc210186/Reconfig/Project_7.1/part2/part2 source_sobel_exploration/cycloneV.FLIB
+	sobel-auto.FLIB
+	sobel-amacro-auto.FLIB
+I_BT4169: All signals are synthesized as ascending bit-order because all declared signals are of ascending bit-order.
+I_BT4607: for loop is unrolled
+	[Source Lines]
+	57(../../sobel.c):      for(X=0;X< 3;X++){
+I_BT4607: for loop is unrolled
+	[Source Lines]
+	56(../../sobel.c):    for(Y=2;Y>0;Y--){
+I_BT4607: for loop is unrolled
+	[Source Lines]
+	63(../../sobel.c):        for(X=0; X<SIZE_BUFFER; X++)
+I_BT5035: Unspecified information (e.g. AREA/DELAY/NET) of combinational array (Gy) in FCNT file estimated from basic library file (/home/010/s/sx/sxc210186/Reconfig/Project_7.1/part2/part2 source_sobel_exploration/cycloneV.BLIB).
+I_BT4121: Array Gy is synthesized as a combinational circuit.
+W_BT4127: Change the physical type of signal(input_row) to var.
+I_BT4679: Array input_row was expanded.
+I_BT4679: Array VR_input_row was expanded.
+I_BT8371: Height of operation tree has been reduced.
+	[Source Lines]
+	77(../../sobel.c):        sumX = sumX + line_buffer[1 +rowOffset][1-colOffset] * Gx[1+rowOffset][1+colOffset];
+I_BT4389: Overwrite memory library file / memory constraint file.
+	sobel-auto.MLIB
+	sobel-auto.MCNT
+I_BT4395: 12 functional units templates are generated.
+I_BT4392: No arithmetic macro functional unit required.
+I_BT4319: Empty FLIB file (sobel-amacro-auto.FLIB) generated. No functional units required.
+ [Action] If required, confirm the description.
+I_BT4318: Empty FCNT file (sobel-amacro-auto.FCNT) generated. No functional units required.
+ [Action] If required, confirm the description.
+I_BT4384: Overwrite functional unit library files / functional unit constraint files.
+	sobel-auto.FLIB
+	sobel-auto.FCNT
+	sobel-amacro-auto.FLIB
+	sobel-amacro-auto.FCNT
+I_BT4392: No arithmetic macro functional unit required.
+W_BT2751: No information about memory area in MLIB file.
+ [Action] Add area information to MLIB file using MLIBgen.
+I_BT1190: The following ERROR/WARNING/INFO/TIPS exist.
+	 2 warning      exist
+	20 information  exist
+	 2 tips         exist
+	---> SEE sobel.err FILE and sobel.tips FILE for DETAILS

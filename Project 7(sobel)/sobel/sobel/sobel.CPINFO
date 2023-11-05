@@ -1,0 +1,7 @@
+<hierarchy>
+[SC_MODULE:sobel]
+  module_kind	single_process	module
+  process	FUNC	combinational	sobel	sobel.IFF
+
+<hash>
+  ed9486f1778803947bff66a718258a74	sobel.IFF

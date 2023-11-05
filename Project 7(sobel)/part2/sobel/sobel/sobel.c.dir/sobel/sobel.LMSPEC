@@ -1,0 +1,29 @@
+#@VERSION{3.00}
+#@CNT{sobel}
+#@KIND{BASIC_OPERATOR}
+#@CLK 200000
+#@UNIT 1/10ps
+@PROCESS{
+	NAME	sobel
+#	KIND
+#	LIMIT
+#	BITWIDTH
+#	DELAY
+	AREA_REG	32
+	AREA_COMB	175
+	FPGA_MEM_BIT	0
+	NET	204
+	PIN_PAIR	344
+#	SPECULATION
+#	COMMENT
+	DEFMOD {
+		in    unsigned ter(0:8)  input_row_a00    /* glo, input_row[0], func_arg_idx = 1 */;
+		in    unsigned ter(0:8)  input_row_a01    /* glo, input_row[1], func_arg_idx = 1 */;
+		in    unsigned ter(0:8)  input_row_a02    /* glo, input_row[2], func_arg_idx = 1 */;
+		out   unsigned ter(0:8)  sobel_ret        /* glo, sobel_ret, org_sig_phyty_reg = YES, ansi_func_return = YES */;
+		clock                    CLOCK            /* c, CLOCK, @clock_period = 20ns, @auto_gen_sig = YES, clock_edge = \pos */;
+		reset                    RESET            /* r, RESET, @auto_gen_sig = YES, reset_mode = async, reset_active = high */;
+	}
+}
+#@HASH{f0ee04f21ce81cfb473922dfd16d8338}
+#@END{sobel}

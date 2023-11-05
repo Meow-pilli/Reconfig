@@ -1,0 +1,31 @@
+<!DOCTYPE AQUARIUM_OPTION [
+<!ELEMENT root (properties)>
+<!ELEMENT properties (property)*>
+<!ELEMENT property EMPTY>
+<!ATTLIST property
+   name CDATA #REQUIRED
+   type CDATA #REQUIRED
+   value CDATA #REQUIRED
+>
+]>
+<root>
+  <properties>
+    <property type="string" value="2023/10/31 17:19:07.000" name="ap::timestamp" />
+    <property type="string" value="2023/10/31 17:19:07.000" name="created" />
+    <property type="string" value="2023/10/31 17:19:07.000" name="do::timestamp" />
+    <property type="int" value="1073741824" name="extraInfo" />
+    <property type="string" value="auto" name="ss::Execution" />
+    <property type="string" value="sim_rtl" name="ss::Name" />
+    <property type="string" value="sobel" name="ss::Processes" />
+    <property type="string" value="rtl" name="ss::SimLevel" />
+    <property type="string" value="modelsim-all" name="ss::Simulator" />
+    <property type="string" value="SystemC" name="ss::TestbenchType" />
+    <property type="string" value="2023/11/04 18:02:34.000" name="ss::timestamp" />
+    <property type="string" value="OFF" name="tb::CheckFollows" />
+    <property type="string" value="10" name="tb::DataRadix" />
+    <property type="string" value="VCD" name="tb::Dump" />
+    <property type="string" value="sobel_E.v" name="tb::Hdl" />
+    <property type="string" value="modelsim-all" name="tb::Scr" />
+    <property type="string" value="2023/11/04 18:02:37.000" name="tb::timestamp" />
+  </properties>
+</root>

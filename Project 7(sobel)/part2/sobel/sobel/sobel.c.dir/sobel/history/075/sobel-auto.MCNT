@@ -1,0 +1,16 @@
+
+#@VERSION { 3.00 }
+#@CNT { sobel }
+@MCNT {
+     NAME	MEMB1W3_1
+     LIMIT	1
+}
+@MCNT {
+     NAME	MEMB3W3_1
+     LIMIT	1
+}
+@MCNT {
+     NAME	MEMB2W3_1
+     LIMIT	4
+}
+#@END { sobel }

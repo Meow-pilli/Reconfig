@@ -1,0 +1,42 @@
+<!DOCTYPE AQUARIUM_OPTION [
+<!ELEMENT root (properties)>
+<!ELEMENT properties (property)*>
+<!ELEMENT property EMPTY>
+<!ATTLIST property
+   name CDATA #REQUIRED
+   type CDATA #REQUIRED
+   value CDATA #REQUIRED
+>
+]>
+<root>
+  <properties>
+    <property type="string" value="2023/11/01 12:14:08.000" name="created" />
+    <property type="string" value="2023/11/01 12:14:08.000" name="do::timestamp" />
+    <property type="int" value="536870912" name="extraInfo" />
+    <property type="string" value="log_file" name="mk::LogFile" />
+    <property type="string" value="log_stdout" name="mk::LogStdout" />
+    <property type="string" value="SystemC" name="mk::Model" />
+    <property type="string" value="sim_cycle.exe" name="mk::ScenarioTarget" />
+    <property type="string" value="Cycle" name="mk::SimLevel" />
+    <property type="string" value="sim_cycle.exe" name="mk::Target" />
+    <property type="string" value="2023/11/02 12:05:27.000" name="mk::timestamp" />
+    <property type="string" value="ON" name="sc::CheckCompare" />
+    <property type="string" value="OFF" name="sc::CheckFollows" />
+    <property type="string" value="10" name="sc::DataRadix" />
+    <property type="string" value="VCD" name="sc::Dump" />
+    <property type="string" value="file" name="sc::Input" />
+    <property type="string" value="2023/11/02 12:05:27.000" name="sc::timestamp" />
+    <property type="string" value="on" name="se::CompareScenario" />
+    <property type="string" value="2023/11/01 12:14:41.000" name="se::timestamp" />
+    <property type="string" value="on" name="ss::CompareScenario" />
+    <property type="string" value="auto" name="ss::Execution" />
+    <property type="string" value="2023/11/01 18:01:45.000" name="ss::LastCompiled" />
+    <property type="string" value="2023/11/01 12:28:56.000" name="ss::LastModelGenerated" />
+    <property type="string" value="sim_cycle" name="ss::Name" />
+    <property type="string" value="sobel" name="ss::Processes" />
+    <property type="string" value="cycle" name="ss::SimLevel" />
+    <property type="string" value="modelsim-all" name="ss::Simulator" />
+    <property type="string" value="SystemC" name="ss::TestbenchType" />
+    <property type="string" value="2023/11/02 12:04:28.000" name="ss::timestamp" />
+  </properties>
+</root>
