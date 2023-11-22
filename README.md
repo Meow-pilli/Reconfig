@@ -65,3 +65,20 @@ or VHDL)
 - Create input stimuli files.   
 - Simulate using the cycle-accurate model generator. 
 - Perform a simulation using the same input vectors as for the SW verification for the RTL simulation
+
+### 7. Sobel
+
+- Learn how to control the synthesis result of a commercial HLS tool through different synthesis options like synthesis directives to control how to synthesize:
+    * Arrays, loops and functions
+
+### 8. Hard Processor System (HPS)
+
+- Learn how to install Linux on the DE1-SoC board
+- Understand how to write programs for the HPS using the embedded system Design.
+- Driving DE1-SoC peripherals from the HPS
+
+### 9. FPGA and HPS
+
+- Guides project creation and Qsys configuration for LED control
+- Generates HPS header file (hps_0.h) for PIO_LED component
+- Driving DE1-SoC peripherals from the HPS through AXI bridge
