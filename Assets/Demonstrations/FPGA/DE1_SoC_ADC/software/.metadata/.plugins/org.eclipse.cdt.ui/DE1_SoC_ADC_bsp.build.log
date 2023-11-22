@@ -1,0 +1,6 @@
+17:58:05 **** Build of configuration Nios II for project DE1_SoC_ADC_bsp ****
+wsl make all 
+[BSP build complete]
+
+17:58:06 Build Finished (took 501ms)
+

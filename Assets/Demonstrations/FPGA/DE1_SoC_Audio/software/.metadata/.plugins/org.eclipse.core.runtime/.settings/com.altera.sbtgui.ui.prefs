@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=E\:\\DE1_SoC_Audio\\software\\DE1_SoC_Audio
+newSoftwareExampleWizardPage.sopcinfoFile=E\:\\DE1_SoC_Audio\\audio_nios.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=E\:\\DE1_SoC_Audio\\software\\DE1_SoC_Audio_bsp

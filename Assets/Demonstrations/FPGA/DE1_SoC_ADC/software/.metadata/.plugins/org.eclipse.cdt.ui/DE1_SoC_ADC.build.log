@@ -1,0 +1,9 @@
+20:03:07 **** Incremental Build of configuration Nios II for project DE1_SoC_ADC ****
+wsl make all 
+Info: Building /mnt/e/DE1_SoC_ADC/software/DE1_SoC_ADC_bsp/
+make --no-print-directory -C /mnt/e/DE1_SoC_ADC/software/DE1_SoC_ADC_bsp/
+[BSP build complete]
+[DE1_SoC_ADC build complete]
+
+20:03:09 Build Finished (took 1s.924ms)
+
